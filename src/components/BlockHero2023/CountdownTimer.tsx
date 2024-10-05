@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, useBreakpointValue, useColorModeValue } from "@chakra-ui/react";
+import { t } from "i18next";
 
 const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
   eventStartTime,
@@ -24,6 +25,10 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
+  const numberFontSize = useBreakpointValue({ base: "2rem", md: "4rem", lg: "5.5rem" });
+  const textFontSize = useBreakpointValue({ base: "1rem", md: "1.5rem", lg: "2rem" });
+  const boxSize = useBreakpointValue({ base: "70px", md: "140px", lg: "150px" });
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
@@ -36,124 +41,58 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
     unit < 10 ? `0${unit}` : unit.toString();
 
   return (
-    <Box
-      //   width="100%"
-      textAlign="center"
-      overflow={"hidden"}
-      //   maxWidth={{ base: "20rem" }}
-      margin="0 auto"
-    >
-      <Flex justifyContent="center">
-        <Box
-          padding="1rem 1rem"
-          bgColor="rgba(0, 128, 128, 0.2)"
-          color="white"
-          borderRadius="7px"
-          margin={{ base: "0.2rem 0.2rem", lg: "1.7rem 1.7rem" }}
-          width="100%"
-          height="100%"
-        >
-          <Text
-            fontSize={{ base: "2rem", md: "4rem", lg: "17rem" }}
-            fontWeight="bold"
-            marginTop={{ base: "0rem", md: "-1rem", lg: "-6rem" }}
-            marginBottom={{ base: "0rem", md: "-1rem", lg: "-6rem" }}
-          >
-            {formatTimeUnit(timeLeft.days)}
-          </Text>
-          <Text
-            fontSize={{ base: "1rem", md: "2rem", lg: "5.5rem" }}
-            fontWeight="bold"
-          >
-            Days
-          </Text>
-        </Box>
-        <Box
-          padding="1rem 1rem"
-          bgColor="rgba(0, 128, 128, 0.2)"
-          color="white"
-          borderRadius="7px"
-          margin={{ base: "0.2rem 0.2rem", lg: "1.7rem 1.7rem" }}
-          width="100%"
-          height="100%"
-        >
-          <Text
-            fontSize={{ base: "2rem", md: "4rem", lg: "17rem" }}
-            fontWeight="bold"
-            marginTop={{ base: "0rem", md: "-1rem", lg: "-6rem" }}
-            marginBottom={{ base: "0rem", md: "-1rem", lg: "-6rem" }}
-          >
-            {formatTimeUnit(timeLeft.hours)}
-          </Text>
-          <Text
-            fontSize={{ base: "1rem", md: "2rem", lg: "5.5rem" }}
-            fontWeight="bold"
-          >
-            Hours
-          </Text>
-        </Box>
-        <Box
-          padding="1rem 1rem"
-          bgColor="rgba(0, 128, 128, 0.2)"
-          color="white"
-          borderRadius="7px"
-          margin={{ base: "0.2rem 0.2rem", lg: "1.7rem 1.7rem" }}
-          width="100%"
-          height="100%"
-        >
-          <Text
-            fontSize={{ base: "2rem", md: "4rem", lg: "17rem" }}
-            fontWeight="bold"
-            marginTop={{ base: "0rem", md: "-1rem", lg: "-6rem" }}
-            marginBottom={{ base: "0rem", md: "-1rem", lg: "-6rem" }}
-          >
-            {formatTimeUnit(timeLeft.minutes)}
-          </Text>
-          <Text
-            fontSize={{ base: "1rem", md: "2rem", lg: "5.5rem" }}
-            fontWeight="bold"
-          >
-            Minutes
-          </Text>
-        </Box>
-        <Box
-          padding="1rem 1rem"
-          bgColor="rgba(0, 128, 128, 0.2)"
-          color="white"
-          borderRadius="7px"
-          margin={{ base: "0.2rem 0.2rem", lg: "1.7rem 1.7rem" }}
-          width="100%"
-          height="100%"
-        >
-          <Text
-            fontSize={{ base: "2rem", md: "4rem", lg: "17rem" }}
-            fontWeight="bold"
-            marginTop={{ base: "0rem", md: "-1rem", lg: "-6rem" }}
-            marginBottom={{ base: "0rem", md: "-1rem", lg: "-6rem" }}
-          >
-            {formatTimeUnit(timeLeft.seconds)}
-          </Text>
-          <Text
-            fontSize={{ base: "1rem", md: "2rem", lg: "5.5rem" }}
-            fontWeight="bold"
-          >
-            Seconds
-          </Text>
-        </Box>
-      </Flex>
-      {/* <Text
-        fontSize="5rem"
+    <Box textAlign="center" overflow={"hidden"} margin="0 auto" padding="2rem">
+      {/* Interesting Text for the TEDxLakeheadU event */}
+      <Text
+        fontSize={useBreakpointValue({ base: "1.5rem", md: "2.8rem", lg: "2.8rem", xl: "3rem" })}
+        color="white"
         fontWeight="bold"
-        color={
-          "linear-gradient(to bottom, rgba(31,191,88, 1), rgba(1,186,234, 1))"
-        }
-        fontStyle="italic"
-        marginTop="3rem"
+        mb="2rem"
       >
-        Get Ready to Experience ...
-      </Text> */}
+        {t("countdownTitle")}
+      </Text>
+      <Text
+        fontSize={useBreakpointValue({ base: "1.2rem", md: "2.3rem", lg: "2.5rem" })}
+        color="white"
+        fontWeight="bold"
+        mb="4rem"
+      >
+        {t("countdownSubTitle")}
+      </Text>
+      <Flex justifyContent="center" gap={5} >
+        {["days", "hours", "minutes", "seconds"].map((unit, index) => (
+          <Box
+            key={index}
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            justifyContent="center"
+            width={boxSize}
+            height={boxSize}
+            bgColor={useColorModeValue("rgba(0, 124, 124, 0.9)", "rgba(255, 0, 0, 0.5)")}
+            color="white"
+            fontWeight="bold"
+            borderRadius="12px"
+            boxShadow="0 8px 16px rgba(0, 0, 0, 0.3)"
+            transition="transform 0.3s ease, box-shadow 0.3s ease"
+            _hover={{
+              transform: "scale(1.05)",
+              boxShadow: "0 12px 24px rgba(0, 0, 0, 0.4)",
+            }}
+            textAlign="center"
+          >
+            <Text fontSize={numberFontSize}>
+              {formatTimeUnit(timeLeft[unit as keyof typeof timeLeft])}
+            </Text>
+            <Text fontSize={textFontSize} textTransform="capitalize">
+              {unit.charAt(0).toUpperCase() + unit.slice(1)}
+            </Text>
+          </Box>
+        ))}
+      </Flex>
     </Box>
   );
 };
 
 export default CountdownTimer;
+

@@ -24,6 +24,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { CgEventbrite } from "react-icons/cg";
 import { SiTed } from "react-icons/si";
 import { useLocation } from "react-router-dom";
+import CountdownTimer from "../BlockHero2023/CountdownTimer";
 
 
 const BlockHeroHome: React.FC = () => {
@@ -94,6 +95,8 @@ const BlockHeroHome: React.FC = () => {
     setIsHoveredButton(false);
   };
 
+  const eventStartTime = new Date("2025-02-28T09:00:00-08:00");
+
   useEffect(() => { }, [boxLoaded]);
 
   const { hash } = useLocation();
@@ -132,147 +135,178 @@ const BlockHeroHome: React.FC = () => {
         onAnimationComplete={handleBoxLoad}
       >
         <Box
-          className="block block--dark"
-          padding="6rem 2rem 6rem 2rem"
-          bg={useColorModeValue(
-            "#6868F7",
-            "linear-gradient(180deg, #000, #0E0E29)"
-          )}
-        >
-          <Box
-            className="block__header container"
-            textAlign="left"
-            maxWidth="1140px"
-            margin="0 auto"
-          >
-            <Text
-              className="h2 block__heading"
-              color={useColorModeValue("#fff", "#fff")}
-              marginBottom="1rem"
-              marginTop="0"
-              fontSize={{ base: "2.2rem", md: "2.5rem", lg: "2.6rem", xl: "3.2rem" }}
-              fontWeight="bold"
-              lineHeight="1.5"
-              textAlign={{ base: "center", lg: "initial" }}
-            // fontFamily="'Acme', sans-serif"
-            >
-              {t("heroTitle")}
-            </Text>
-            <Text
-              className="p"
-              fontSize={{ base: "1.5rem", md: "1.5rem", lg: "1.5rem", xl: "1.9rem" }}
-              marginTop={10}
-              color={useColorModeValue("gray.200", "#04c97a")}
-              textAlign={{ base: "center", lg: "initial" }}
-              lineHeight="1.5"
-            // fontFamily="'Acme', sans-serif"
-            // fontFamily="'Englebert', cursive"
-            >
-              {t("heroSubTitle")}
-            </Text>
-          </Box>
-        </Box>
-
-        <Box
-          // className="parallax"
-          width="100%"
-          height={{ base: "55vh", md: "80vh", lg: "100vh", xl: "110vh" }}
           position="relative"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
+          width="100%"
           overflow="hidden"
-          ref={ref}
-          background={useColorModeValue(
-            "linear-gradient(180deg, #6868f7, #6868f7, #a6a6ff, #a6a6ff)",
-            "linear-gradient(180deg, #0e0e29, #0e0e29, #272763, #272763)"
-          )}
         >
           <Flex
-            className="tellMeMoreButton"
-            display={{ base: "none", lg: "block" }}
-            justifyContent="center"
-            bg="transparent"
-            // transform="translateY(-50%)"
-            // width="100%"
             position="absolute"
-            top="10%"
-            zIndex={5}
+            top={{ base: "35%", md: "40%", lg: "28%" }}
+            left="50%"
+            transform="translate(-50%, -50%)"
+            zIndex={100}
           >
-            <ScrollLink to="more-info-section" smooth={true} duration={500}>
-              <Button
-                border="2px solid #FF0000"
-                borderRadius="10px"
-                cursor="pointer"
-                fontSize={{ base: "1.2rem", lg: "2.2rem" }}
-                padding={{ base: "0.5rem", lg: "2rem" }}
-                textAlign="center"
-                whiteSpace="nowrap"
-                bg="#FF0000"
-                color="#fff"
-                boxShadow="0px 6px 10px rgba(0, 0, 0, 0.2), 0px -6px 10px rgba(0, 0, 0, 0.2)"
-                display="inline-block"
-                width={{ base: "11rem", lg: "25rem" }}
-                height={{ base: "5rem", lg: "7rem" }}
-                _hover={{
-                  border: "0.2rem solid",
-                  borderColor: buttonHoverBorderColor,
-                  bg: "transparent",
-                  color: buttonHoverTextColor,
-                  boxShadow:
-                    "0px 8px 14px rgba(0, 0, 0, 0.3), 0px -8px 14px rgba(0, 0, 0, 0.3)",
-                }}
-                transition="background-color 0.25s ease-out, border 0.25s ease-out, box-shadow 0.25s ease"
-                onMouseEnter={handleHoverButton}
-                onMouseLeave={handleUnHoverButton}
-
-              >
-                Tell Me More
-              </Button>
-            </ScrollLink>
+            <CountdownTimer eventStartTime={eventStartTime} />
           </Flex>
+          {/* <Box
+            className="block block--dark"
+            padding="6rem 2rem 6rem 2rem"
+            bg={useColorModeValue(
+              "#6868F7",
+              "linear-gradient(180deg, #000, #0E0E29)"
+            )}
+          >
+            <Box
+              className="block__header container"
+              textAlign="left"
+              maxWidth="1140px"
+              margin="0 auto"
+            >
+              <Text
+                className="h2 block__heading"
+                color={useColorModeValue("#fff", "#fff")}
+                marginBottom="1rem"
+                marginTop="0"
+                fontSize={{ base: "2.2rem", md: "2.5rem", lg: "2.6rem", xl: "3.2rem" }}
+                fontWeight="bold"
+                lineHeight="1.5"
+                textAlign={{ base: "center", lg: "initial" }}
+              // fontFamily="'Acme', sans-serif"
+              >
+                {t("heroTitle")}
+              </Text>
+              <Text
+                className="p"
+                fontSize={{ base: "1.5rem", md: "1.5rem", lg: "1.5rem", xl: "1.9rem" }}
+                marginTop={10}
+                color={useColorModeValue("gray.200", "#04c97a")}
+                textAlign={{ base: "center", lg: "initial" }}
+                lineHeight="1.5"
+              // fontFamily="'Acme', sans-serif"
+              // fontFamily="'Englebert', cursive"
+              >
+                {t("heroSubTitle")}
+              </Text>
+            </Box>
+          </Box> */}
 
           <Box
-            // className="mountains"
-            backgroundImage={mountainsImage}
-            backgroundSize={{ base: "contain", lg: "cover" }}
-            backgroundPosition="bottom"
-            backgroundRepeat={{ base: "no-repeat", lg: "initial" }}
+            // className="parallax"
             width="100%"
-            height="100%"
-            position="absolute"
-            zIndex={4}
-          ></Box>
-          <Box
-            // className="planets"
-            as={motion.div}
-            style={{
-              y: yBg,
-            }}
-            backgroundImage={planetsImage}
-            // backgroundImage={planetImg}
-            backgroundSize={{ base: "contain", lg: "cover" }}
-            backgroundPosition="bottom"
-            backgroundRepeat={{ base: "no-repeat", lg: "initial" }}
-            opacity={1}
-            width="125%"
-            height="100%"
-            position="absolute"
-            zIndex={3}
-          ></Box>
-          <Box
-            // className="stars"
-            as={motion.div}
-            style={{
-              x: yBg,
-            }}
-            backgroundSize={{ base: "contain", lg: "cover" }}
-            backgroundPosition="bottom"
-            backgroundImage={starsImage}
-            width="100%"
-            height="100%"
-            position="absolute"
-          ></Box>
+            height={{ base: "55vh", md: "80vh", lg: "100vh", xl: "110vh" }}
+            position="relative"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            overflow="hidden"
+            ref={ref}
+            background={useColorModeValue(
+              "linear-gradient(180deg, #6868f7, #6868f7, #a6a6ff, #a6a6ff)",
+              "linear-gradient(180deg, #0e0e29, #0e0e29, #272763, #272763)"
+            )}
+          >
+            <Flex
+              className="tellMeMoreButton"
+              display={{ base: "none", lg: "block" }}
+              justifyContent="center"
+              bg="transparent"
+              position="absolute"
+              top="60%"
+              zIndex={5}
+            >
+              <ScrollLink to="more-info-section" smooth={true} duration={500}>
+                <Button
+                  border="2px solid #FF0000"
+                  borderRadius="10px"
+                  cursor="pointer"
+                  fontSize={{ base: "1.2rem", lg: "2.2rem" }}
+                  padding={{ base: "0.5rem", lg: "2rem" }}
+                  textAlign="center"
+                  whiteSpace="nowrap"
+                  bg="#FF0000"
+                  color="#fff"
+                  boxShadow="0px 6px 10px rgba(0, 0, 0, 0.2), 0px -6px 10px rgba(0, 0, 0, 0.2)"
+                  display="inline-block"
+                  width={{ base: "11rem", lg: "25rem" }}
+                  height={{ base: "5rem", lg: "7rem" }}
+                  _hover={{
+                    border: "0.2rem solid",
+                    borderColor: buttonHoverBorderColor,
+                    bg: "transparent",
+                    color: buttonHoverTextColor,
+                    boxShadow:
+                      "0px 8px 14px rgba(0, 0, 0, 0.3), 0px -8px 14px rgba(0, 0, 0, 0.3)",
+                  }}
+                  transition="background-color 0.25s ease-out, border 0.25s ease-out, box-shadow 0.25s ease"
+                  onMouseEnter={handleHoverButton}
+                  onMouseLeave={handleUnHoverButton}
+
+                >
+                  Tell Me More
+                </Button>
+              </ScrollLink>
+            </Flex>
+
+            <Box
+              // className="mountains"
+              backgroundImage={mountainsImage}
+              backgroundSize={{ base: "contain", lg: "cover" }}
+              backgroundPosition="bottom"
+              backgroundRepeat={{ base: "no-repeat", lg: "initial" }}
+              width="100%"
+              height="100%"
+              position="absolute"
+              zIndex={4}
+            ></Box>
+            <Box
+              // className="planets"
+              as={motion.div}
+              style={{
+                y: yBg,
+              }}
+              backgroundImage={planetsImage}
+              // backgroundImage={planetImg}
+              backgroundSize={{ base: "contain", lg: "cover" }}
+              backgroundPosition="bottom"
+              backgroundRepeat={{ base: "no-repeat", lg: "initial" }}
+              opacity="0.4"
+              width="125%"
+              height="100%"
+              position="absolute"
+              zIndex={3}
+            ></Box>
+            <Box
+              // className="stars"
+              as={motion.div}
+              style={{
+                x: yBg,
+              }}
+              backgroundSize={{ base: "contain", lg: "cover" }}
+              backgroundPosition="bottom"
+              backgroundImage={starsImage}
+              width="100%"
+              height="100%"
+              position="absolute"
+              opacity="0.7"
+            ></Box>
+          </Box>
+
+          {/* <Flex
+        position="relative"
+
+          display="flex"
+          position="absolute"
+          width="100%"
+          height={"100vh"}
+          top="50%"
+          left="50%"
+          transform="translate(-50%, -50%)"
+          alignItems="center"
+          justifyContent="center"
+          zIndex={1000}
+        >
+          <CountdownTimer eventStartTime={eventStartTime} />
+        </Flex> */}
         </Box>
       </motion.div>
     </>

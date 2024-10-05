@@ -710,9 +710,9 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      // to={"https://www.linkedin.com/company/tedx-plateaumontroyal/"}
+                      to={"https://www.linkedin.com/company/tedxlakeheadu/"}
                       cursor="pointer"
-                      // target="_blank"
+                      target="_blank"
                       rel="noopener noreferrer"
                       fontSize={{ base: "2rem", lg: "1.5rem" }}
                       color={useColorModeValue("gray.800", "#777")}
@@ -725,9 +725,9 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      // to={"https://www.instagram.com/tedxplateaumontroyal?igsh=MW16MGNhc3RuaXQ3dg=="}
+                      to={"https://www.instagram.com/tedxlakeheadu2025?igsh=eW5pcTNsanppZA=="}
                       cursor="pointer"
-                      // target="_blank"
+                      target="_blank"
                       rel="noopener noreferrer"
                       fontSize={{ base: "2rem", lg: "1.5rem" }}
                       color={useColorModeValue("gray.800", "#777")}
@@ -828,9 +828,9 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      // to={"https://www.linkedin.com/company/tedx-plateaumontroyal/"}
+                      to={"https://www.linkedin.com/company/tedxlakeheadu/"}
                       cursor="pointer"
-                      // target="_blank"
+                      target="_blank"
                       rel="noopener noreferrer"
                       fontSize={{ base: "2rem", lg: "1.5rem" }}
                       color={useColorModeValue("gray.800", "#777")}
@@ -843,9 +843,9 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      // to={"https://www.instagram.com/tedxplateaumontroyal?igsh=MW16MGNhc3RuaXQ3dg=="}
+                      to={"https://www.instagram.com/tedxlakeheadu2025?igsh=eW5pcTNsanppZA=="}
                       cursor="pointer"
-                      // target="_blank"
+                      target="_blank"
                       rel="noopener noreferrer"
                       fontSize={{ base: "2rem", lg: "1.5rem" }}
                       color={useColorModeValue("gray.800", "#777")}
@@ -937,8 +937,8 @@ export const BlockFooter = () => {
       >
         <Box
           as="a"
-          // href="https://www.linkedin.com/company/tedx-plateaumontroyal/"
-          // target="_blank"
+          href="https://www.linkedin.com/company/tedxlakeheadu/"
+          target="_blank"
           rel="noopener noreferrer"
         >
           <IconButton
@@ -975,8 +975,8 @@ export const BlockFooter = () => {
         </Box>
         <Box
           as="a"
-          // href="https://www.instagram.com/tedxplateaumontroyal?igsh=MW16MGNhc3RuaXQ3dg=="
-          // target="_blank"
+          href="https://www.instagram.com/tedxlakeheadu2025?igsh=eW5pcTNsanppZA=="
+          target="_blank"
           rel="noopener noreferrer"
         >
           <IconButton

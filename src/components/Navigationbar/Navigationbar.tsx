@@ -19,6 +19,7 @@ import { youChooseLogo, tedxWhite, tedxBlack } from "../../assets";
 import { MenuLinks } from "../MenuLinks";
 import { navigationLinks } from "../layout/navigation-links";
 import { KbarInput } from "../KbarInput";
+import LanguageSwitcher2 from "./LanguageSwitcher2";
 // import { HamburgerButton } from "../HamburgerButton";
 // import { MobileMenu } from "../MobileMenu";
 
@@ -56,7 +57,7 @@ export const Navigationbar: React.FC = () => {
 
   return (
     <>
-      {/* <Box
+      <Box
         width="100%"
         py={{ base: "1rem" }}
         px={{ base: "1rem" }}
@@ -66,13 +67,10 @@ export const Navigationbar: React.FC = () => {
       >
         <Link as={RouterLink} to={"/"} cursor="pointer">
           <Flex justifyContent={"center"} alignItems={"center"}>
-            <HStack justifyContent={"center"} alignItems={"center"}>
-              <Image src={youChooseLogo} boxSize={{ base: "16%", lg: "70px" }} />
-              <Image src={tedxImg} width={{ base: "80%", lg: 300 }} />
-            </HStack>
+            <Image src={tedxImg} width={{ base: "80%", lg: 300 }} />
           </Flex>
         </Link>
-      </Box> */}
+      </Box>
       <Box
         bg={useColorModeValue("rgb(241,241,241)", "black")}
         py={{ base: "1.5rem" }}
@@ -134,12 +132,13 @@ export const Navigationbar: React.FC = () => {
                 {/* <KbarInput /> */}
               </Flex>
               {/* <LanguageSwitcher /> */}
+              <LanguageSwitcher2 />
               <ColorModeSwitch />
             </HStack>
           ) : (
             <>
-              {/* <LanguageSwitcher /> */}
-              <Image src={tedxImg} width={{ base: "50%", lg: 300 }} />
+              {/* <Image src={tedxImg} width={{ base: "50%", lg: 300 }} /> */}
+              <LanguageSwitcher2 />
               <ColorModeSwitch />
             </>
           )}
