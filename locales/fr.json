@@ -183,5 +183,16 @@
     "comingSoonMediaPageSubTitle": "Revivez l'expérience TEDxLakeheadU à travers des photos et vidéos, bientôt disponibles.",
     "fromOurPreviousEvent": "de Notre Evénement Précédent",
     "countdownTitle": "Tic-tac... TEDxLakeheadU approche à grands pas!",
-    "countdownSubTitle": "Préparez-vous à en avoir plein la tête!"
+    "countdownSubTitle": "Préparez-vous à en avoir plein la tête!",
+    "seconds": "Secondes",
+    "minutes": "Minutes",
+    "hours": "Heures",
+    "days": "Jours",
+    "tellMeMore":"Dites-m'en plus",
+    "yourTicketAwaits": "Votre billet vous attend",
+    "getTicketTitle": "Achetez votre billet, découvrez de nouvelles idées!",
+    "getTicketSubTitle": "Rejoignez-nous pour une journée d'idées, de performances et de connexions..",
+    "ticket": "Billet",
+    "buyYourTickets": "Achetez vos billets",
+    "ticketSubtitle": "Get Your Ticket"
 }

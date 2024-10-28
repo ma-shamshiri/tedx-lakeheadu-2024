@@ -236,9 +236,17 @@ import zahraBG from "./assets/images/Zahra.webp";
 import zproduction from "./assets/images/ZProduction.webp";
 import hero1 from "./assets/images/hero1.jpeg";
 import hero2 from "./assets/images/heroPlateauMR.jpg";
+import lakeheadu1 from "./assets/images/lakeheadu1.jpg";
+import lakeheadu2 from "./assets/images/lakeheadu2.png";
+import lakeheadu3 from "./assets/images/lakeheadu3.png";
+import landing4 from "./assets/images/landing4.jpg";
 
 
 export {
+    landing4,
+    lakeheadu1,
+    lakeheadu2,
+    lakeheadu3,
     hero1,
     hero2,
     alina_noBG,

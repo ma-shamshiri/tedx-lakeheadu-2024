@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { BlockAgenda } from "../components/BlockAgenda";
-import { BlockEvent } from "../components/BlockEvent";
 import { BlockFooter } from "../components/BlockFooter";
 import { motion } from "framer-motion";
 import { Navigationbar } from "../components/Navigationbar";
 import { PageTransition } from "../components/PageTransition";
 import { PageTransition2 } from "../components/PageTransition2";
-import { ComingSoonEventPage } from "../components/ComingSoonEventPage";
+import TicketCard from "../components/TicketCard";
+import BlockEvent from "../components/BlockEvent/BlockEvent";
 
 const EventPage: React.FC = () => {
   const [boxLoaded, setBoxLoaded] = useState(false);
@@ -28,9 +27,8 @@ const EventPage: React.FC = () => {
         onAnimationComplete={handleBoxLoad}
       >
         <Navigationbar />
-        <ComingSoonEventPage />
-        {/* <BlockEvent /> */}
-        {/* <BlockAgenda /> */}
+        <BlockEvent />
+        <TicketCard />
         <BlockFooter />
       </motion.div>
     </>

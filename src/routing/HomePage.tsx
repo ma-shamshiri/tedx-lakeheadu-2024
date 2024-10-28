@@ -4,10 +4,9 @@ import { BlockFooter } from "../components/BlockFooter"
 import BlockHeroHome from "../components/BlockHeroHome";
 import { BlockStatistics } from "../components/BlockStatistics";
 import { Navigationbar } from "../components/Navigationbar";
-import { BlockScrollingText } from "../components/BlockScrollingText";
-import { ParallaxSection } from "../components/ParallaxSection";
 import { PageTransition } from "../components/PageTransition";
 import { PageTransition2 } from "../components/PageTransition2";
+import TicketCard from "../components/TicketCard";
 
 const HomePage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,9 +24,8 @@ const HomePage: React.FC = () => {
       {/* <Header /> */}
       <Navigationbar />
       <BlockHeroHome />
+      <TicketCard />
       <BlockStatistics />
-      {/* <ParallaxSection /> */}
-      {/* <BlockScrollingText /> */}
       <BlockFeatures />
       <BlockFooter />
     </>

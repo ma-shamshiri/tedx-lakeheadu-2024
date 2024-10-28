@@ -1,90 +1,34 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  MotionValue,
-  useAnimation,
-  useSpring,
-} from "framer-motion";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import {
   Box,
   Flex,
-  Text,
   useColorModeValue,
-  useColorMode,
   Button,
-  HStack,
 } from "@chakra-ui/react";
-import HeroEventCard from "./HeroEventCard";
-import { event2024, heroimage, mountainsImage, planetsImage, starsImage, sunImage, sliderImage1 } from "../../assets";
+import { landing4 } from "../../assets";
 import { Link as ScrollLink } from 'react-scroll';
-import { CgEventbrite } from "react-icons/cg";
-import { SiTed } from "react-icons/si";
+
 import { useLocation } from "react-router-dom";
 import CountdownTimer from "../BlockHero2023/CountdownTimer";
 
 
 const BlockHeroHome: React.FC = () => {
-  const { colorMode } = useColorMode();
-  const isDarkMode = colorMode === "dark";
-  const planetImg = isDarkMode ? planetsImage : sunImage;
-
   const ref = useRef<HTMLDivElement>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-
-  const yText: MotionValue<string> = useTransform(
-    scrollYProgress,
-    [0, 1],
-    ["0%", "500%"]
-  );
-
-  const yTransform = useTransform(scrollYProgress, [0, 1], [0, 100]);
-
-  // Then, useSpring to add smoothness with stiffness and damping
-  const smoothYTransform = useSpring(yTransform, {
-    stiffness: 100,
-    damping: 20,
-  });
-
-  // Finally, transform the smooth value to a percentage string
-  const yBg = useTransform(smoothYTransform, (value) => `${value}%`);
 
   const { t } = useTranslation();
 
   const [boxLoaded, setBoxLoaded] = useState(false);
 
-  const numElements = 2;
-  const [isHoveredArray, setIsHoveredArray] = useState(Array(numElements).fill(false));
   const [isHoveredButton, setIsHoveredButton] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
-  const buttonHoverTextColor = useColorModeValue("black", "#FF0000");
-  const buttonHoverBorderColor = useColorModeValue("black", "#FF0000");
+  const buttonHoverTextColor = useColorModeValue("#000", "#000");
+  const buttonHoverBorderColor = useColorModeValue("#000", "#000");
 
   const handleBoxLoad = () => {
     setBoxLoaded(true);
-  };
-
-  const handleHover = (index: number) => {
-    setIsHoveredArray((prevArray) => {
-      const newArray = [...prevArray];
-      newArray[index] = true;
-      return newArray;
-    });
-  };
-
-  const handleUnhover = (index: number) => {
-    setIsHoveredArray((prevArray) => {
-      const newArray = [...prevArray];
-      newArray[index] = false;
-      return newArray;
-    });
   };
 
   const handleHoverButton = () => {
@@ -148,48 +92,6 @@ const BlockHeroHome: React.FC = () => {
           >
             <CountdownTimer eventStartTime={eventStartTime} />
           </Flex>
-          {/* <Box
-            className="block block--dark"
-            padding="6rem 2rem 6rem 2rem"
-            bg={useColorModeValue(
-              "#6868F7",
-              "linear-gradient(180deg, #000, #0E0E29)"
-            )}
-          >
-            <Box
-              className="block__header container"
-              textAlign="left"
-              maxWidth="1140px"
-              margin="0 auto"
-            >
-              <Text
-                className="h2 block__heading"
-                color={useColorModeValue("#fff", "#fff")}
-                marginBottom="1rem"
-                marginTop="0"
-                fontSize={{ base: "2.2rem", md: "2.5rem", lg: "2.6rem", xl: "3.2rem" }}
-                fontWeight="bold"
-                lineHeight="1.5"
-                textAlign={{ base: "center", lg: "initial" }}
-              // fontFamily="'Acme', sans-serif"
-              >
-                {t("heroTitle")}
-              </Text>
-              <Text
-                className="p"
-                fontSize={{ base: "1.5rem", md: "1.5rem", lg: "1.5rem", xl: "1.9rem" }}
-                marginTop={10}
-                color={useColorModeValue("gray.200", "#04c97a")}
-                textAlign={{ base: "center", lg: "initial" }}
-                lineHeight="1.5"
-              // fontFamily="'Acme', sans-serif"
-              // fontFamily="'Englebert', cursive"
-              >
-                {t("heroSubTitle")}
-              </Text>
-            </Box>
-          </Box> */}
-
           <Box
             // className="parallax"
             width="100%"
@@ -200,26 +102,27 @@ const BlockHeroHome: React.FC = () => {
             alignItems="center"
             overflow="hidden"
             ref={ref}
-            background={useColorModeValue(
-              "linear-gradient(180deg, #6868f7, #6868f7, #a6a6ff, #a6a6ff)",
-              "linear-gradient(180deg, #0e0e29, #0e0e29, #272763, #272763)"
-            )}
+            backgroundImage={landing4}
+          // background={useColorModeValue(
+          //   "linear-gradient(180deg, #6868f7, #6868f7, #a6a6ff, #a6a6ff)",
+          //   "linear-gradient(180deg, #0e0e29, #0e0e29, #272763, #272763)"
+          // )}
           >
             <Flex
               className="tellMeMoreButton"
-              display={{ base: "none", lg: "block" }}
+              display={{ base: "block", lg: "block" }}
               justifyContent="center"
               bg="transparent"
               position="absolute"
-              top="60%"
+              top={{ base: "70%", md: "75%", lg: "60%" }}
               zIndex={5}
             >
-              <ScrollLink to="more-info-section" smooth={true} duration={500}>
+              <ScrollLink to="ticket-section" smooth={true} duration={500}>
                 <Button
                   border="2px solid #FF0000"
-                  borderRadius="10px"
+                  borderRadius="7px"
                   cursor="pointer"
-                  fontSize={{ base: "1.2rem", lg: "2.2rem" }}
+                  fontSize={{ base: "1.5rem", md: "1.8rem", lg: "2.2rem" }}
                   padding={{ base: "0.5rem", lg: "2rem" }}
                   textAlign="center"
                   whiteSpace="nowrap"
@@ -227,8 +130,8 @@ const BlockHeroHome: React.FC = () => {
                   color="#fff"
                   boxShadow="0px 6px 10px rgba(0, 0, 0, 0.2), 0px -6px 10px rgba(0, 0, 0, 0.2)"
                   display="inline-block"
-                  width={{ base: "11rem", lg: "25rem" }}
-                  height={{ base: "5rem", lg: "7rem" }}
+                  width={{ base: "11rem", md: "18rem", lg: "25rem" }}
+                  height={{ base: "5rem", md: "6rem", lg: "7rem" }}
                   _hover={{
                     border: "0.2rem solid",
                     borderColor: buttonHoverBorderColor,
@@ -242,71 +145,11 @@ const BlockHeroHome: React.FC = () => {
                   onMouseLeave={handleUnHoverButton}
 
                 >
-                  Tell Me More
+                  {t("getTicket")}
                 </Button>
               </ScrollLink>
             </Flex>
-
-            <Box
-              // className="mountains"
-              backgroundImage={mountainsImage}
-              backgroundSize={{ base: "contain", lg: "cover" }}
-              backgroundPosition="bottom"
-              backgroundRepeat={{ base: "no-repeat", lg: "initial" }}
-              width="100%"
-              height="100%"
-              position="absolute"
-              zIndex={4}
-            ></Box>
-            <Box
-              // className="planets"
-              as={motion.div}
-              style={{
-                y: yBg,
-              }}
-              backgroundImage={planetsImage}
-              // backgroundImage={planetImg}
-              backgroundSize={{ base: "contain", lg: "cover" }}
-              backgroundPosition="bottom"
-              backgroundRepeat={{ base: "no-repeat", lg: "initial" }}
-              opacity="0.4"
-              width="125%"
-              height="100%"
-              position="absolute"
-              zIndex={3}
-            ></Box>
-            <Box
-              // className="stars"
-              as={motion.div}
-              style={{
-                x: yBg,
-              }}
-              backgroundSize={{ base: "contain", lg: "cover" }}
-              backgroundPosition="bottom"
-              backgroundImage={starsImage}
-              width="100%"
-              height="100%"
-              position="absolute"
-              opacity="0.7"
-            ></Box>
           </Box>
-
-          {/* <Flex
-        position="relative"
-
-          display="flex"
-          position="absolute"
-          width="100%"
-          height={"100vh"}
-          top="50%"
-          left="50%"
-          transform="translate(-50%, -50%)"
-          alignItems="center"
-          justifyContent="center"
-          zIndex={1000}
-        >
-          <CountdownTimer eventStartTime={eventStartTime} />
-        </Flex> */}
         </Box>
       </motion.div>
     </>

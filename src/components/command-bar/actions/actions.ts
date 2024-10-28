@@ -44,10 +44,10 @@ export const initialActions = [
         perform: () => (window.location.href = "/event"),
     },
     {
-        id: "agendaAction",
-        name: "Agenda",
+        id: "ticketAction",
+        name: "Ticket",
         shortcut: ["a", "v"],
-        keywords: "agenda",
+        keywords: "ticket",
         section: "EVENT",
         subtitle: "The venue address and directions to the location",
         perform: () => (window.location.href = "/event"),

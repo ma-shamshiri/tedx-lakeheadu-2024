@@ -75,40 +75,50 @@ const SpeakerForm = () => {
 
   const onSubmit = async (data: FieldValues) => {
     const formattedData = {
-      "First Name": data.firstName,
-      "Middle Name": data.middleName,
-      "Last Name": data.lastName,
-      "Reason to Join": data.reasonToJoin,
-      "Idea to Talk": data.ideaToTalk,
-      "Contact Info": data.contactInfo,
-      "Date of Birth": data.dateOfBirth,
-      "Preferred Pronoun": data.preferredPronoun,
-      "Education Level": data.educationLevel,
-      "Occupation": data.occupation,
+      firstName: data.firstName,
+      middleName: data.middleName,
+      lastName: data.lastName,
+      reasonToJoin: data.reasonToJoin,
+      ideaToTalk: data.ideaToTalk,
+      contactInfo: data.contactInfo,
+      dateOfBirth: data.dateOfBirth,
+      preferredPronoun: data.preferredPronoun,
+      educationLevel: data.educationLevel,
+      occupation: data.occupation,
     };
 
     try {
-      const response = await fetch("https://formspree.io/f/xanwgdeq", {
+      const response = await fetch("https://formcarry.com/s/LRgUuKTbZ6K", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Accept": "application/json",
+          "Content-Type": "application/json"
         },
         body: JSON.stringify(formattedData),
       });
 
-      if (response.ok) {
-        toast.success("Form submitted successfully!");
-        // Reset the form after a successful submission
-        reset();
+      const result = await response.json();
+
+      if (response.status === 200) {
+        toast.success("We received your submission, thank you!");
+        reset();  // Reset the form after a successful submission
         window.scrollTo(0, 0);
+      } else if (response.status === 422) {
+        toast.error(result.message);  // Handle form validation errors
       } else {
-        toast.error("Error submitting form");
-        window.scrollTo(0, 0);
+        toast.error("Error submitting form: " + result.message);
       }
-    } catch (error) {
+    } catch (error: unknown) {
+      let errorMessage = "An unknown error occurred";
+
+      if (error instanceof Error) {
+        errorMessage = error.message;
+      } else if (typeof error === "string") {
+        errorMessage = error;
+      }
+
       console.error("Error submitting form:", error);
-      toast.error("Error submitting form");
-      window.scrollTo(0, 0);
+      toast.error("Error submitting form: " + errorMessage);
     }
   };
 

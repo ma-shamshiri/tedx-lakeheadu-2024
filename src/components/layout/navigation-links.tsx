@@ -65,8 +65,8 @@
           icon: <BsCalendarDate size="25px" color="white" />,
         },
         {
-          name: "agenda",
-          description: "agendaSubtitle",
+          name: "ticket",
+          description: "ticketSubtitle",
           link: "/event",
           color: "#4a18f0",
           icon: <GrScheduleNew size="25px" color="white" />,

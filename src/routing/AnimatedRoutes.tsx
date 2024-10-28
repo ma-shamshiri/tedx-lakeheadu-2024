@@ -2,7 +2,6 @@ import React from 'react';
 import { useLocation, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import HomePage from "./HomePage";
-import Event2023Page from "./Event2023Page";
 import JoinUsTeamPage from "./JoinUsTeamPage";
 import JoinUsSponsorPage from "./JoinUsSponsorPage";
 import JoinUsPage from "./JoinUsPage";
@@ -48,7 +47,6 @@ const AnimatedRoutes: React.FC = () => {
     <AnimatePresence mode='wait'>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/tedx-2023/" element={<Event2023Page />} />
         <Route path="/tedx-2024/" element={<Event2024Page />} />
         <Route path="/photos/" element={<MediaPage />} />
         <Route path="/tedx-2023/videos/" element={<VideoGalleryPage />} />
@@ -58,16 +56,16 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/joinus/speaker/" element={<JoinUsSpeakerPage />} />
         <Route path="/joinus/sponsor/" element={<JoinUsSponsorPage />} />
         <Route path="/speakers/" element={<SpeakersPage />} />
-        <Route path="/tedx-2023/myra-virgil/" element={<MyraVirgil />} />
+        {/* <Route path="/tedx-2023/myra-virgil/" element={<MyraVirgil />} />
         <Route path="/tedx-2023/kira-dolhan/" element={<KiraDolhan />} />
         <Route path="/tedx-2023/flore-deshayes/" element={<FloreDeshayes />} />
         <Route path="/tedx-2023/leila-kosseim/" element={<LeilaKosseim />} />
         <Route path="/tedx-2023/janet-perlman/" element={<JanetPerlman />} />
         <Route path="/tedx-2023/peggy-bell/" element={<PeggyBell />} />
         <Route path="/tedx-2023/alina-gutierrez-mejia/" element={<AlinaGutierrezMejia />} />
-        <Route path="/tedx-2023/andrew-churchil/" element={<AndrewChurchil />} />
+        <Route path="/tedx-2023/andrew-churchil/" element={<AndrewChurchil />} /> */}
         <Route path="/team/" element={<TeamPage />} />
-        <Route path="/tedx-2023/samin-majidi/" element={<SaminMajidi />} />
+        {/* <Route path="/tedx-2023/samin-majidi/" element={<SaminMajidi />} />
         <Route path="/tedx-2023/fatemeh-tavanaei/" element={<FatemehTavanaei />} />
         <Route path="/tedx-2023/reihaneh-ghoroghchian/" element={<ReihanehGhoroghchian />} />
         <Route path="/tedx-2023/mohammaderfan-mohit/" element={<MohammaderfanMohit />} />
@@ -84,7 +82,7 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/tedx-2023/royan-jafari/" element={<RoyanJafari />} />
         <Route path="/tedx-2023/edwin-meriaux/" element={<EdwinMeriaux />} />
         <Route path="/tedx-2023/gezal-najafi/" element={<GezalNajafi />} />
-        <Route path="/tedx-2023/amin-shamshiri/" element={<AminShamshiri />} />
+        <Route path="/tedx-2023/amin-shamshiri/" element={<AminShamshiri />} /> */}
       </Routes>
     </AnimatePresence>
   );

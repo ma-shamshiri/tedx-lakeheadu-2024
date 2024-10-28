@@ -52,8 +52,8 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
         {t("countdownTitle")}
       </Text>
       <Text
-        fontSize={useBreakpointValue({ base: "1.2rem", md: "2.3rem", lg: "2.5rem" })}
-        color="white"
+        fontSize={useBreakpointValue({ base: "1.6rem", md: "2.5rem", lg: "3.5rem" })}
+        color="#000"
         fontWeight="bold"
         mb="4rem"
       >
@@ -69,7 +69,7 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
             justifyContent="center"
             width={boxSize}
             height={boxSize}
-            bgColor={useColorModeValue("rgba(0, 124, 124, 0.9)", "rgba(255, 0, 0, 0.5)")}
+            bgColor={useColorModeValue("rgba(0, 124, 124, 0.8)", "rgba(255, 0, 0, 0.7)")}
             color="white"
             fontWeight="bold"
             borderRadius="12px"

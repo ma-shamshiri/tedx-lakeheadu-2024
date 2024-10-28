@@ -1,6 +1,5 @@
 // import { createBrowserRouter } from "react-router-dom";
 // import HomePage from "./HomePage";
-// import Event2023Page from "./Event2023Page";
 // import JoinUsTeamPage from "./JoinUsTeamPage";
 // import JoinUsSponsorPage from "./JoinUsSponsorPage";
 // import JoinUsPage from "./JoinUsPage";
@@ -39,7 +38,6 @@
 
 // const router = createBrowserRouter([
 //   { path: "/", element: <HomePage /> },
-//   { path: "/tedx-2023/", element: <Event2023Page /> },
 //   { path: "/tedx-2024/", element: <Event2024Page /> },
 //   { path: "/photos/", element: <MediaPage /> },
 //   { path: "/event/", element: <EventPage /> },

@@ -1,0 +1,15 @@
+.card {
+  perspective: 1400px;
+}
+
+.card-fg {
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-cta {
+  transform: translateX(40px) rotateZ(7deg);
+}
+
+.card:hover .card-fg {
+  transform: rotateY(-40deg);
+}
