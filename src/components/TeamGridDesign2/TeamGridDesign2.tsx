@@ -113,7 +113,7 @@ const TeamGridDesign2: React.FC = () => {
                                             gap={4}
                                         >
                                             <Text
-                                                fontSize="3.5rem"
+                                                fontSize="3rem"
                                                 fontWeight="bold"
                                                 fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
                                                 dir={i18n.language === "fa" ? "rtl" : "ltr"}
@@ -124,7 +124,7 @@ const TeamGridDesign2: React.FC = () => {
                                                 align="center"
                                                 sx={sxTitle}
                                             >
-                                                {slide.firstName}
+                                                {slide.fullName}
                                             </Text>
                                             <Text
                                                 fontSize="2.8rem"
@@ -248,7 +248,7 @@ const TeamGridDesign2: React.FC = () => {
                                             align="center"
                                             sx={sxTitle}
                                         >
-                                            {slide.firstName}
+                                            {slide.fullName}
                                         </Text>
 
                                         <Text
