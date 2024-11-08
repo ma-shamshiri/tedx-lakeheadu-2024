@@ -103,10 +103,6 @@ const BlockHeroHome: React.FC = () => {
             overflow="hidden"
             ref={ref}
             backgroundImage={landing4}
-          // background={useColorModeValue(
-          //   "linear-gradient(180deg, #6868f7, #6868f7, #a6a6ff, #a6a6ff)",
-          //   "linear-gradient(180deg, #0e0e29, #0e0e29, #272763, #272763)"
-          // )}
           >
             <Flex
               className="tellMeMoreButton"

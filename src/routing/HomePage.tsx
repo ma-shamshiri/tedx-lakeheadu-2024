@@ -7,6 +7,8 @@ import { Navigationbar } from "../components/Navigationbar";
 import { PageTransition } from "../components/PageTransition";
 import { PageTransition2 } from "../components/PageTransition2";
 import TicketCard from "../components/TicketCard";
+import Stories from "../components/Stories";
+import TeamGridDesign2 from "../components/TeamGridDesign2";
 
 const HomePage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,9 +23,10 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      {/* <Header /> */}
       <Navigationbar />
-      <BlockHeroHome />
+      {/* <BlockHeroHome /> */}
+      <Stories/>
+      <TeamGridDesign2/>
       <TicketCard />
       <BlockStatistics />
       <BlockFeatures />

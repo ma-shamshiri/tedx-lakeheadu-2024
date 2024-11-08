@@ -240,9 +240,24 @@ import lakeheadu1 from "./assets/images/lakeheadu1.jpg";
 import lakeheadu2 from "./assets/images/lakeheadu2.png";
 import lakeheadu3 from "./assets/images/lakeheadu3.png";
 import landing4 from "./assets/images/landing4.jpg";
-
+import storyImg1 from "./assets/images/storyImg1.png";
+import storyImg2 from "./assets/images/storyImg2.png";
+import storyImg3 from "./assets/images/storyImg3.png";
+import storyImg4 from "./assets/images/storyImg4.png";
+import storyImg5 from "./assets/images/storyImg5.png";
+import unknownBoyProfile from "./assets/images/unknownBoyProfile.jpg";
+import farazBG from "./assets/images/farazBG.jpeg";
+import sanjanaBG from "./assets/images/sanjanaBG.jpeg";
 
 export {
+    farazBG,
+    sanjanaBG,
+    unknownBoyProfile,
+    storyImg1,
+    storyImg2,
+    storyImg3,
+    storyImg4,
+    storyImg5,
     landing4,
     lakeheadu1,
     lakeheadu2,
