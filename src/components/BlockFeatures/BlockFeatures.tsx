@@ -207,7 +207,7 @@ const BlockFeatures: React.FC = () => {
         >
           <Text
             className="h2 block__heading"
-            color={useColorModeValue("gray.600", "#E1DCA9")}
+            color={useColorModeValue("gray.800", "#E1DCA9")}
             marginBottom="1rem"
             marginTop="0"
             fontSize={{ base: "2.8rem", lg: "4rem" }}
@@ -218,7 +218,7 @@ const BlockFeatures: React.FC = () => {
           </Text>
           <Text
             className="p"
-            color={useColorModeValue("gray.600", "silver")}
+            color={useColorModeValue("gray.700", "silver")}
             fontSize={{ base: "1.5rem", lg: "2.1rem" }}
             // fontWeight="bold"
             marginBottom={{ base: "3rem", lg: "6rem" }}

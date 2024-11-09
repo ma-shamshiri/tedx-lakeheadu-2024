@@ -39,11 +39,14 @@ const Stories: React.FC = () => {
     return (
         <Box
             as="div"
-            width="100%"
-            height="100vh"
-            overflow="hidden"
             position="relative"
-            cursor="auto" // Ensure default cursor is visible
+            width="100%"
+            _before={{
+                content: '""',
+                display: "block",
+                paddingTop: "56%", // 948 / 1694 * 100 = 56% for aspect ratio
+            }}
+            overflow="hidden"
         >
             {/* Custom Cursor */}
             <Box
@@ -65,7 +68,7 @@ const Stories: React.FC = () => {
                 top="25px"
                 left="50%"
                 transform="translateX(-50%)"
-                width="30%"
+                width={{ base: "60%", lg: "30%" }}
                 zIndex={3}
                 display="flex"
                 justifyContent="space-between"
@@ -76,11 +79,12 @@ const Stories: React.FC = () => {
                         key={`progress-${index}`}
                         position="relative"
                         width="100%"
-                        height="6px"
+                        height={{ base: "3px", lg: "5px" }}
+                        borderRadius="20px"
                         bg="rgba(255, 255, 255, 0.25)"
                     >
                         <motion.div
-                            key={`progress-${activeStory}-${index}`} // Force re-render
+                            key={`progress-${activeStory}-${index}`}
                             className="index-highlight"
                             initial={{ width: 0 }}
                             animate={{
@@ -110,7 +114,6 @@ const Stories: React.FC = () => {
                 left={0}
                 width="100%"
                 height="100%"
-                overflow="hidden"
             >
                 <AnimatePresence mode="wait">
                     <motion.img
@@ -126,9 +129,11 @@ const Stories: React.FC = () => {
                         }}
                         style={{
                             position: 'absolute',
+                            top: 0,
+                            left: 0,
                             width: '100%',
                             height: '100%',
-                            objectFit: 'fill',
+                            objectFit: 'cover',
                         }}
                     />
                 </AnimatePresence>

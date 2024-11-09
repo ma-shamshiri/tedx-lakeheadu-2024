@@ -60,17 +60,44 @@ const TeamGridDesign2: React.FC = () => {
             // height={isLargeScreen ? "80vh" : "auto"}
             bg={useColorModeValue("#F0E2B6", "#0f0f0f")}
             display="flex"
+            flexDirection="column"
             justifyContent="center"
             alignItems="center"
             overflow="hidden"
             padding={isLargeScreen ? "0" : "20px 20px"}
-            paddingY={{ base: "8rem", lg: "8rem" }}
+            paddingY={{ base: "4rem", lg: "8rem" }}
         >
+            {/* --------------- SCROLLING HEADER --------------- */}
+            <Box
+                className="header_container"
+                textAlign="center"
+                paddingBottom={{ base: "4rem", lg: "5rem" }}
+            >
+                <Text
+                    className="h2"
+                    color={useColorModeValue("gray.800", "gray.100")}
+                    marginBottom="1rem"
+                    marginTop="0"
+                    fontSize={{ base: "2.8rem", lg: "4rem" }}
+                    fontWeight="bold"
+                    lineHeight="1.1"
+                >
+                    {t("scrollingTeamTitle")}
+                </Text>
+                <Text
+                    className="p"
+                    color={useColorModeValue("gray.700", "gray.200")}
+                    fontSize={{ base: "1.5rem", lg: "2.1rem" }}
+                >
+                    {t("scrollingTeamSubTitle")}
+                </Text>
+            </Box>
+
             {isLargeScreen ? (
                 <>
                     <Box
                         width={{ base: "90%", md: "90%", lg: "90%", xl: "75%" }}
-                        maxWidth="1600px"
+                        maxWidth="1250px"
                         display="flex"
                         justifyContent="center"
                     >
@@ -129,7 +156,6 @@ const TeamGridDesign2: React.FC = () => {
                                             <Text
                                                 fontSize="2.8rem"
                                                 fontWeight="bold"
-                                                // fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
                                                 fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
                                                 dir={i18n.language === "fa" ? "rtl" : "ltr"}
                                                 opacity={hoveredIndex === index ? 1 : 0}
@@ -253,9 +279,7 @@ const TeamGridDesign2: React.FC = () => {
 
                                         <Text
                                             color="white"
-                                            fontSize="3rem"
-                                            // fontWeight="bold"
-                                            // fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                            fontSize="2.8rem"
                                             fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
                                             dir={i18n.language === "fa" ? "rtl" : "ltr"}
                                             opacity={hoveredIndex === index ? 1 : 0}

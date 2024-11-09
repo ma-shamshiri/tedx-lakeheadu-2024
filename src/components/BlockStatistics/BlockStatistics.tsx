@@ -32,7 +32,7 @@ export const BlockStatistics: React.FC = () => {
       //   bg={useColorModeValue("gray.800", "#16F8B6")}
       //   bg={useColorModeValue("#ACD1B4", "#23214A")}
       bg={useColorModeValue(
-        "linear-gradient(45deg, #685ACD, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)",
+        "#dedcce",
         "#23214A"
       )}
       color="#16F8B6"
@@ -52,7 +52,7 @@ export const BlockStatistics: React.FC = () => {
           >
             <Text
               className="h2"
-              color={useColorModeValue("white", "#16F8B6")}
+              color={useColorModeValue("gray.800", "#16F8B6")}
               marginBottom="2rem"
               fontSize={{ base: "2.8rem", lg: "4rem" }}
               fontWeight="bold"
@@ -63,7 +63,7 @@ export const BlockStatistics: React.FC = () => {
 
             <Text
               className="p"
-              color={useColorModeValue("gray.100", "white")}
+              color={useColorModeValue("gray.700", "white")}
               //   marginBottom="1rem"
               marginTop="0"
               fontSize={{ base: "1.5rem", lg: "2.1rem" }}
