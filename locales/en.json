@@ -194,5 +194,7 @@
     "getTicketSubTitle": "A Full Day of Thought-Provoking Talks and Performances..",
     "ticket": "Ticket",
     "buyYourTickets": "Buy Your Tickets",
-    "ticketSubtitle": "Get Your Ticket"
+    "ticketSubtitle": "Get Your Ticket",
+    "theme": "Theme",
+    "themeSubtitle": "The theme of the event"
 }

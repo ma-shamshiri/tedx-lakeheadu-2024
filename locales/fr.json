@@ -194,5 +194,7 @@
     "getTicketSubTitle": "Rejoignez-nous pour une journée d'idées, de performances et de connexions..",
     "ticket": "Billet",
     "buyYourTickets": "Achetez vos billets",
-    "ticketSubtitle": "Get Your Ticket"
+    "ticketSubtitle": "Get Your Ticket",
+    "theme": "Thème",
+    "themeSubtitle": "Le thème de l'événement"
 }

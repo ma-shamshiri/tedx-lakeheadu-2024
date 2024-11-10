@@ -7,9 +7,8 @@ import { Navigationbar } from "../components/Navigationbar";
 // import { PageTransition } from "../components/PageTransition";
 // import { PageTransition2 } from "../components/PageTransition2";
 import TicketCard from "../components/TicketCard";
-import Stories from "../components/Stories";
-import TeamGridDesign2 from "../components/TeamGridDesign2";
 import BlockCountdownTimer from "../components/BlockCountdownTimer";
+import HomeStories from "../components/HomeStories";
 
 const HomePage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,9 +25,8 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Navigationbar />
-      <BlockCountdownTimer eventStartTime={eventStartTime} />
-      <Stories />
-      <TeamGridDesign2 />
+      {/* <BlockCountdownTimer eventStartTime={eventStartTime} /> */}
+      <HomeStories />
       <TicketCard />
       <BlockStatistics />
       <BlockFeatures />

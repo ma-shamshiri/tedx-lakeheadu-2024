@@ -39,6 +39,7 @@ import EventPage from "./EventPage";
 import Event2024Page from "./Event2024Page";
 import { BlockVideoGallery } from '../components/BlockVideoGallery';
 import VideoGalleryPage from './VideoGalleryPage';
+import ThemePage from './ThemePage';
 
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
@@ -56,6 +57,7 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/joinus/speaker/" element={<JoinUsSpeakerPage />} />
         <Route path="/joinus/sponsor/" element={<JoinUsSponsorPage />} />
         <Route path="/speakers/" element={<SpeakersPage />} />
+        <Route path="/theme/" element={<ThemePage />} />
         {/* <Route path="/tedx-2023/myra-virgil/" element={<MyraVirgil />} />
         <Route path="/tedx-2023/kira-dolhan/" element={<KiraDolhan />} />
         <Route path="/tedx-2023/flore-deshayes/" element={<FloreDeshayes />} />

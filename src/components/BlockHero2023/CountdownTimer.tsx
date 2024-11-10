@@ -42,8 +42,7 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
 
   return (
     <Box textAlign="center" overflow={"hidden"} margin="0 auto" padding="2rem">
-      {/* Interesting Text for the TEDxLakeheadU event */}
-      <Text
+      {/* <Text
         fontSize={useBreakpointValue({ base: "1.5rem", md: "2.8rem", lg: "2.8rem", xl: "3rem" })}
         color="white"
         fontWeight="bold"
@@ -58,7 +57,7 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
         mb="4rem"
       >
         {t("countdownSubTitle")}
-      </Text>
+      </Text> */}
       <Flex justifyContent="center" gap={5} >
         {["days", "hours", "minutes", "seconds"].map((unit, index) => (
           <Box
@@ -69,7 +68,7 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
             justifyContent="center"
             width={boxSize}
             height={boxSize}
-            bgColor={useColorModeValue("rgba(0, 124, 124, 0.8)", "rgba(255, 0, 0, 0.7)")}
+            bgColor={useColorModeValue("rgba(255, 0, 0, 0.5)", "rgba(255, 0, 0, 0.5)")}
             color="white"
             fontWeight="bold"
             borderRadius="12px"

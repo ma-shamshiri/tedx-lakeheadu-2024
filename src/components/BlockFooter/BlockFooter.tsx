@@ -10,6 +10,7 @@ import {
   ListItem,
   Link,
   useColorMode,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
@@ -24,7 +25,8 @@ export const BlockFooter = () => {
   const { colorMode } = useColorMode();
 
   const tedxImg = colorMode === "dark" ? tedxWhite : tedxBlack;
-
+  const titleFontSize = useBreakpointValue({ base: "1.5rem", lg: "1.5rem" });
+  const subTitleFontSize = useBreakpointValue({ base: "1.5rem", lg: "1.5rem" });
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024); // Set your large screen breakpoint
 
   const [column1Expanded, setColumn1Expanded] = useState(true);
@@ -67,31 +69,7 @@ export const BlockFooter = () => {
       padding="6rem 2rem"
       paddingBottom="10rem"
       overflow={"hidden"}
-      // ------------------------------------------------------------------------------------------
-      // bg="#232323"
-      // bg="#333333"
-      // bg="#849494"
-      // bg="#429E9D"
-      // bg="#3E848D"
-      // bg="#347576"
-      // bg="#285D5E"
-      // bg="#57BCBE"
-      // bg="#BE1984"
-      // bg="#CC2364"
-      // bg="#D7264E"
-      // bg="#DD2D43"
-      // bg="#E04140"
-      // bg="#E4593E"
       bg={useColorModeValue("gray.300", "#232323")}
-    // bg={useColorModeValue(
-    //   "linear-gradient(45deg, #685ACD, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)",
-    //   "black"
-    // )}
-    // bg={useColorModeValue(
-    //   "linear-gradient(45deg, #EE8B35, #E4593E, #E04140, #DD2D43, #D7264E, #CC2364, #BE1984)",
-    //   "black"
-    // )}
-    // ------------------------------------------------------------------------------------------
     >
       <Box className="grid grid--1x2" maxWidth="1320px" margin="0 auto">
         <Grid
@@ -117,7 +95,7 @@ export const BlockFooter = () => {
                 className="h2 collapsible__heading footer__heading"
                 color={useColorModeValue("gray.800", "#ddd")}
                 marginBottom="1rem"
-                fontSize="1.6rem"
+                fontSize={titleFontSize}
                 fontWeight="bold"
                 lineHeight="1.1"
                 marginTop="0"
@@ -136,12 +114,9 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/"}
-                      // href="/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.900", "#777")}
-                      // textTransform="uppercase"
                       _hover={{ color: "#fff" }}
                     >
                       TED
@@ -152,12 +127,9 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/"}
-                      // href="/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
-                      // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
                       TEDx
@@ -168,12 +140,9 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/"}
-                      // href="/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
-                      // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
                       TEDxLakeheadU
@@ -202,7 +171,7 @@ export const BlockFooter = () => {
                   className="h2 collapsible__heading footer__heading"
                   color={useColorModeValue("gray.800", "#ddd")}
                   marginBottom="1rem"
-                  fontSize="2.0rem"
+                  fontSize={titleFontSize}
                   fontWeight="bold"
                   lineHeight="1.1"
                   marginTop="0"
@@ -242,10 +211,8 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/"}
-                      // href="/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       textTransform="uppercase"
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
@@ -258,10 +225,8 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/"}
-                      // href="/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       textTransform="uppercase"
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
@@ -274,11 +239,8 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/"}
-                      // href="/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
-                      // textTransform="uppercase"
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
@@ -303,7 +265,7 @@ export const BlockFooter = () => {
                 className="h2 collapsible__heading footer__heading"
                 color={useColorModeValue("gray.800", "#ddd")}
                 marginBottom="1rem"
-                fontSize="1.6rem"
+                fontSize={titleFontSize}
                 fontWeight="bold"
                 lineHeight="1.1"
                 marginTop="0"
@@ -404,7 +366,7 @@ export const BlockFooter = () => {
                   className="h2 collapsible__heading footer__heading"
                   color={useColorModeValue("gray.800", "#ddd")}
                   marginBottom="1rem"
-                  fontSize="2.0rem"
+                  fontSize={titleFontSize}
                   fontWeight="bold"
                   lineHeight="1.1"
                   marginTop="0"
@@ -444,13 +406,9 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/photos"}
-                      // href="/media/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
-
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
-                      // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
                       {t("media")}
@@ -461,12 +419,9 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/team"}
-                      // href="/team/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
-                      // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
                       {t("team")}
@@ -477,12 +432,9 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/event"}
-                      // href="/event/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
-                      // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
                       {t("event")}
@@ -506,7 +458,7 @@ export const BlockFooter = () => {
                 className="h2 collapsible__heading footer__heading"
                 color={useColorModeValue("gray.800", "#ddd")}
                 marginBottom="1rem"
-                fontSize="1.6rem"
+                fontSize={titleFontSize}
                 fontWeight="bold"
                 lineHeight="1.1"
                 marginTop="0"
@@ -525,12 +477,9 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/joinus/team"}
-                      // href="/joinus/team/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
-                      // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
                       {t("organizers")}
@@ -541,12 +490,9 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/joinus/speaker"}
-                      // href="/joinus/speaker/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
-                      // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
                       {t("speakers")}
@@ -557,12 +503,9 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/joinus/sponsor"}
-                      // href="/joinus/sponsor/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
-                      // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
                       {t("sponsors")}
@@ -591,7 +534,7 @@ export const BlockFooter = () => {
                   className="h2 collapsible__heading footer__heading"
                   color={useColorModeValue("gray.800", "#ddd")}
                   marginBottom="1rem"
-                  fontSize="2.0rem"
+                  fontSize={titleFontSize}
                   fontWeight="bold"
                   lineHeight="1.1"
                   marginTop="0"
@@ -631,12 +574,9 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/joinus/team"}
-                      // href="/joinus/team/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
-                      // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
                       {t("organizers")}
@@ -647,12 +587,9 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/joinus/speaker"}
-                      // href="/joinus/speaker/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
-                      // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
                       {t("speakers")}
@@ -663,12 +600,9 @@ export const BlockFooter = () => {
                       className="link-arrow"
                       as={RouterLink}
                       to={"/joinus/sponsor"}
-                      // href="/joinus/sponsor/"
                       cursor="pointer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
-                      // fontWeight="bold"
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
-                      // textTransform="uppercase"
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
                       {t("sponsors")}
@@ -692,7 +626,7 @@ export const BlockFooter = () => {
                 className="h2 collapsible__heading footer__heading"
                 color={useColorModeValue("gray.800", "#ddd")}
                 marginBottom="1rem"
-                fontSize="1.6rem"
+                fontSize={titleFontSize}
                 fontWeight="bold"
                 lineHeight="1.1"
                 marginTop="0"
@@ -714,7 +648,7 @@ export const BlockFooter = () => {
                       cursor="pointer"
                       target="_blank"
                       rel="noopener noreferrer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
@@ -729,7 +663,7 @@ export const BlockFooter = () => {
                       cursor="pointer"
                       target="_blank"
                       rel="noopener noreferrer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
@@ -744,7 +678,7 @@ export const BlockFooter = () => {
                       cursor="pointer"
                       // target="_blank"
                       rel="noopener noreferrer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
@@ -759,7 +693,7 @@ export const BlockFooter = () => {
                       cursor="pointer"
                       // target="_blank"
                       rel="noopener noreferrer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
@@ -789,7 +723,7 @@ export const BlockFooter = () => {
                   className="h2 collapsible__heading footer__heading"
                   color={useColorModeValue("black", "#ddd")}
                   marginBottom="1rem"
-                  fontSize="2.0rem"
+                  fontSize={titleFontSize}
                   fontWeight="bold"
                   lineHeight="1.1"
                   marginTop="0"
@@ -832,7 +766,7 @@ export const BlockFooter = () => {
                       cursor="pointer"
                       target="_blank"
                       rel="noopener noreferrer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
@@ -862,7 +796,7 @@ export const BlockFooter = () => {
                       cursor="pointer"
                       // target="_blank"
                       rel="noopener noreferrer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
@@ -877,7 +811,7 @@ export const BlockFooter = () => {
                       cursor="pointer"
                       // target="_blank"
                       rel="noopener noreferrer"
-                      fontSize={{ base: "2rem", lg: "1.5rem" }}
+                      fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
                       _hover={{ color: useColorModeValue("#fff", "#fff") }}
                     >
@@ -899,15 +833,8 @@ export const BlockFooter = () => {
             marginRight={0}
             justifyContent={"center"}
             alignItems={"center"}
-          // marginLeft={{ lg: "-8rem" }}
           >
             <Link>
-              {/* <Image
-                  src={logo}
-                  width="6.5rem"
-                  alt="logo"
-                  marginRight="1rem"
-                /> */}
               <Image
                 className="hero__image"
                 src={tedxImg}

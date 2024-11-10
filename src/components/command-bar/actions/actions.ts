@@ -35,6 +35,15 @@ export const initialActions = [
 
     // ------------------- Event -------------------
     {
+        id: "themeAction",
+        name: "Theme",
+        shortcut: ["a", "w"],
+        keywords: "theme connecting change thunder bay place cultures people",
+        section: "EVENT",
+        subtitle: "The theme of the event",
+        perform: () => (window.location.href = "/theme"),
+    },
+    {
         id: "dateAndTimeAction",
         name: "Date & Time",
         shortcut: ["a", "w"],

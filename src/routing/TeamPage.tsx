@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { BlockFooter } from "../components/BlockFooter";
-import { BlockTeamGrid } from "../components/BlockTeamGrid";
 import { motion } from "framer-motion";
 import { Navigationbar } from "../components/Navigationbar";
 import { useTranslation } from "react-i18next";
-import { PageTransition } from "../components/PageTransition";
-import { ComingSoonTeamPage } from "../components/ComingSoonTeamPage";
+// import { PageTransition } from "../components/PageTransition";
+import TeamGridDesign2 from "../components/TeamGridDesign2";
 
 const TeamPage: React.FC = () => {
   const { t } = useTranslation();
@@ -29,8 +28,7 @@ const TeamPage: React.FC = () => {
         onAnimationComplete={handleBoxLoad}
       >
         <Navigationbar />
-        <ComingSoonTeamPage />
-        {/* <BlockTeamGrid /> */}
+        <TeamGridDesign2 />
         <BlockFooter />
       </motion.div>
     </>

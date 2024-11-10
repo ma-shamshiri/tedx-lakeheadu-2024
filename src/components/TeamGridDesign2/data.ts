@@ -157,6 +157,6 @@ export const slides: Slide[] = [
         firstName: "Aastha",
         lastName: "Malhotra",
         fullName: "Aastha Malhotra",
-        role: "Sponsorship and Outreach Manager"
+        role: "Sponsorship Manager"
     },
 ];

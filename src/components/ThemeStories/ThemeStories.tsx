@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { stories } from './data';
-import { Box, Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const storyDuration = 4000; // Duration for each story in milliseconds
 
-const Stories: React.FC = () => {
+const ThemeStories: React.FC = () => {
     const [activeStory, setActiveStory] = useState(0);
     const [direction, setDirection] = useState<'next' | 'prev'>('next');
     const cursorRef = useRef<HTMLDivElement>(null);
@@ -162,4 +162,4 @@ const Stories: React.FC = () => {
     );
 };
 
-export default Stories;
+export default ThemeStories;

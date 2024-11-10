@@ -23,7 +23,7 @@
   import { FaHandshake } from "react-icons/fa";
   import { FaUsers } from "react-icons/fa";
   import { IoDiamond } from "react-icons/io5";
-  import { IoIosPeople } from "react-icons/io";
+  import { IoIosColorPalette, IoIosPeople } from "react-icons/io";
   import { ImVideoCamera } from "react-icons/im";
   import { FaPhotoVideo } from "react-icons/fa";
 
@@ -57,6 +57,13 @@
     {
       name: "event",
       subLinks: [
+        {
+          name: "theme",
+          description: "themeSubtitle",
+          link: "/theme",
+          color: "#e60082",
+          icon: <IoIosColorPalette size="25px" color="white" />,
+        },
         {
           name: "dateAndTime",
           description: "dateAndTimeSubtitle",

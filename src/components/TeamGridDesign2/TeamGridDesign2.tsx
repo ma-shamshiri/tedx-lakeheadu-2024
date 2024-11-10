@@ -58,6 +58,7 @@ const TeamGridDesign2: React.FC = () => {
             position="relative"
             width="100%"
             // height={isLargeScreen ? "80vh" : "auto"}
+            minHeight="93vh"
             bg={useColorModeValue("#F0E2B6", "#0f0f0f")}
             display="flex"
             flexDirection="column"
@@ -136,32 +137,32 @@ const TeamGridDesign2: React.FC = () => {
                                         />
                                         <VStack
                                             position="absolute"
-                                            bottom="25%"
+                                            bottom="15%"
                                             gap={4}
+                                            paddingX="4rem"
                                         >
                                             <Text
                                                 fontSize="3rem"
-                                                fontWeight="bold"
+                                                // fontWeight="bold"
                                                 fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
                                                 dir={i18n.language === "fa" ? "rtl" : "ltr"}
                                                 opacity={hoveredIndex === index ? 1 : 0}
                                                 transition={`opacity ${hoveredIndex === index ? '1s' : '0.2s'} ease-in-out`}
                                                 pointerEvents="none"
-                                                maxWidth="25rem"
                                                 align="center"
                                                 sx={sxTitle}
+
                                             >
                                                 {slide.fullName}
                                             </Text>
                                             <Text
-                                                fontSize="2.8rem"
+                                                fontSize="2.5rem"
                                                 fontWeight="bold"
                                                 fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
                                                 dir={i18n.language === "fa" ? "rtl" : "ltr"}
                                                 opacity={hoveredIndex === index ? 1 : 0}
                                                 transition={`opacity ${hoveredIndex === index ? '1s' : '0.2s'} ease-in-out`}
                                                 pointerEvents="none"
-                                                maxWidth="25rem"
                                                 align="center"
                                                 sx={sxSubTitle}
                                             >
@@ -171,41 +172,6 @@ const TeamGridDesign2: React.FC = () => {
                                     </Box>
                                 ))}
                             </Box>
-
-                            <Link
-                                position="relative"
-                                className="btn btn--secondary btn--block"
-                                as={RouterLink}
-                                to={"/team/"}
-                                border="2px solid #F04E2D"
-                                borderRadius="7px"
-                                cursor="pointer"
-                                fontSize={{ base: "1.8rem", lg: "2rem" }}
-                                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
-                                dir={i18n.language === "fa" ? "rtl" : "ltr"}
-                                marginTop="5rem"
-                                padding="1.5rem"
-                                paddingX="3rem"
-                                textAlign="center"
-                                whiteSpace="nowrap"
-                                bg="#f04e2d"
-                                color="#fff"
-                                boxShadow="0px 6px 10px rgba(0, 0, 0, 0.2), 0px -6px 10px rgba(0, 0, 0, 0.2)"
-                                display="inline-block"
-                                width={{ base: "fit-content", lg: "fit-content" }}
-                                _hover={{
-                                    border: "0.2rem solid #f75540",
-                                    bg: "transparent",
-                                    color: "#f04e2d",
-                                    boxShadow:
-                                        "0px 8px 14px rgba(0, 0, 0, 0.3), 0px -8px 14px rgba(0, 0, 0, 0.3)",
-                                }}
-                                transition="background-color 0.25s ease-out, border 0.25s ease-out, box-shadow 0.25s ease"
-                                onMouseEnter={handleHoverButton}
-                                onMouseLeave={handleUnHoverButton}
-                            >
-                                <Text>{t("scrollingTeamButtonLabel")}</Text>
-                            </Link>
                         </VStack>
                     </Box>
                 </>
@@ -257,11 +223,6 @@ const TeamGridDesign2: React.FC = () => {
                                         gap={4}
                                         maxWidth="80%"
                                     >
-                                        {/* <Link
-                                            as={RouterLink}
-                                            to={slide.profileSrc}
-                                            _hover={{ textDecoration: 'none' }}
-                                        > */}
                                         <Text
                                             color="white"
                                             fontSize="3rem"
@@ -291,45 +252,9 @@ const TeamGridDesign2: React.FC = () => {
                                         >
                                             {slide.role}
                                         </Text>
-                                        {/* </Link> */}
                                     </VStack>
                                 </Box>
                             ))}
-
-                            <Link
-                                position="relative"
-                                className="btn btn--secondary btn--block"
-                                as={RouterLink}
-                                to={"/team/"}
-                                border="2px solid #F04E2D"
-                                borderRadius="7px"
-                                cursor="pointer"
-                                fontSize={{ base: "1.8rem", lg: "2rem" }}
-                                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
-                                dir={i18n.language === "fa" ? "rtl" : "ltr"}
-                                marginTop="5rem"
-                                padding="1.5rem"
-                                paddingX="3rem"
-                                textAlign="center"
-                                whiteSpace="nowrap"
-                                bg="#f04e2d"
-                                color="#fff"
-                                boxShadow="0px 6px 10px rgba(0, 0, 0, 0.2), 0px -6px 10px rgba(0, 0, 0, 0.2)"
-                                display="inline-block"
-                                width={{ base: "fit-content", lg: "fit-content" }}
-                                _hover={{
-                                    border: "0.2rem solid #f75540",
-                                    bg: "transparent",
-                                    color: "#f04e2d",
-                                    boxShadow:
-                                        "0px 8px 14px rgba(0, 0, 0, 0.3), 0px -8px 14px rgba(0, 0, 0, 0.3)",
-                                }}
-                                transition="background-color 0.25s ease-out, border 0.25s ease-out, box-shadow 0.25s ease"
-                                onMouseEnter={handleHoverButton}
-                                onMouseLeave={handleUnHoverButton}
-                            >
-                                <Text>{t("scrollingTeamButtonLabel")}</Text>
-                            </Link>
                         </Box>
                     </Box>
                 </>
