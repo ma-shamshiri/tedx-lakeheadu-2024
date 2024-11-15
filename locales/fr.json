@@ -188,7 +188,7 @@
     "minutes": "Minutes",
     "hours": "Heures",
     "days": "Jours",
-    "tellMeMore":"Dites-m'en plus",
+    "tellMeMore": "Dites-m'en plus",
     "yourTicketAwaits": "Votre billet vous attend",
     "getTicketTitle": "Achetez votre billet, découvrez de nouvelles idées!",
     "getTicketSubTitle": "Rejoignez-nous pour une journée d'idées, de performances et de connexions..",
@@ -196,5 +196,17 @@
     "buyYourTickets": "Achetez vos billets",
     "ticketSubtitle": "Get Your Ticket",
     "theme": "Thème",
-    "themeSubtitle": "Le thème de l'événement"
+    "themeSubtitle": "Le thème de l'événement",
+    "featureThemeTitle": "Join the Movement of Connection and Transformation",
+    "featureThemeSubTitle": "March 2025 – Lakehead University, Thunder Bay, ON",
+    "themeItem1Title": "Why Speak at TEDxLakeheadU 2025?",
+    "themeItem1Description": "TEDxLakeheadU 2025 is more than just a stage—it's a platform where your ideas can spark real change. With the theme 'Connecting for Change' we’re bringing together inspiring voices that will shape new perspectives, inspire action, and leave a lasting impact. Be a part of this transformative experience!",
+    "themeItem2Title": "What Makes TEDxLakeheadU Special?",
+    "themeItem2Description": "TEDx events are globally recognized for spreading ideas worth sharing, and TEDxLakeheadU is no different. We provide a local forum to connect our community with groundbreaking solutions, diverse perspectives, and thought-provoking ideas. Our 2025 event will feature: 1) Thought-provoking speakers from all sectors: technology, arts, education, environment, and beyond. 2) Engaging interactions that spark collaboration and create lasting change. 3) A diverse audience of community leaders, influencers, educators, social entrepreneurs, and professionals passionate about positive change.",
+    "themeItem3Title": "Our Theme: Connecting for Change",
+    "themeItem3Description": "Thunder Bay, known for its resilient community and multicultural landscape, is the perfect setting to explore local and global issues through the power of connection. Together, we will: 1) Challenge perspectives 2) Foster collaborations 3) Drive meaningful, actionable change. Whether it’s climate change, mental health, racism, or the evolving business landscape of Thunder Bay, your voice has the power to inspire transformation.",
+    "themeItem4Title": "Who Will Be Attending?",
+    "themeItem4Description": "At TEDxLakeheadU, expect to connect with: 1) Community leaders passionate about growth and positive change 2) Students and educators eager to think critically and act effectively 3) Innovators and business professionals focused on the future 4) Government and Indigenous representatives working toward collaboration 5) Social entrepreneurs and change agents making an impact",
+    "themeItem5Title": "Why Thunder Bay?",
+    "themeItem5Description": "Thunder Bay's unique blend of Indigenous heritage, immigrant perspectives, and resilient communities provides a rich backdrop for discussions on equity, sustainability, and innovation. Our event amplifies Thunder Bay's spirit of inclusion, adaptability, and potential. It’s not just about the venue—it’s about creating a movement that resonates globally."
 }

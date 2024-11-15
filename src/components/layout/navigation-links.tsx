@@ -31,20 +31,20 @@
     {
       name: "aboutUs",
       subLinks: [
-        {
-          name: "ted",
-          description: "tedSubLabel",
-          link: "/#more-info-section",
-          color: "red",
-          icon: <SiTed size="25px" color="white" />,
-        },
-        {
-          name: "tedx",
-          description: "tedxSubtitle",
-          link: "/#more-info-section",
-          color: "#c40253",
-          icon: <FaUniversity size="25px" color="white"/>,
-        },
+        // {
+        //   name: "ted",
+        //   description: "tedSubLabel",
+        //   link: "/#more-info-section",
+        //   color: "red",
+        //   icon: <SiTed size="25px" color="white" />,
+        // },
+        // {
+        //   name: "tedx",
+        //   description: "tedxSubtitle",
+        //   link: "/#more-info-section",
+        //   color: "#c40253",
+        //   icon: <FaUniversity size="25px" color="white"/>,
+        // },
         {
           name: "tedxlakeheadu",
           description: "tedxlakeheaduSubtitle",

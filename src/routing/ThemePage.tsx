@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Navigationbar } from "../components/Navigationbar";
 import { useTranslation } from "react-i18next";
 import ThemeStories from "../components/ThemeStories";
+import BlockThemeFeatures from "../components/BlockThemeFeatures";
 // import { PageTransition } from "../components/PageTransition";
 
 const ThemePage: React.FC = () => {
@@ -29,6 +30,7 @@ const ThemePage: React.FC = () => {
             >
                 <Navigationbar />
                 <ThemeStories />
+                <BlockThemeFeatures />
                 <BlockFooter />
             </motion.div>
         </>

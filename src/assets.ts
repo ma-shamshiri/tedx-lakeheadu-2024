@@ -239,7 +239,11 @@ import hero2 from "./assets/images/heroPlateauMR.jpg";
 import lakeheadu1 from "./assets/images/lakeheadu1.jpg";
 import lakeheadu2 from "./assets/images/lakeheadu2.png";
 import lakeheadu3 from "./assets/images/lakeheadu3.png";
+import landing1 from "./assets/images/landing1.jpg";
+import landing2 from "./assets/images/landing2.jpg";
+import landing3 from "./assets/images/landing3.jpg";
 import landing4 from "./assets/images/landing4.jpg";
+import landing5 from "./assets/images/landing5.jpg";
 import storyImg1 from "./assets/images/storyImg1.png";
 import storyImg2 from "./assets/images/storyImg2.png";
 import storyImg3 from "./assets/images/storyImg3.png";
@@ -258,7 +262,11 @@ export {
     storyImg3,
     storyImg4,
     storyImg5,
+    landing1,
+    landing2,
+    landing3,
     landing4,
+    landing5,
     lakeheadu1,
     lakeheadu2,
     lakeheadu3,
