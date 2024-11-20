@@ -98,7 +98,7 @@ const Feature: React.FC<FeatureProps> = ({
       <Text
         className="h3 feature__heading"
         // color="var(--color-white)"
-        color={useColorModeValue("gray.800", "white")}
+        color={useColorModeValue("#fff", "#fff")}
         fontSize={{ base: "2rem", lg: "2.2rem" }}
         fontWeight="bold"
         lineHeight="1.3"
@@ -111,7 +111,7 @@ const Feature: React.FC<FeatureProps> = ({
         fontSize={{ base: "1.6rem", lg: "1.5rem" }}
         marginTop="0"
         marginBottom="1rem"
-        color={useColorModeValue("gray.700", "gray.400")}
+        color={useColorModeValue("gray.100", "gray.100")}
       // textAlign={"justify"}
       >
         {t(description)}
@@ -121,7 +121,7 @@ const Feature: React.FC<FeatureProps> = ({
         href={linkUrl}
         fontSize={{ base: "1.4rem", lg: "1.4rem" }}
         fontWeight="bold"
-        color={useColorModeValue("#fc2d03", "tomato")}
+        color={useColorModeValue("#000", "#000")}
         textTransform="uppercase"
         target="_blank"
         rel="noopener noreferrer"
@@ -185,7 +185,7 @@ const BlockFeatures: React.FC = () => {
       id="more-info-section"
       className="block block--dark aos-animate"
       // bg={useColorModeValue("#F5DEB3	", "gray.800")}
-      bg={useColorModeValue("#F0E2B6	", "gray.800")}
+      bg={useColorModeValue("#FF2B05	", "#FF2B05")}
       width="100%"
       overflow={"hidden"}
     // clipPath="polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%)"
@@ -207,7 +207,7 @@ const BlockFeatures: React.FC = () => {
         >
           <Text
             className="h2 block__heading"
-            color={useColorModeValue("gray.800", "#E1DCA9")}
+            color={useColorModeValue("#fff", "#fff")}
             marginBottom="1rem"
             marginTop="0"
             fontSize={{ base: "2.8rem", lg: "4rem" }}
@@ -218,7 +218,7 @@ const BlockFeatures: React.FC = () => {
           </Text>
           <Text
             className="p"
-            color={useColorModeValue("gray.700", "silver")}
+            color={useColorModeValue("gray.100", "gray.100")}
             fontSize={{ base: "1.5rem", lg: "2.1rem" }}
             // fontWeight="bold"
             marginBottom={{ base: "3rem", lg: "6rem" }}

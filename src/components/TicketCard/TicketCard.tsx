@@ -162,8 +162,8 @@ const TicketCard = () => {
             height={{ base: "max-content", lg: "max-content" }}
             // bg="radial-gradient(circle, rgba(29, 17, 56, 1) 0%, rgba(7, 4, 14, 1) 100%)"
             bg={useColorModeValue(
-                "linear-gradient(45deg, #685ACD, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)",
-                "gray.800"
+                "#FF2B05",
+                "#FF2B05"
             )}
             paddingBottom={{ base: "6rem", lg: "initial" }}
         >

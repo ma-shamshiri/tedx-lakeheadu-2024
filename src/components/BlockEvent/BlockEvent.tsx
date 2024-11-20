@@ -118,7 +118,7 @@ const BlockEvent: React.FC = () => {
         <>
             <Box
                 className="block block--white"
-                bg={useColorModeValue("#EFE8D6", "#0D1224")}
+                bg={useColorModeValue("#0F0F0F", "#0F0F0F")}
                 // bg={useColorModeValue("#EFE8D6", "#9DAF89")}
                 // color="#7b858b"
                 // width="100vh"
@@ -212,11 +212,11 @@ const BlockEvent: React.FC = () => {
                                     />
                                     <HStack>
                                         <Text fontSize={{ base: "5.2rem", lg: "5.2rem" }}>
-                                            28
+                                            1
                                         </Text>
                                         <VStack>
-                                            <Text fontSize={{ base: "1.5rem", lg: "1.5rem" }}>FRI</Text>
-                                            <Text fontSize={{ base: "1.5rem", lg: "1.5rem" }}>FEB</Text>
+                                            <Text fontSize={{ base: "1.5rem", lg: "1.5rem" }}>SAT</Text>
+                                            <Text fontSize={{ base: "1.5rem", lg: "1.5rem" }}>MAR</Text>
                                         </VStack>
                                     </HStack>
                                 </VStack>
@@ -361,7 +361,7 @@ const BlockEvent: React.FC = () => {
                                                 left="50%"
                                                 transform="translate(-50%, -50%)"
                                             >
-                                                Oval Theater
+                                                Lakehead University
                                             </Text>
                                         </Box>
                                         <Image
@@ -417,7 +417,7 @@ const BlockEvent: React.FC = () => {
                                                 left="50%"
                                                 transform="translate(-50%, -50%)"
                                             >
-                                                University of South Florida
+                                                Lakehead University
                                             </Text>
                                         </Box>
                                         <Image
@@ -472,7 +472,7 @@ const BlockEvent: React.FC = () => {
                                                 left="50%"
                                                 transform="translate(-50%, -50%)"
                                             >
-                                                Oval Theater
+                                                Lakehead University
                                             </Text>
                                         </Box>
                                         <Image

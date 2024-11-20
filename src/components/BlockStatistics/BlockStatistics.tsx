@@ -32,8 +32,8 @@ export const BlockStatistics: React.FC = () => {
       //   bg={useColorModeValue("gray.800", "#16F8B6")}
       //   bg={useColorModeValue("#ACD1B4", "#23214A")}
       bg={useColorModeValue(
-        "#dedcce",
-        "#23214A"
+        "#0F0F0F",
+        "#0F0F0F"
       )}
       color="#16F8B6"
       overflow={"hidden"}
@@ -52,7 +52,7 @@ export const BlockStatistics: React.FC = () => {
           >
             <Text
               className="h2"
-              color={useColorModeValue("gray.800", "#16F8B6")}
+              color={useColorModeValue("#fff", "#fff")}
               marginBottom="2rem"
               fontSize={{ base: "2.8rem", lg: "4rem" }}
               fontWeight="bold"
@@ -63,7 +63,7 @@ export const BlockStatistics: React.FC = () => {
 
             <Text
               className="p"
-              color={useColorModeValue("gray.700", "white")}
+              color={useColorModeValue("#fff", "#fff")}
               //   marginBottom="1rem"
               marginTop="0"
               fontSize={{ base: "1.5rem", lg: "2.1rem" }}
@@ -99,7 +99,7 @@ export const BlockStatistics: React.FC = () => {
                       lg: "fit-content",
                       xl: "fit-content",
                     }}
-                    endNumber={20}
+                    endNumber={13}
                     hasPlusSign={false}
                     text={t("coreTeam")}
                     textSize={{
