@@ -234,8 +234,8 @@ const BlockEvent: React.FC = () => {
                                         pointerEvents="none"
                                     />
                                     <Box className="addressContainer">
-                                        <Text fontSize={{ base: "1.5rem", lg: "2rem" }} fontWeight="bold">
-                                        Lakehead University, 955 Oliver Road
+                                        <Text fontSize={{ base: "1.5rem", lg: "1.8rem" }} fontWeight="bold">
+                                        Outpost, Lakehead University, 955 Oliver Road
                                         </Text>
                                         <Text fontSize={{ base: "1.2rem", lg: "1.4rem" }}>
                                         Thunder Bay, Ontario Canada P7B 5E1

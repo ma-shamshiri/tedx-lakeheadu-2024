@@ -185,7 +185,7 @@ const BlockFeatures: React.FC = () => {
       id="more-info-section"
       className="block block--dark aos-animate"
       // bg={useColorModeValue("#F5DEB3	", "gray.800")}
-      bg={useColorModeValue("#FF2B05	", "#FF2B05")}
+      bg={useColorModeValue("red	", "red")}
       width="100%"
       overflow={"hidden"}
     // clipPath="polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%)"
