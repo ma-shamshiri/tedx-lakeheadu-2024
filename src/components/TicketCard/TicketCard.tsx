@@ -380,7 +380,7 @@ const TicketCard = () => {
                                         >
                                             <HStack gap={7}>
                                                 <FaCalendarAlt />
-                                                <Text> Feb. 28, 2025 </Text>
+                                                <Text> Mar. 1, 2025 </Text>
                                             </HStack>
                                             <HStack gap={7}>
                                                 <FaRegClock />
