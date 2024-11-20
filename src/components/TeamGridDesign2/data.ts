@@ -1,9 +1,18 @@
 import {
     unkown,
     unknownBoyProfile,
-    farazBG,
-    sanjanaBG,
-    aminBG
+    aminBG,
+    aarya,
+    aastha,
+    akash,
+    amir,
+    faraz,
+    haard,
+    harshit,
+    khushi,
+    parinaz,
+    sanjana,
+    shreya,
 } from "../../assets";
 
 export interface Slide {
@@ -20,7 +29,7 @@ export const slides: Slide[] = [
     // ======================== Project Director ========================
     {
         id: 1,
-        imageSrc: farazBG,
+        imageSrc: faraz,
         profileSrc: "/faraz-khorsandi",
         firstName: "Faraz",
         lastName: "Khorsandi",
@@ -31,7 +40,7 @@ export const slides: Slide[] = [
     // ======================== Sanjana Ravi ========================
     {
         id: 2,
-        imageSrc: sanjanaBG,
+        imageSrc: sanjana,
         profileSrc: "/sanjana-ravi",
         firstName: "Sanjana",
         lastName: "Ravi",
@@ -42,7 +51,7 @@ export const slides: Slide[] = [
     // ======================== Akash Balaji ========================
     {
         id: 3,
-        imageSrc: unknownBoyProfile,
+        imageSrc: akash,
         profileSrc: "/akash-balaji",
         firstName: "Akash",
         lastName: "Balaji",
@@ -53,7 +62,7 @@ export const slides: Slide[] = [
     // ======================== Harshit Singh Maann ========================
     {
         id: 4,
-        imageSrc: unknownBoyProfile,
+        imageSrc: harshit,
         profileSrc: "/harshit-singh-maann",
         firstName: "Harshit",
         lastName: "Singh Maann",
@@ -64,7 +73,7 @@ export const slides: Slide[] = [
     // ======================== Haard Pathak ========================
     {
         id: 5,
-        imageSrc: unknownBoyProfile,
+        imageSrc: haard,
         profileSrc: "/haard-pathak",
         firstName: "Haard",
         lastName: "Pathak",
@@ -75,7 +84,7 @@ export const slides: Slide[] = [
     // ======================== Khushi Shah ========================
     {
         id: 6,
-        imageSrc: unkown,
+        imageSrc: khushi,
         profileSrc: "/khushi-shah",
         firstName: "Khushi",
         lastName: "Shah",
@@ -86,7 +95,7 @@ export const slides: Slide[] = [
     // ======================== Parinaz Beigi ========================
     {
         id: 7,
-        imageSrc: unkown,
+        imageSrc: parinaz,
         profileSrc: "/parinaz-beigi",
         firstName: "Parinaz",
         lastName: "Beigi",
@@ -108,7 +117,7 @@ export const slides: Slide[] = [
     // ======================== Shreya Pradhan ========================
     {
         id: 9,
-        imageSrc: unkown,
+        imageSrc: shreya,
         profileSrc: "/shreya-pradhan",
         firstName: "Shreya",
         lastName: "Pradhan",
@@ -130,7 +139,7 @@ export const slides: Slide[] = [
     // ======================== Aarya Sadhwani ========================
     {
         id: 11,
-        imageSrc: unknownBoyProfile,
+        imageSrc: aarya,
         profileSrc: "/aarya-sadhwani",
         firstName: "Aarya",
         lastName: "Sadhwani",
@@ -141,7 +150,7 @@ export const slides: Slide[] = [
     // ======================== Seyed Amirmohammad Tayeban ========================
     {
         id: 12,
-        imageSrc: unknownBoyProfile,
+        imageSrc: amir,
         profileSrc: "/seyed-amirmohammad-tayeban",
         firstName: "Seyed Amirmohammad",
         lastName: "Tayeban",
@@ -152,7 +161,7 @@ export const slides: Slide[] = [
     // ======================== Aastha Malhotra ========================
     {
         id: 13,
-        imageSrc: unkown,
+        imageSrc: aastha,
         profileSrc: "/aastha-malhotra",
         firstName: "Aastha",
         lastName: "Malhotra",

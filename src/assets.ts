@@ -253,7 +253,34 @@ import unknownBoyProfile from "./assets/images/unknownBoyProfile.jpg";
 import farazBG from "./assets/images/farazBG.jpeg";
 import sanjanaBG from "./assets/images/sanjanaBG.jpeg";
 
+
+
+import aarya from "./assets/images/aarya.webp";
+import aastha from "./assets/images/aastha.webp";
+import akash from "./assets/images/akash.webp";
+import amir from "./assets/images/amir.webp";
+import faraz from "./assets/images/faraz.webp";
+import haard from "./assets/images/haard.webp";
+import harshit from "./assets/images/harshit.webp";
+import khushi from "./assets/images/khushi.webp";
+import parinaz from "./assets/images/parinaz.webp";
+import sanjana from "./assets/images/sanjana.webp";
+import shreya from "./assets/images/shreya.webp";
+
+
+
 export {
+    aarya,
+    aastha,
+    akash,
+    amir,
+    faraz,
+    haard,
+    harshit,
+    khushi,
+    parinaz,
+    sanjana,
+    shreya,
     farazBG,
     sanjanaBG,
     unknownBoyProfile,
