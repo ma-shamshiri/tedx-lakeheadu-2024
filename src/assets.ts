@@ -264,7 +264,7 @@ import haard from "./assets/images/haard.webp";
 import harshit from "./assets/images/harshit.webp";
 import khushi from "./assets/images/khushi.webp";
 import parinaz from "./assets/images/parinaz.webp";
-import sanjana from "./assets/images/sanjana.webp";
+import sanjana from "./assets/images/sanjana.jpeg";
 import shreya from "./assets/images/shreya.webp";
 
 
