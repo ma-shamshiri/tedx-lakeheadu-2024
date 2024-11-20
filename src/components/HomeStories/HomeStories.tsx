@@ -54,8 +54,8 @@ const HomeStories: React.FC = () => {
             <Flex
                 display={{ base: "none", lg: "block" }}
                 position="absolute"
-                top={{ base: "35%", md: "40%", lg: "18%" }}
-                left="50%"
+                top={{ base: "35%", md: "40%", lg: "17%", xl:"10%" }}
+                left={{ base: "15%", md: "15%", lg: "20%", xl:"17%" }}
                 transform="translate(-50%, -50%)"
                 zIndex={100}
             >

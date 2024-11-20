@@ -25,9 +25,9 @@ const CountdownTimer: React.FC<{ eventStartTime: Date }> = ({
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-  const numberFontSize = useBreakpointValue({ base: "2rem", md: "4rem", lg: "5.5rem" });
-  const textFontSize = useBreakpointValue({ base: "1rem", md: "1.5rem", lg: "2rem" });
-  const boxSize = useBreakpointValue({ base: "70px", md: "140px", lg: "150px" });
+  const numberFontSize = useBreakpointValue({ base: "2rem", md: "4rem", lg: "2.4rem" });
+  const textFontSize = useBreakpointValue({ base: "1rem", md: "1.5rem", lg: "1.2rem" });
+  const boxSize = useBreakpointValue({ base: "70px", md: "140px", lg: "80px" });
 
   useEffect(() => {
     const timer = setTimeout(() => {
