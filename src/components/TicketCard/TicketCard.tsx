@@ -228,14 +228,14 @@ const TicketCard = () => {
                         fontWeight="bold"
                         lineHeight="1.4"
                     >
-                        {t("getTicketTitle")}
+                        Tickets Coming Soon!
                     </Text>
                     <Text
                         color={useColorModeValue("gray.100", "gray.100")}
                         fontSize={{ base: "1.7rem", lg: "2.5rem" }}
                         lineHeight="1.4"
                     >
-                        {t("getTicketSubTitle")}
+                        Stay tuned for updates – we’re working to bring you an amazing experience!
                     </Text>
                 </Box>
             </motion.div>
