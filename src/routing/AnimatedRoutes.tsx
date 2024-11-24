@@ -43,6 +43,7 @@ import ThemePage from './ThemePage';
 import TeamPageDesign1 from './TeamPageDesign1';
 import TeamPageDesign2 from './TeamPageDesign2';
 import TeamPageDesign3 from './TeamPageDesign3';
+import TeamPageDesign4 from './TeamPageDesign4';
 
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
@@ -71,9 +72,10 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/tedx-2023/andrew-churchil/" element={<AndrewChurchil />} /> */}
         <Route path="/team/" element={<TeamPage />} />
 
-        <Route path="/team-design1/" element={<TeamPageDesign1 />} />
-        <Route path="/team-design2/" element={<TeamPageDesign2 />} />
-        <Route path="/team-design3/" element={<TeamPageDesign3 />} />
+        <Route path="/team/design1/" element={<TeamPageDesign1 />} />
+        <Route path="/team/design2/" element={<TeamPageDesign2 />} />
+        <Route path="/team/design3/" element={<TeamPageDesign3 />} />
+        <Route path="/team/design4/" element={<TeamPageDesign4 />} />
 
         {/* <Route path="/tedx-2023/samin-majidi/" element={<SaminMajidi />} />
         <Route path="/tedx-2023/fatemeh-tavanaei/" element={<FatemehTavanaei />} />

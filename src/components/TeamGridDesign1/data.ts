@@ -167,4 +167,14 @@ export const slides: Slide[] = [
         fullName: "Aastha Malhotra",
         role: "Sponsorship Manager"
     },
+    // ======================== Aastha Malhotra ========================
+    {
+        // id: 13,
+        // imageSrc: aastha,
+        // profileSrc: "/aastha-malhotra",
+        // firstName: "Aastha",
+        // lastName: "Malhotra",
+        // fullName: "Aastha Malhotra",
+        // role: "Sponsorship Manager"
+    },
 ];

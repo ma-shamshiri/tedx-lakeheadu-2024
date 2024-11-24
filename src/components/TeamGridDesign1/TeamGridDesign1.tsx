@@ -1,23 +1,23 @@
-import { Box, Flex, Image, SimpleGrid, Text, useBreakpointValue, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, Image, Link, SimpleGrid, Text, useBreakpointValue, useColorModeValue } from "@chakra-ui/react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { slides as originalItems } from "./data";
 import { useTranslation } from "react-i18next";
-
+import { Link as RouterLink } from "react-router-dom";
 
 
 const TeamGridDesign1 = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const isLargeScreen = useBreakpointValue({ base: false, lg: true });
 
     const itemsRef = useRef<(HTMLDivElement | null)[]>([]);
 
     const items = originalItems.map(item => ({
         ...item,
-        firstName: t(item.fullName ?? "First Name"),
-        lastName: t(item.fullName ?? "Last Name"),
-        fullName: t(item.fullName ?? "Full Name"),
-        role: t(item.role ?? "Role"),
+        firstName: t(item.firstName ?? ""),
+        lastName: t(item.lastName ?? ""),
+        fullName: t(item.fullName ?? ""),
+        role: t(item.role ?? ""),
     }));
 
     useEffect(() => {
@@ -66,8 +66,13 @@ const TeamGridDesign1 = () => {
                 <Flex height="100%" width="100%">
                     <SimpleGrid columns={{ base: 1, md: 3, lg: 4, xl: 4 }} spacing={0}>
                         {items.map((item, index) => (
-                            <Flex key={item.firstName} direction="row" alignItems="stretch" flex="1">
-                                <Box flex="1" position="relative" overflow="hidden">
+                            // <Link
+                            //     as={RouterLink}
+                            //     to={`/team/${item.profileSrc}`}
+                            //     href={item.profileSrc}
+                            // >
+                            <Flex key={item.firstName} direction="row" alignItems="stretch" flex="1" height="100%">
+                                <Box flex="1" position="relative" height="100%" overflow="hidden">
                                     <Box
                                         className="item-wrapper"
                                         position="relative"
@@ -86,7 +91,7 @@ const TeamGridDesign1 = () => {
                                     >
                                         <Image
                                             src={item.imageSrc}
-                                            alt={item.fullName}
+                                            // alt={item.fullName}
                                             width="100%"
                                             height="100%"
                                             objectFit="cover"
@@ -113,20 +118,28 @@ const TeamGridDesign1 = () => {
                                             height="100%"
                                             display="flex"
                                             flexDirection="column"
-                                            justifyContent="space-between"
+                                            justifyContent="center"
                                             alignItems="center"
                                             textAlign="center"
                                             padding="8em 2em"
-                                            fontFamily="'Acme', sans-serif"
                                             color={useColorModeValue("black", "white")}
                                             transition="0.3s cubic-bezier(0.075, 0.82, 0.165, 1)"
                                             zIndex="2"
+                                            gap={{ base: "0", lg: "4rem" }}
                                         >
-                                            <Text fontSize="3.2rem">
+                                            <Text
+                                                fontSize="3.2rem"
+                                                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                                paddingTop={{ base: "initial", lg: "10rem" }}
+                                            >
                                                 {item.fullName}
                                             </Text>
                                             <Text
                                                 fontSize="3.2rem"
+                                                fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
+                                                fontWeight="bold"
+                                                letterSpacing={"1px"}
+                                                color="#16F8B6"
                                             >
                                                 {item.role}
                                             </Text>
@@ -143,12 +156,19 @@ const TeamGridDesign1 = () => {
                                     />
                                 )}
                             </Flex>
+                            // </Link>
                         ))}
                     </SimpleGrid>
                 </Flex>
             ) : (
+
                 <Flex height="100%" width="100%" direction="column">
                     {items.map((item, index) => (
+                        // <Link
+                        //     as={RouterLink}
+                        //     to={`/team/${item.profileSrc}`}
+                        //     href={item.profileSrc}
+                        // >
                         <Box key={item.firstName} position="relative" overflow="hidden" flex="1">
                             <Box
                                 className="item-wrapper"
@@ -168,7 +188,7 @@ const TeamGridDesign1 = () => {
                             >
                                 <Image
                                     src={item.imageSrc}
-                                    alt={item.role}
+                                    // alt={item.role}
                                     width="100%"
                                     height="100%"
                                     objectFit="cover"
@@ -208,12 +228,22 @@ const TeamGridDesign1 = () => {
                                         width="100%"
                                         height="100%"
                                         padding="2em 2em"
-                                        justifyContent="space-between"
+                                        justifyContent="center"
+                                        gap="4rem"
                                     >
-                                        <Text fontSize="3rem">
+                                        <Text
+                                            fontSize="3.2rem"
+                                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                        >
                                             {item.fullName}
                                         </Text>
-                                        <Text fontSize="2.8rem">
+                                        <Text
+                                            fontSize="2.5rem"
+                                            fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Big Shoulders Display', sans-serif"}
+                                            fontWeight="bold"
+                                            color="#16F8B6"
+                                            letterSpacing={"1px"}
+                                        >
                                             {item.role}
                                         </Text>
                                     </Flex>
@@ -229,6 +259,7 @@ const TeamGridDesign1 = () => {
                                 />
                             )}
                         </Box>
+                        // </Link>
                     ))}
                 </Flex>
             )}
