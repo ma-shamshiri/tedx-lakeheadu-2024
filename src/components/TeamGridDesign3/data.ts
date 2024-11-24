@@ -1,6 +1,6 @@
 import {
     javan,
-    amin,
+    aminBG,
     aarya,
     aastha,
     akash,
@@ -127,7 +127,7 @@ export const slides: Slide[] = [
     // ======================== Mohammad Amin Shamshiri ========================
     {
         id: 10,
-        imageSrc: amin,
+        imageSrc: aminBG,
         profileSrc: "/mohammad-amin-shamshiri",
         firstName: "Mohammad Amin",
         lastName: "Shamshiri",

@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import {
     Box,
-    Link as ChakraLink,
     Grid,
     Image,
     Text,
+    UnorderedList,
+    ListItem,
     useColorModeValue,
 } from "@chakra-ui/react";
 import { GiTalk } from "react-icons/gi";
@@ -31,24 +32,22 @@ const featuresData = [
         icon: GiTalk,
         iconColor: "var(--color-primary)",
         title: "themeItem2Title",
-        description: `themeItem2Description`,
+        description: "themeItem2Description",
         linkText: "exploreMore",
-        linkUrl:
-            "https://www.ted.com/participate/organize-a-local-tedx-event/before-you-start/what-is-a-tedx-event",
+        linkUrl: "https://www.ted.com/about/our-organization",
         image: {
             src: landing2,
             alt: "easy",
         },
         size: "40px",
     },
-
     {
         icon: GiTalk,
         iconColor: "var(--color-primary)",
         title: "themeItem3Title",
-        description: `themeItem3Description`,
+        description: "themeItem3Description",
         linkText: "exploreMore",
-        linkUrl: "https://www.ted.com/tedx/events/57678",
+        linkUrl: "https://www.ted.com/about/our-organization",
         image: {
             src: landing3,
             alt: "easy",
@@ -59,7 +58,7 @@ const featuresData = [
         icon: GiTalk,
         iconColor: "var(--color-primary)",
         title: "themeItem4Title",
-        description: `themeItem4Description`,
+        description: "themeItem4Description", // Description is an array in the JSON file
         linkText: "exploreMore",
         linkUrl: "https://www.ted.com/tedx/events/57678",
         image: {
@@ -68,41 +67,21 @@ const featuresData = [
         },
         size: "40px",
     },
-    {
-        icon: GiTalk,
-        iconColor: "var(--color-primary)",
-        title: "themeItem5Title",
-        description: `themeItem5Description`,
-        linkText: "exploreMore",
-        linkUrl: "https://www.ted.com/tedx/events/57678",
-        image: {
-            src: landing5,
-            alt: "easy",
-        },
-        size: "40px",
-    },
-    // Add more feature objects as needed
 ];
 
 interface FeatureProps {
-    // icon: React.ElementType;
-    // iconColor: string;
     title: string;
-    description: string;
+    description: string | string[]; // Accept either a string or an array
     linkText: string;
     linkUrl: string;
     image: {
         src: string;
         alt: string;
-        // srcSetWebp: string;
-        // srcSetPng: string;
     };
     size: string;
 }
 
 const Feature: React.FC<FeatureProps> = ({
-    // icon: IconComponent,
-    // iconColor,
     title,
     description,
     linkText,
@@ -113,12 +92,9 @@ const Feature: React.FC<FeatureProps> = ({
     const { t } = useTranslation();
 
     return (
-        <Box
-            className="feature__content"
-        >
+        <Box className="feature__content">
             <Text
                 className="h3 feature__heading"
-                // color="var(--color-white)"
                 color={useColorModeValue("#fff", "#fff")}
                 fontSize={{ base: "2rem", lg: "2.2rem" }}
                 fontWeight="bold"
@@ -127,57 +103,70 @@ const Feature: React.FC<FeatureProps> = ({
             >
                 {t(title)}
             </Text>
-            <Text
-                className="p"
-                fontSize={{ base: "1.6rem", lg: "1.7rem" }}
-                marginTop="0"
-                marginBottom="1rem"
-                color={useColorModeValue("gray.100", "gray.100")}
-            // textAlign={"justify"}
-            >
-                {t(description)}
-            </Text>
-            {/* <ChakraLink
-                className="link-arrow"
-                href={linkUrl}
-                fontSize={{ base: "1.4rem", lg: "1.4rem" }}
-                fontWeight="bold"
-                color={useColorModeValue("#fc2d03", "tomato")}
-                textTransform="uppercase"
-                target="_blank"
-                rel="noopener noreferrer"
-                _hover={{
-                    "::after": {
-                        marginLeft: "10px",
-                    },
-                }}
-                sx={{
-                    "::after": {
-                        content: '">"',
-                        marginLeft: "5px",
-                        transition: "margin 0.15s",
-                    },
-                }}
-            >
-                {t(linkText)}
-            </ChakraLink> */}
+
+            {(() => {
+                const localizedDescription = t(description, { returnObjects: true });
+
+                if (Array.isArray(localizedDescription)) {
+                    return (
+                        <>
+                            {localizedDescription.map((item, index) => {
+                                if (typeof item === "string") {
+                                    // Render plain text
+                                    return (
+                                        <Text
+                                            key={index}
+                                            fontSize={{ base: "1.6rem", lg: "1.7rem" }}
+                                            color={useColorModeValue("gray.100", "gray.100")}
+                                            marginBottom={index === localizedDescription.length - 1 ? "1rem" : "0"}
+                                        >
+                                            {item}
+                                        </Text>
+                                    );
+                                } else if (Array.isArray(item)) {
+                                    // Render bullet points
+                                    return (
+                                        <UnorderedList
+                                            key={index}
+                                            spacing={2}
+                                            fontSize={{ base: "1.6rem", lg: "1.7rem" }}
+                                            color={useColorModeValue("gray.100", "gray.100")}
+                                            marginLeft="1.5rem"
+                                        >
+                                            {item.map((listItem, listIndex) => (
+                                                <ListItem key={listIndex}>{listItem}</ListItem>
+                                            ))}
+                                        </UnorderedList>
+                                    );
+                                }
+                                return null;
+                            })}
+                        </>
+                    );
+                }
+
+                // If localizedDescription is a plain string
+                if (typeof localizedDescription === "string") {
+                    return (
+                        <Text
+                            className="p"
+                            fontSize={{ base: "1.6rem", lg: "1.7rem" }}
+                            color={useColorModeValue("gray.100", "gray.100")}
+                        >
+                            {localizedDescription}
+                        </Text>
+                    );
+                }
+
+                // Fallback for unexpected cases
+                return null;
+            })()}
         </Box>
     );
 };
 
-interface FeatureImageProps {
-    image: {
-        src: string;
-        alt: string;
-        // srcSetWebp: string;
-        // srcSetPng: string;
-    };
-}
-
-const FeatureImage: React.FC<FeatureImageProps> = ({ image }) => (
+const FeatureImage: React.FC<{ image: { src: string; alt: string } }> = ({ image }) => (
     <Box as="picture">
-        {/* <source type="image/webp" srcSet={image.srcSetWebp} />
-    <source type="image/png" srcSet={image.srcSetPng} /> */}
         <Image
             className="feature__image"
             src={image.src}
@@ -205,10 +194,9 @@ const BlockThemeFeatures: React.FC = () => {
         <Box
             id="more-info-section"
             className="block block--dark aos-animate"
-            bg={useColorModeValue("red", "red")}
+            bg={useColorModeValue("#FE2B06", "#FE2B06")}
             width="100%"
-            overflow={"hidden"}
-        // clipPath="polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%)"
+            overflow="hidden"
         >
             <Box
                 className="block container"
@@ -221,7 +209,6 @@ const BlockThemeFeatures: React.FC = () => {
                 <Box
                     className="block__header aos-animate"
                     textAlign="center"
-                    // marginBottom="-4rem"
                     data-aos="fade-up"
                     data-aos-duration="500"
                 >
@@ -240,7 +227,6 @@ const BlockThemeFeatures: React.FC = () => {
                         className="p"
                         color={useColorModeValue("gray.100", "gray.100")}
                         fontSize={{ base: "1.5rem", lg: "2.1rem" }}
-                        // fontWeight="bold"
                         marginBottom={{ base: "3rem", lg: "6rem" }}
                     >
                         {t("featureThemeSubTitle")}
@@ -259,7 +245,6 @@ const BlockThemeFeatures: React.FC = () => {
                             margin="4rem 0"
                             sx={{
                                 order: index % 2 === 0 ? 1 : 2,
-                                // textAlign: index % 2 === 0 ? "right" : "left",
                             }}
                         >
                             {index % 2 === 0 ? (
@@ -286,10 +271,7 @@ const BlockThemeFeatures: React.FC = () => {
                                         data-aos="fade-right"
                                         data-aos-duration="500"
                                     >
-                                        <FeatureImage
-                                            image={feature.image}
-                                            data-aos-duration="500"
-                                        />
+                                        <FeatureImage image={feature.image} />
                                     </Box>
                                     <Box
                                         className="aos-animate"
@@ -303,8 +285,9 @@ const BlockThemeFeatures: React.FC = () => {
                         </Grid>
                     </Box>
                 ))}
-                                        <Text color={"#fff"} fontSize={"1.3rem"}>Photo Credits: Suman D'souza</Text>
-
+                <Text color={"#fff"} fontSize={"1.3rem"}>
+                    Photo Credits: Suman D'souza
+                </Text>
             </Box>
         </Box>
     );

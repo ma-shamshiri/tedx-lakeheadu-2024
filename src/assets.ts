@@ -17,7 +17,7 @@ import alina_talk60 from "./assets/images/alina_talk60.webp";
 import alina_talk70 from "./assets/images/alina_talk70.webp";
 import alina_talk80 from "./assets/images/alina_talk80.webp";
 import alina_talk90 from "./assets/images/alina_talk90.webp";
-import amin from "./assets/images/Amin-removedBG.webp";
+import aminNoBG from "./assets/images/Amin-removedBG.webp";
 import aminBadge from "./assets/images/badge-webmaster.webp";
 import aminBG from "./assets/images/Amin.webp";
 import andrew from "./assets/images/Andrew.webp";
@@ -241,7 +241,7 @@ import lakeheadu2 from "./assets/images/lakeheadu2.png";
 import lakeheadu3 from "./assets/images/lakeheadu3.png";
 import landing1 from "./assets/images/landing1.jpg";
 import landing2 from "./assets/images/landing2.jpg";
-import landing3 from "./assets/images/landing3.jpg";
+import landing3 from "./assets/images/landing3.png";
 import landing4 from "./assets/images/landing4.jpg";
 import landing5 from "./assets/images/landing5.jpg";
 import storyImg1 from "./assets/images/storyImg1.png";
@@ -251,9 +251,6 @@ import storyImg4 from "./assets/images/storyImg4.png";
 import storyImg5 from "./assets/images/storyImg5.png";
 import unknownBoyProfile from "./assets/images/unknownBoyProfile.jpg";
 import farazBG from "./assets/images/farazBG.jpeg";
-import sanjanaBG from "./assets/images/sanjanaBG.jpeg";
-
-
 
 import aarya from "./assets/images/aarya.webp";
 import aastha from "./assets/images/aastha.webp";
@@ -264,12 +261,13 @@ import haard from "./assets/images/haard.webp";
 import harshit from "./assets/images/harshit.webp";
 import khushi from "./assets/images/khushi.webp";
 import parinaz from "./assets/images/parinaz.webp";
-import sanjana from "./assets/images/sanjana.jpeg";
+import sanjana from "./assets/images/sanjana.png";
 import shreya from "./assets/images/shreya.webp";
-
-
+import javan from "./assets/images/javan.png";
+import amin from "./assets/images/amin.jpg";
 
 export {
+    javan,
     aarya,
     aastha,
     akash,
@@ -282,7 +280,6 @@ export {
     sanjana,
     shreya,
     farazBG,
-    sanjanaBG,
     unknownBoyProfile,
     storyImg1,
     storyImg2,
