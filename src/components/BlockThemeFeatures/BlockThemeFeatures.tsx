@@ -286,7 +286,7 @@ const BlockThemeFeatures: React.FC = () => {
                     </Box>
                 ))}
                 <Text color={"#fff"} fontSize={"1.3rem"}>
-                    Photo Credits: Suman D'souza
+                    Photo Credits: Suman D'Souza
                 </Text>
             </Box>
         </Box>
