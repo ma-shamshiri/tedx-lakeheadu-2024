@@ -42,7 +42,7 @@ export const SubLinksBox = (props: SubLinksBoxProps) => {
         bg={useColorModeValue(
           // "#F0E2B6",
           "linear-gradient(to right bottom, #ebebeb, #f7f7f7, #fcfcfc)",
-          "linear-gradient(to right bottom, #0e0e29, #0e0e29, #272763, #272763)"
+          "#232323"
           // "linear-gradient(to right top, #FF00CC, #333399)",
         )}
         borderRadius="7px"

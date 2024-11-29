@@ -194,7 +194,7 @@ const BlockThemeFeatures: React.FC = () => {
         <Box
             id="more-info-section"
             className="block block--dark aos-animate"
-            bg={useColorModeValue("#FE2B06", "#FE2B06")}
+            bg={useColorModeValue("#900000", "#900000")}
             width="100%"
             overflow="hidden"
         >

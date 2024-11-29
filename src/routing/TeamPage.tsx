@@ -5,6 +5,7 @@ import { Navigationbar } from "../components/Navigationbar";
 import { useTranslation } from "react-i18next";
 // import { PageTransition } from "../components/PageTransition";
 import TeamGridDesign2 from "../components/TeamGridDesign2";
+import TeamGridDesign4 from "../components/TeamGridDesign4";
 
 const TeamPage: React.FC = () => {
   const { t } = useTranslation();
@@ -28,7 +29,7 @@ const TeamPage: React.FC = () => {
         onAnimationComplete={handleBoxLoad}
       >
         <Navigationbar />
-        <TeamGridDesign2 />
+        <TeamGridDesign4 />
         <BlockFooter />
       </motion.div>
     </>
