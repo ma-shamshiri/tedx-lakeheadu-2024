@@ -52,10 +52,10 @@ const HomeStories: React.FC = () => {
             overflow="hidden"
         >
             <Flex
-                display={{ base: "none", lg: "block" }}
+                display={{ base: "block", lg: "block" }}
                 position="absolute"
-                top={{ base: "35%", md: "40%", lg: "17%", xl:"10%" }}
-                left={{ base: "15%", md: "15%", lg: "20%", xl:"17%" }}
+                top={{ base: "70%", md: "70%", lg: "17%", xl:"10%" }}
+                left={{ base: "50%", md: "50%", lg: "20%", xl:"17%" }}
                 transform="translate(-50%, -50%)"
                 zIndex={100}
             >
