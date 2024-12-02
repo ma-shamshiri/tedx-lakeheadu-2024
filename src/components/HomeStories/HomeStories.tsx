@@ -52,7 +52,7 @@ const HomeStories: React.FC = () => {
             overflow="hidden"
         >
             <Flex
-                display={{ base: "block", lg: "block" }}
+                display={{ base: "none", lg: "block" }}
                 position="absolute"
                 top={{ base: "70%", md: "70%", lg: "17%", xl:"10%" }}
                 left={{ base: "50%", md: "50%", lg: "20%", xl:"17%" }}
