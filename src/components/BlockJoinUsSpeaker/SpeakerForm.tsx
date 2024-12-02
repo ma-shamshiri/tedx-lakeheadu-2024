@@ -88,7 +88,16 @@ const SpeakerForm = () => {
     };
 
     try {
-      const response = await fetch("https://formcarry.com/s/LRgUuKTbZ6K", {
+      // const response = await fetch("https://formcarry.com/s/LRgUuKTbZ6K", {
+      //   method: "POST",
+      //   headers: {
+      //     "Accept": "application/json",
+      //     "Content-Type": "application/json"
+      //   },
+      //   body: JSON.stringify(formattedData),
+      // });
+
+      const response = await fetch("https://formcarry.com/s/3UW9a0FlOMR", {
         method: "POST",
         headers: {
           "Accept": "application/json",
