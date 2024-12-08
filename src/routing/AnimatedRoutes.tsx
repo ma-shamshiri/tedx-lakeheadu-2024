@@ -7,43 +7,56 @@ import JoinUsSponsorPage from "./JoinUsSponsorPage";
 import JoinUsPage from "./JoinUsPage";
 import JoinUsSpeakerPage from "./JoinUsSpeakerPage";
 import MediaPage from "./MediaPage";
-import SaminMajidi from "../components/TeamMembers/SaminMajidi";
-import FatemehTavanaei from "../components/TeamMembers/FatemehTavanaei";
-import ReihanehGhoroghchian from "../components/TeamMembers/ReihanehGhoroghchian";
-import FathimaNihathaLathiff from "../components/TeamMembers/FathimaNihathaLathiff";
-import HamidrezaErmagan from "../components/TeamMembers/HamidrezaErmagan";
-import BaharanNouriinanloo from "../components/TeamMembers/BaharanNouriinanloo";
-import MelikaSeyedi from "../components/TeamMembers/MelikaSeyedi";
-import MohammadZaid from "../components/TeamMembers/MohammadZaid";
-import MinaTaraghi from "../components/TeamMembers/MinaTaraghi";
-import MotaharehPourrahimi from "../components/TeamMembers/MotaharehPourrahimi";
-import AryanaHaghjoo from "../components/TeamMembers/AryanaHaghjoo";
-import PegahEinakchi from "../components/TeamMembers/PegahEinakchi";
-import RoyanJafari from "../components/TeamMembers/RoyanJafari";
-import EdwinMeriaux from "../components/TeamMembers/EdwinMeriaux";
-import GezalNajafi from "../components/TeamMembers/GezalNajafi";
-import AminShamshiri from "../components/TeamMembers/AminShamshiri";
-import AndrewChurchil from "../components/Speakers/AndrewChurchil";
-import MyraVirgil from "../components/Speakers/MyraVirgil";
-import KiraDolhan from "../components/Speakers/KiraDolhan";
-import FloreDeshayes from "../components/Speakers/FloreDeshayes";
-import LeilaKosseim from "../components/Speakers/LeilaKosseim";
-import JanetPerlman from "../components/Speakers/JanetPerlman";
-import PeggyBell from "../components/Speakers/PeggyBell";
-import AlinaGutierrezMejia from "../components/Speakers/AlinaGutierrezMejia";
-import MohammaderfanMohit from "../components/TeamMembers/MohammaderfanMohit";
-import ZahraAhmadi from "../components/TeamMembers/ZahraAhmadi";
+// import SaminMajidi from "../components/TeamMembers/SaminMajidi";
+// import FatemehTavanaei from "../components/TeamMembers/FatemehTavanaei";
+// import ReihanehGhoroghchian from "../components/TeamMembers/ReihanehGhoroghchian";
+// import FathimaNihathaLathiff from "../components/TeamMembers/FathimaNihathaLathiff";
+// import HamidrezaErmagan from "../components/TeamMembers/HamidrezaErmagan";
+// import BaharanNouriinanloo from "../components/TeamMembers/BaharanNouriinanloo";
+// import MelikaSeyedi from "../components/TeamMembers/MelikaSeyedi";
+// import MohammadZaid from "../components/TeamMembers/MohammadZaid";
+// import MinaTaraghi from "../components/TeamMembers/MinaTaraghi";
+// import MotaharehPourrahimi from "../components/TeamMembers/MotaharehPourrahimi";
+// import AryanaHaghjoo from "../components/TeamMembers/AryanaHaghjoo";
+// import PegahEinakchi from "../components/TeamMembers/PegahEinakchi";
+// import RoyanJafari from "../components/TeamMembers/RoyanJafari";
+// import EdwinMeriaux from "../components/TeamMembers/EdwinMeriaux";
+// import GezalNajafi from "../components/TeamMembers/GezalNajafi";
+// import AminShamshiri from "../components/TeamMembers/AminShamshiri";
+// import AndrewChurchil from "../components/Speakers/AndrewChurchil";
+// import MyraVirgil from "../components/Speakers/MyraVirgil";
+// import KiraDolhan from "../components/Speakers/KiraDolhan";
+// import FloreDeshayes from "../components/Speakers/FloreDeshayes";
+// import LeilaKosseim from "../components/Speakers/LeilaKosseim";
+// import JanetPerlman from "../components/Speakers/JanetPerlman";
+// import PeggyBell from "../components/Speakers/PeggyBell";
+// import AlinaGutierrezMejia from "../components/Speakers/AlinaGutierrezMejia";
+// import MohammaderfanMohit from "../components/TeamMembers/MohammaderfanMohit";
+// import ZahraAhmadi from "../components/TeamMembers/ZahraAhmadi";
 import SpeakersPage from "./SpeakersPage";
 import TeamPage from "./TeamPage";
 import EventPage from "./EventPage";
 import Event2024Page from "./Event2024Page";
-import { BlockVideoGallery } from '../components/BlockVideoGallery';
+// import { BlockVideoGallery } from '../components/BlockVideoGallery';
 import VideoGalleryPage from './VideoGalleryPage';
 import ThemePage from './ThemePage';
 import TeamPageDesign1 from './TeamPageDesign1';
 import TeamPageDesign2 from './TeamPageDesign2';
 import TeamPageDesign3 from './TeamPageDesign3';
 import TeamPageDesign4 from './TeamPageDesign4';
+import Aarya from '../components/TeamMembers2025/Aarya';
+import Aastha from '../components/TeamMembers2025/Aastha';
+import Akash from '../components/TeamMembers2025/Akash';
+import Amin from '../components/TeamMembers2025/Amin';
+import Amir from '../components/TeamMembers2025/Amir';
+import Faraz from '../components/TeamMembers2025/Faraz';
+import Haard from '../components/TeamMembers2025/Haard';
+import Harshit from '../components/TeamMembers2025/Harshit';
+import Javan from '../components/TeamMembers2025/Javan';
+import Khushi from '../components/TeamMembers2025/Khushi';
+import Parinaz from '../components/TeamMembers2025/Parinaz';
+import Sanjana from '../components/TeamMembers2025/Sanjana';
+import Shreya from '../components/TeamMembers2025/Shreya';
 
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
@@ -95,6 +108,19 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/tedx-2023/edwin-meriaux/" element={<EdwinMeriaux />} />
         <Route path="/tedx-2023/gezal-najafi/" element={<GezalNajafi />} />
         <Route path="/tedx-2023/amin-shamshiri/" element={<AminShamshiri />} /> */}
+        <Route path="/team/aarya-sadhwani/" element={<Aarya />} />
+        <Route path="/team/aastha-malhotra/" element={<Aastha />} />
+        <Route path="/team/akash-balaji/" element={<Akash />} />
+        <Route path="/team/mohammad-amin-shamshiri/" element={<Amin />} />
+        <Route path="/team/amirmohammad-tayeban/" element={<Amir />} />
+        <Route path="/team/faraz-khorsandi/" element={<Faraz />} />
+        <Route path="/team/haard-pathak/" element={<Haard />} />
+        <Route path="/team/harshit-maann/" element={<Harshit />} />
+        <Route path="/team/javan-chhatwal/" element={<Javan />} />
+        <Route path="/team/khushi-shah/" element={<Khushi />} />
+        <Route path="/team/parinaz-beigi/" element={<Parinaz />} />
+        <Route path="/team/sanjana-ravi/" element={<Sanjana />} />
+        <Route path="/team/shreya-pradhan/" element={<Shreya />} />
       </Routes>
     </AnimatePresence>
   );

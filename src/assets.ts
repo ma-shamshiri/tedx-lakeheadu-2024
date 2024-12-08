@@ -266,7 +266,34 @@ import shreya from "./assets/images/shreya.webp";
 import javan from "./assets/images/javan.png";
 import amin from "./assets/images/amin.jpg";
 
+import aaryaNoBG from "./assets/images/aaryaNoBG.png";
+import aasthaNoBG from "./assets/images/aasthaNoBG.png";
+import akashNoBG from "./assets/images/akashNoBG.png";
+import amirNoBG from "./assets/images/amirNoBG.png";
+import farazNoBG from "./assets/images/farazNoBG.png";
+import haardNoBG from "./assets/images/haardNoBG.png";
+import harshitNoBG from "./assets/images/harshitNoBG.png";
+import khushiNoBG from "./assets/images/khushiNoBG.png";
+import parinazNoBG from "./assets/images/parinazNoBG.png";
+import sanjanaNoBG from "./assets/images/sanjanaNoBG.png";
+import shreyaNoBG from "./assets/images/shreyaNoBG.png";
+import javanNoBG from "./assets/images/javanNoBG.png";
+import aminNewNoBG from "./assets/images/aminNoBG.png";
+
 export {
+    aaryaNoBG,
+    aasthaNoBG,
+    akashNoBG,
+    amirNoBG,
+    farazNoBG,
+    haardNoBG,
+    harshitNoBG,
+    khushiNoBG,
+    parinazNoBG,
+    sanjanaNoBG,
+    shreyaNoBG,
+    javanNoBG,
+    aminNewNoBG,
     javan,
     aarya,
     aastha,

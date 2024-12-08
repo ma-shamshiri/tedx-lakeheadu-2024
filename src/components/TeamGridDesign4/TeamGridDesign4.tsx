@@ -109,681 +109,681 @@ const TeamGridDesign4: React.FC = () => {
                 marginY="4rem"
             >
                 {/* Item 1 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/henry-mintzberg/`}
-                    href={`/speakers/henry-mintzberg/`}
-                > */}
-                <Box className="item" id="item-1">
-                    <Box className="item-img">
-                        <img src={faraz} alt="Item 1" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number">
-                                    {/* <Text
+                    to={`/team/faraz-khorsandi/`}
+                    href={`/team/faraz-khorsandi/`}
+                >
+                    <Box className="item" id="item-1">
+                        <Box className="item-img">
+                            <img src={faraz} alt="Item 1" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             01
                                         </Text> */}
-                                    <span>0</span><span>1</span>
-                                </Box>
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Faraz
-                                    </Text>
+                                        <span>0</span><span>1</span>
+                                    </Box>
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Faraz
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Khorsandi
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Khorsandi
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
 
                 {/* Item 2 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/sylvain-allard/`}
-                    href={`/speakers/sylvain-allard/`}
-                > */}
-                <Box className="item" id="item-2">
-                    <Box className="item-img">
-                        <img src={sanjana} alt="Item 2" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number" className="text-right">
-                                    {/* <Text
+                    to={`/team/sanjana-ravi/`}
+                    href={`/team/sanjana-ravi/`}
+                >
+                    <Box className="item" id="item-2">
+                        <Box className="item-img">
+                            <img src={sanjana} alt="Item 2" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number" className="text-right">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             02
                                         </Text> */}
-                                    <span>0</span><span>2</span>
-                                </Box>
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Ravi
-                                    </Text>
+                                        <span>0</span><span>2</span>
+                                    </Box>
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Ravi
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Sanjana
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Sanjana
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
 
                 {/* Item 3 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/sami-ramirez/`}
-                    href={`/speakers/sami-ramirez/`}
-                > */}
-                <Box className="item" id="item-1">
-                    <Box className="item-img">
-                        <img src={akash} alt="Item 1" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number">
-                                    {/* <Text
+                    to={`/team/akash-balaji/`}
+                    href={`/team/akash-balaji/`}
+                >
+                    <Box className="item" id="item-1">
+                        <Box className="item-img">
+                            <img src={akash} alt="Item 1" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             03
                                         </Text> */}
-                                    <span>0</span><span>3</span>
-                                </Box>
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Akash
-                                    </Text>
+                                        <span>0</span><span>3</span>
+                                    </Box>
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Akash
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Balaji
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Balaji
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
 
                 {/* Item 4 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/brian-robinson/`}
-                    href={`/speakers/brian-robinson/`}
-                > */}
-                <Box className="item" id="item-2">
-                    <Box className="item-img">
-                        <img src={harshit} alt="Item 2" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number" className="text-right">
-                                    {/* <Text
+                    to={`/team/harshit-maann/`}
+                    href={`/team/harshit-maann/`}
+                >
+                    <Box className="item" id="item-2">
+                        <Box className="item-img">
+                            <img src={harshit} alt="Item 2" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number" className="text-right">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             04
                                         </Text> */}
-                                    <span>0</span><span>4</span>
-                                </Box>
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Maann
-                                    </Text>
+                                        <span>0</span><span>4</span>
+                                    </Box>
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Maann
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Harshit
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Harshit
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
 
                 {/* Item 5 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/christopher-buddle/`}
-                    href={`/speakers/christopher-buddle/`}
-                > */}
-                <Box className="item" id="item-1">
-                    <Box className="item-img">
-                        <img src={haard} alt="Item 1" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number">
-                                    {/* <Text
+                    to={`/team/haard-pathak/`}
+                    href={`/team/haard-pathak/`}
+                >
+                    <Box className="item" id="item-1">
+                        <Box className="item-img">
+                            <img src={haard} alt="Item 1" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             05
                                         </Text> */}
-                                    <span>0</span><span>5</span>
-                                </Box>
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Haard
-                                    </Text>
+                                        <span>0</span><span>5</span>
+                                    </Box>
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Haard
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Pathak
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Pathak
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
 
                 {/* Item 6 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/ehson-kazerooni/`}
-                    href={`/speakers/ehson-kazerooni/`}
-                > */}
-                <Box className="item" id="item-2">
-                    <Box className="item-img">
-                        <img src={khushi} alt="Item 2" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number" className="text-right">
-                                    {/* <Text
+                    to={`/team/khushi-shah/`}
+                    href={`/team/khushi-shah/`}
+                >
+                    <Box className="item" id="item-2">
+                        <Box className="item-img">
+                            <img src={khushi} alt="Item 2" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number" className="text-right">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             06
                                         </Text> */}
-                                    <span>0</span><span>6</span>
-                                </Box>
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Shah
-                                    </Text>
+                                        <span>0</span><span>6</span>
+                                    </Box>
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Shah
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Khushi
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Khushi
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
 
                 {/* Item 7 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/shaun-lovejoy/`}
-                    href={`/speakers/shaun-lovejoy/`}
-                > */}
-                <Box className="item" id="item-1">
-                    <Box className="item-img">
-                        <img src={parinaz} alt="Item 1" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number">
-                                    {/* <Text
+                    to={`/team/parinaz-beigi/`}
+                    href={`/team/parinaz-beigi/`}
+                >
+                    <Box className="item" id="item-1">
+                        <Box className="item-img">
+                            <img src={parinaz} alt="Item 1" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             07
                                         </Text> */}
-                                    <span>0</span><span>7</span>
-                                </Box>
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Parinaz
-                                    </Text>
+                                        <span>0</span><span>7</span>
+                                    </Box>
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Parinaz
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Beigi
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Beigi
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
 
                 {/* Item 8 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/charles-onu/`}
-                    href={`/speakers/charles-onu/`}
-                > */}
-                <Box className="item" id="item-2">
-                    <Box className="item-img">
-                        <img src={javan} alt="Item 2" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number" className="text-right">
-                                    {/* <Text
+                    to={`/team/javan-chhatwal/`}
+                    href={`/team/javan-chhatwal/`}
+                >
+                    <Box className="item" id="item-2">
+                        <Box className="item-img">
+                            <img src={javan} alt="Item 2" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number" className="text-right">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             08
                                         </Text> */}
-                                    <span>0</span><span>8</span>
-                                </Box>
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Chhatwal
-                                    </Text>
+                                        <span>0</span><span>8</span>
+                                    </Box>
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Chhatwal
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Javan
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Javan
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
 
                 {/* Item 9 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/valerie-desroches/`}
-                    href={`/speakers/valerie-desroches/`}
-                > */}
-                <Box className="item" id="item-1">
-                    <Box className="item-img">
-                        <img src={shreya} alt="Item 1" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number">
-                                    {/* <Text
+                    to={`/team/shreya-pradhan/`}
+                    href={`/team/shreya-pradhan/`}
+                >
+                    <Box className="item" id="item-1">
+                        <Box className="item-img">
+                            <img src={shreya} alt="Item 1" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             09
                                         </Text> */}
-                                    <span>0</span><span>9</span>
-                                </Box>
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Shreya
-                                    </Text>
+                                        <span>0</span><span>9</span>
+                                    </Box>
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Shreya
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Pradhan
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Pradhan
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
 
                 {/* Item 10 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/valerie-desroches/`}
-                    href={`/speakers/valerie-desroches/`}
-                > */}
-                <Box className="item" id="item-1">
-                    <Box className="item-img">
-                        <img src={amin} alt="Item 1" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number">
-                                    {/* <Text
+                    to={`/team/mohammad-amin-shamshiri/`}
+                    href={`/team/mohammad-amin-shamshiri/`}
+                >
+                    <Box className="item" id="item-1">
+                        <Box className="item-img">
+                            <img src={amin} alt="Item 1" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             09
                                         </Text> */}
-                                    <span>1</span><span>0</span>
-                                </Box>
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
+                                        <span>1</span><span>0</span>
+                                    </Box>
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
 
-                                        Amin
-                                    </Text>
+                                            Amin
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Shamshiri
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Shamshiri
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
 
                 {/* Item 11 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/valerie-desroches/`}
-                    href={`/speakers/valerie-desroches/`}
-                > */}
-                <Box className="item" id="item-1">
-                    <Box className="item-img">
-                        <img src={aarya} alt="Item 1" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number">
-                                    {/* <Text
+                    to={`/team/aarya-sadhwani/`}
+                    href={`/team/aarya-sadhwani/`}
+                >
+                    <Box className="item" id="item-1">
+                        <Box className="item-img">
+                            <img src={aarya} alt="Item 1" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             09
                                         </Text> */}
-                                    <span>1</span><span>1</span>
-                                </Box>
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Sadhwani
-                                    </Text>
+                                        <span>1</span><span>1</span>
+                                    </Box>
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Sadhwani
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Aarya
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Aarya
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
 
                 {/* Item 12 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/valerie-desroches/`}
-                    href={`/speakers/valerie-desroches/`}
-                > */}
-                <Box className="item" id="item-1">
-                    <Box className="item-img">
-                        <img src={amir} alt="Item 1" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number">
-                                    {/* <Text
+                    to={`/team/amirmohammad-tayeban/`}
+                    href={`/team/amirmohammad-tayeban/`}
+                >
+                    <Box className="item" id="item-1">
+                        <Box className="item-img">
+                            <img src={amir} alt="Item 1" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             09
                                         </Text> */}
-                                    <span>1</span><span>2</span>
-                                </Box>
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="2.2rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Amirmohammad
-                                    </Text>
+                                        <span>1</span><span>2</span>
+                                    </Box>
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="2.2rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Amirmohammad
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Tayeban
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Tayeban
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
 
                 {/* Item 13 */}
-                {/* <Link
+                <Link
                     as={RouterLink}
-                    to={`/speakers/valerie-desroches/`}
-                    href={`/speakers/valerie-desroches/`}
-                > */}
-                <Box className="item" id="item-1">
-                    <Box className="item-img">
-                        <img src={aastha} alt="Item 1" />
-                    </Box>
-                    <Box className="item-copy">
-                        <Box className="item-copy-1">
-                            <Box className="shape">
-                                <Box id="number">
-                                    {/* <Text
+                    to={`/team/aastha-malhotra/`}
+                    href={`/team/aastha-malhotra/`}
+                >
+                    <Box className="item" id="item-1">
+                        <Box className="item-img">
+                            <img src={aastha} alt="Item 1" />
+                        </Box>
+                        <Box className="item-copy">
+                            <Box className="item-copy-1">
+                                <Box className="shape">
+                                    <Box id="number">
+                                        {/* <Text
                                             fontSize="5rem"
                                             fontWeight="bold"
                                             fontFamily="'Big Shoulders Display', serif"
                                         >
                                             09
                                         </Text> */}
-                                    <span>1</span><span>3</span>
-                                </Box>
-                                <Box className="text-right">
-                                    <Text
-                                        textAlign="right"
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Malhotra
-                                    </Text>
+                                        <span>1</span><span>3</span>
+                                    </Box>
+                                    <Box className="text-right">
+                                        <Text
+                                            textAlign="right"
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Malhotra
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Box>
-                        <Box className="item-copy-2">
-                            <Box className="shape">
-                                <Box>
-                                    <Text
-                                        fontSize="3.5rem"
-                                        fontWeight="bold"
-                                        fontFamily="'Big Shoulders Display', serif"
-                                    >
-                                        Aastha
-                                    </Text>
+                            <Box className="item-copy-2">
+                                <Box className="shape">
+                                    <Box>
+                                        <Text
+                                            fontSize="3.5rem"
+                                            fontWeight="bold"
+                                            fontFamily="'Big Shoulders Display', serif"
+                                        >
+                                            Aastha
+                                        </Text>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>
                     </Box>
-                </Box>
-                {/* </Link> */}
+                </Link>
             </SimpleGrid>
         </Box>
     );
