@@ -34,13 +34,13 @@ const Faraz: React.FC = () => {
           firstName="Faraz"
           lastName="Khorsandi"
           fullName="Faraz Khorsandi"
-          title="..."
+          title="MSc. Civil Engineering"
           role="Project Director"
           imageSrc={farazNoBG}
           badgeSrc={aminBadge}
-          linkedinHref="https://ca.linkedin.com/"
-          twitterHref="https://twitter.com/"
-          tedHref="https://www.ted.com/"
+          linkedinHref="https://ca.linkedin.com/in/farazkhorsandi"
+          twitterHref="mailto:tedxdirector@lakeheadu.ca/"
+          tedHref="https://www.ted.com/profiles/45396494/about"
           quoteText={t("...")}
           icon={FaComputer}
         />

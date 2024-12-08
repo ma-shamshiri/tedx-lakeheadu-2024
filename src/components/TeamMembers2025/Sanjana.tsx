@@ -38,8 +38,8 @@ const Sanjana: React.FC = () => {
           role="Project Manager"
           imageSrc={sanjanaNoBG}
           badgeSrc={aminBadge}
-          linkedinHref="https://ca.linkedin.com/"
-          twitterHref="https://twitter.com/"
+          linkedinHref="https://ca.linkedin.com/in/sanjanaravii"
+          twitterHref="mailto:tedxplanning@lakeheadu.ca/"
           tedHref="https://www.ted.com/"
           quoteText={t("...")}
           icon={FaComputer}

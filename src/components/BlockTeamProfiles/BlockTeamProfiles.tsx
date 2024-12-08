@@ -15,9 +15,10 @@ import {
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { motion, Variants } from "framer-motion";
-import { BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { SiTed } from "react-icons/si";
 import { IconType } from "react-icons";
+import { TfiEmail } from "react-icons/tfi";
 
 interface BlockTeamProfilesProps {
   firstName: string;
@@ -287,7 +288,7 @@ export const BlockTeamProfiles: React.FC<BlockTeamProfilesProps> = ({
                     aria-label="twitter"
                     variant="ghost"
                     size="xl"
-                    icon={<BsTwitter size={iconSize} />}
+                    icon={<TfiEmail size={iconSize} />}
                     color={useColorModeValue("gray.800", "gray.200")}
                     _hover={{
                       bg: useColorModeValue("gray.800", "gray.200"),
