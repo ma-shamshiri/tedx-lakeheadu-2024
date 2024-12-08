@@ -33,7 +33,7 @@ const Amir: React.FC = () => {
         <BlockTeamProfiles
           firstName="Amirmohammad"
           lastName="Tayeban"
-          fullName="Amirmohammad Tayeban"
+          fullName="Amirmohammad Tayeba"
           title="..."
           role="Deputy Director of Finance"
           imageSrc={amirNoBG}

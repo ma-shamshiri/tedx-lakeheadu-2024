@@ -34,7 +34,7 @@ const Javan: React.FC = () => {
           firstName="Javan"
           lastName="Chhatwal"
           fullName="Javan Chhatwal"
-          title="..."
+          title="Master of Education - Specialization in Social Justice | Lakehead University"
           role="Operations Manager"
           imageSrc={javanNoBG}
           badgeSrc={aminBadge}
