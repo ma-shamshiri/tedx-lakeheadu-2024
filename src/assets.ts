@@ -280,7 +280,54 @@ import shreyaNoBG from "./assets/images/shreyaNoBG.png";
 import javanNoBG from "./assets/images/javanNoBG.png";
 import aminNewNoBG from "./assets/images/aminNoBG.png";
 
+import linkedin01 from "./assets/images/linkedin01.png";
+import linkedin02 from "./assets/images/linkedin02.png";
+import linkedin03 from "./assets/images/linkedin03.png";
+import linkedin04 from "./assets/images/linkedin04.png";
+import linkedin05 from "./assets/images/linkedin05.png";
+import linkedin06 from "./assets/images/linkedin06.png";
+import linkedin07 from "./assets/images/linkedin07.png";
+import linkedin08 from "./assets/images/linkedin08.png";
+import linkedin09 from "./assets/images/linkedin09.png";
+import linkedin10 from "./assets/images/linkedin10.png";
+import linkedin11 from "./assets/images/linkedin11.png";
+import insta01 from "./assets/images/insta01.png";
+import insta02 from "./assets/images/insta02.png";
+import insta03 from "./assets/images/insta03.png";
+import insta04 from "./assets/images/insta04.png";
+import insta05 from "./assets/images/insta05.png";
+import insta06 from "./assets/images/insta06.png";
+import insta07 from "./assets/images/insta07.png";
+import insta08 from "./assets/images/insta08.png";
+import insta09 from "./assets/images/insta09.png";
+import insta10 from "./assets/images/insta10.png";
+import facebook01 from "./assets/images/facebook01.png";
+import facebook02 from "./assets/images/facebook02.png";
+
 export {
+    linkedin01,
+    linkedin02,
+    linkedin03,
+    linkedin04,
+    linkedin05,
+    linkedin06,
+    linkedin07,
+    linkedin08,
+    linkedin09,
+    linkedin10,
+    linkedin11,
+    insta01,
+    insta02,
+    insta03,
+    insta04,
+    insta05,
+    insta06,
+    insta07,
+    insta08,
+    insta09,
+    insta10,
+    facebook01,
+    facebook02,
     aaryaNoBG,
     aasthaNoBG,
     akashNoBG,

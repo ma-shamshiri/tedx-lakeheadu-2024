@@ -20,6 +20,7 @@ import { MenuLinks } from "../MenuLinks";
 import { navigationLinks } from "../layout/navigation-links";
 import { KbarInput } from "../KbarInput";
 import LanguageSwitcher2 from "./LanguageSwitcher2";
+import QuickIcons from "../QuickIcons";
 // import { HamburgerButton } from "../HamburgerButton";
 // import { MobileMenu } from "../MobileMenu";
 
@@ -132,6 +133,7 @@ export const Navigationbar: React.FC = () => {
                 {/* <KbarInput /> */}
               </Flex>
               {/* <LanguageSwitcher /> */}
+              <QuickIcons />
               <LanguageSwitcher2 />
               <ColorModeSwitch />
             </HStack>
