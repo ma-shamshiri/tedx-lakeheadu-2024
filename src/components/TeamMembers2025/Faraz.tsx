@@ -6,6 +6,7 @@ import { FaComputer } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { Navigationbar } from "../Navigationbar";
 import { useTranslation } from "react-i18next";
+import { MdOutlineEngineering } from "react-icons/md";
 // import { PageTransition } from "../PageTransition";
 
 const Faraz: React.FC = () => {
@@ -41,8 +42,8 @@ const Faraz: React.FC = () => {
           linkedinHref="https://ca.linkedin.com/in/farazkhorsandi"
           twitterHref="mailto:tedxdirector@lakeheadu.ca/"
           tedHref="https://www.ted.com/profiles/45396494/about"
-          quoteText={t("...")}
-          icon={FaComputer}
+          quoteText={t("Faraz Khorsandi is the Project Director for TEDxLakeheadU, where he leads efforts to bring innovative ideas and inspiring speakers to the community. With a background in civil engineering and project management, Faraz has worked with TBT Engineering and serves as the president of the Lakehead University Student Union (LUSU). He is passionate about community engagement, mentoring, and advocating for marginalized groups. Outside of TEDx, Faraz supports causes related to education, social justice, and environmental sustainability. He is driven by a desire to empower individuals to share their stories and inspire positive change.")}
+          icon={MdOutlineEngineering}
         />
         <BlockFooter />
       </motion.div>

@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { motion, Variants } from "framer-motion";
-import { BsLinkedin } from "react-icons/bs";
+import { BsChatRightQuoteFill, BsLinkedin } from "react-icons/bs";
 import { SiTed } from "react-icons/si";
 import { IconType } from "react-icons";
 import { TfiEmail } from "react-icons/tfi";
@@ -98,9 +98,9 @@ export const BlockTeamProfiles: React.FC<BlockTeamProfilesProps> = ({
   const isDarkMode = colorMode === "dark";
 
   const iconSize = useBreakpointValue({ base: "3.5rem", lg: "3rem" });
-  const titleIconSize = useBreakpointValue({ base: "6rem", lg: "5rem" });
+  const titleIconSize = useBreakpointValue({ base: "5rem", lg: "4rem" });
   const tedIconSize = useBreakpointValue({ base: "5rem", lg: "4rem" });
-
+  const quoteIconSize = useBreakpointValue({ base: "4rem", lg: "4rem" });
   const [boxLoaded, setBoxLoaded] = useState(false);
 
   const handleBoxLoad = () => {
@@ -120,7 +120,9 @@ export const BlockTeamProfiles: React.FC<BlockTeamProfilesProps> = ({
   return (
     <Flex
       direction={{ base: "column", md: "column", lg: "row" }}
-      height={{ base: "initial", lg: "calc(100vh - 70px)" }}
+      // height={{ base: "initial", lg: "calc(100vh - 70px)" }}
+      height={{ base: "initial", lg: "fit-content" }}
+      minHeight={{ base: "initial", lg: "100vh" }}
       //   height="calc(200vh - 70px)"
       width="100%"
       overflow="hidden"
@@ -164,8 +166,10 @@ export const BlockTeamProfiles: React.FC<BlockTeamProfilesProps> = ({
         display="flex"
         flex={{ base: "1", lg: "1" }}
         justifyContent="center"
-        alignItems="center"
+        alignItems="flex-start"
         zIndex={2}
+        paddingTop="10rem"
+      // border="1px solid red"
       >
         <Box
           className="profile_info_container"
@@ -188,7 +192,7 @@ export const BlockTeamProfiles: React.FC<BlockTeamProfilesProps> = ({
             > */}
             <Text
               as="h2"
-              fontSize={{ base: "2.5rem", lg: "3rem" }}
+              fontSize={{ base: "2rem", lg: "2.2rem" }}
               color={useColorModeValue("#fff", "#16F8B6")}
               letterSpacing="3px"
               textAlign={{ base: "center", lg: "center" }}
@@ -212,13 +216,13 @@ export const BlockTeamProfiles: React.FC<BlockTeamProfilesProps> = ({
               opacity={isPageLoaded ? "1" : "0"}
               transition="opacity 0.5s ease-in-out 0.5s"
             >
-              <Box as="span" fontSize={{ base: "4.5rem", lg: "5rem" }}>
+              <Box as="span" fontSize={{ base: "3.5rem", lg: "4rem" }}>
                 {firstName}
               </Box>
               <Box as="span"> </Box>
               <Box
                 as="span"
-                fontSize={{ base: "4.5rem", lg: "5rem" }}
+                fontSize={{ base: "3.5rem", lg: "4rem" }}
                 fontWeight="bold"
                 color={useColorModeValue("#000", "#fff")}
               >
@@ -244,13 +248,13 @@ export const BlockTeamProfiles: React.FC<BlockTeamProfilesProps> = ({
             </Box>
             <Text
               as="h2"
-              fontSize={{ base: "2.2rem", lg: "2.5rem" }}
+              fontSize={{ base: "2rem", lg: "2rem" }}
               color={useColorModeValue("#0B0E36", "#f926ae")}
               letterSpacing="2px"
               lineHeight={{ base: "2.5rem", lg: "3.5rem" }}
               textAlign={{ base: "center", lg: "center" }}
               margin={0}
-              paddingBottom="4rem"
+              paddingBottom="1rem"
               maxWidth={{ base: "initial", lg: "65rem" }}
               opacity={isPageLoaded ? "1" : "0"}
               transition="opacity 0.5s ease-in-out 1.1s"
@@ -317,6 +321,37 @@ export const BlockTeamProfiles: React.FC<BlockTeamProfilesProps> = ({
                 </Box>
               </HStack>
             </Flex>
+
+            <Box
+              className="bioContainer"
+              width="100%"
+              height="100%"
+              display="flex"
+              justifyContent="center"
+              alignItems="left"
+              paddingY={{ base: "2rem", lg: "5rem" }}
+            >
+              <Box
+                display="flex"
+                maxWidth={{ base: "85%", lg: "60%" }}
+              >
+                <Text
+                  className="speaker_title"
+                  fontSize={{ base: "1.6rem", lg: "2rem" }}
+                  lineHeight={{ base: "25px", lg: "32px" }}
+                  color={useColorModeValue("gray.800", "white")}
+
+                  letterSpacing={{ base: "initial", lg: "1.5px" }}
+                // fontFamily="'Literata', serif"
+                >
+                  <Box as="span" display="inline-block">
+                    <BsChatRightQuoteFill size={quoteIconSize} color="#fc5a03" />
+                  </Box>
+                  {" "}
+                  {quoteText}
+                </Text>
+              </Box>
+            </Box>
             {/* </motion.div> */}
           </Box>
         </Box>
