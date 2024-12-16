@@ -41,7 +41,7 @@ const Javan: React.FC = () => {
           linkedinHref="https://ca.linkedin.com/"
           twitterHref="https://twitter.com/"
           tedHref="https://www.ted.com/"
-          quoteText={t("...")}
+          quoteText={t("Javan serves as the Design and Social Media Manager for TEDxLakeheadU, where she brings her creativity and passion to life through captivating visuals and impactful digital storytelling. With a background in public service, Javan works as the Constituency Office Manager for Minister Patty Hajdu, supporting her community through advocacy and meaningful connections. She is a former student assistant at Lakehead University with six years of teaching experience. She has also volunteered as an executive member with the India Canada Association and took the initiative to establish a peer support group for Master of Education students. A proud graduate of the Master of Education program, specializing in Social Justice from Lakehead University, Javan is deeply committed to education, empowerment, and creating positive social change. A natural creative, Javan channels her artistic energy into her personal waterbrush art page, where she explores the beauty of colors and expression. Driven by a belief in the power of creativity, she strives to make a positive impact through every project she undertakes.")}
           icon={FaComputer}
         />
         <BlockFooter />
