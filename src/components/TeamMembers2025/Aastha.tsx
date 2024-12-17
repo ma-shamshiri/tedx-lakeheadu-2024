@@ -34,14 +34,14 @@ const Aastha: React.FC = () => {
           firstName="Aastha"
           lastName="Malhotra"
           fullName="Aastha Malhotra"
-          title="..."
+          title="Coming soon.."
           role="Sponsorship and Outreach Manager"
           imageSrc={aasthaNoBG}
           badgeSrc={aminBadge}
           linkedinHref="https://ca.linkedin.com/"
           twitterHref="https://twitter.com/"
           tedHref="https://www.ted.com/"
-          quoteText={t("...")}
+          quoteText={t("Coming soon.. Stay tuned for an intriguing biography!")}
           icon={FaComputer}
         />
         <BlockFooter />

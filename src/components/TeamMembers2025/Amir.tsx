@@ -34,14 +34,14 @@ const Amir: React.FC = () => {
           firstName="Amirmohammad"
           lastName="Tayeban"
           fullName="Amirmohammad Tayeba"
-          title="..."
+          title="Coming soon.."
           role="Deputy Director of Finance"
           imageSrc={amirNoBG}
           badgeSrc={aminBadge}
           linkedinHref="https://ca.linkedin.com/"
           twitterHref="https://twitter.com/"
           tedHref="https://www.ted.com/"
-          quoteText={t("...")}
+          quoteText={t("Coming soon.. Stay tuned for an intriguing biography!")}
           icon={FaComputer}
         />
         <BlockFooter />

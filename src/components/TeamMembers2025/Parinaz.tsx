@@ -34,14 +34,14 @@ const Parinaz: React.FC = () => {
           firstName="Parinaz"
           lastName="Beigi"
           fullName="Parinaz Beigi"
-          title="..."
+          title="Coming soon.."
           role="Curator Manager"
           imageSrc={parinazNoBG}
           badgeSrc={aminBadge}
           linkedinHref="https://ca.linkedin.com/"
           twitterHref="https://twitter.com/"
           tedHref="https://www.ted.com/"
-          quoteText={t("...")}
+          quoteText={t("Coming soon.. Stay tuned for an intriguing biography!")}
           icon={FaComputer}
         />
         <BlockFooter />

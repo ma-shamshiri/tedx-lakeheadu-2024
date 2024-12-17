@@ -34,7 +34,7 @@ const Amin: React.FC = () => {
           firstName="Amin"
           lastName="Shamshiri"
           fullName="Amin Shamshiri"
-          title="..."
+          title="Full-Stack Software Engineer | EnerZam Inc."
           role="Web Designer"
           imageSrc={aminNewNoBG}
           badgeSrc={aminBadge}
