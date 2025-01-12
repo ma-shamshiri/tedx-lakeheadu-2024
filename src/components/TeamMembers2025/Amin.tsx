@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {akashNoBG, aminBadge, aminNewNoBG } from "../../assets";
+import { aminBadge, aminNewNoBG } from "../../assets";
 import { BlockFooter } from "../BlockFooter";
 import { BlockTeamProfiles } from "../BlockTeamProfiles";
 import { FaComputer } from "react-icons/fa6";
