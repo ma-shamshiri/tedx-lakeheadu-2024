@@ -41,7 +41,7 @@ const Amin: React.FC = () => {
           linkedinHref="https://ca.linkedin.com/"
           twitterHref="https://twitter.com/"
           tedHref="https://www.instagram.com/"
-          quoteText={t("...")}
+          quoteText={t("aminQuote")}
           icon={FaComputer}
         />
         <BlockFooter />
