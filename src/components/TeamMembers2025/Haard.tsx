@@ -40,7 +40,7 @@ const Haard: React.FC = () => {
           badgeSrc={aminBadge}
           linkedinHref="https://ca.linkedin.com/"
           twitterHref="https://twitter.com/"
-          tedHref="https://www.ted.com/"
+          tedHref="https://www.instagram.com/"
           quoteText={t("Haard Pathak is the Operations Manager for TEDxLakeheadU, where he orchestrates the seamless execution of events that bring forward-thinking ideas to life. With a keen eye for detail and strategic planning, he ensures these events are not just organized, but also impactful, inspiring the Lakehead University community to engage with the ideas that shape the future. A second-year Computer Science student at Lakehead University, Haard is captivated by the potential of robotics and quantum computing. As the President of the Artificial Intelligence and Robotics Association (ARIA), he leads a community of students eager to explore and experiment with these cutting-edge technologies. Haard envisions a future where AI, quantum computing, and robotics work in unison to unlock new frontiers of technological advancement. With a passion for innovation and a drive to turn ideas into reality, Haard is determined to bridge the gap between theory and application. Whether managing events, leading tech initiatives, or exploring the complexities of tomorrow’s technologies, he’s committed to creating the future, one innovation at a time.")}
           icon={FaComputer}
         />

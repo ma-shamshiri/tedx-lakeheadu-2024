@@ -150,7 +150,7 @@ export const members: Member[] = [
     {
         id: 12,
         imageSrc: amir,
-        profileSrc: "/seyed-amirmohammad-tayeban",
+        profileSrc: "/amirmohammad-tayeban",
         firstName: "Amir",
         lastName: "Tayeba",
         fullName: "Seyed Amirmohammad Tayeban",

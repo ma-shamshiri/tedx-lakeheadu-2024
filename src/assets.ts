@@ -252,17 +252,17 @@ import storyImg5 from "./assets/images/storyImg5.png";
 import unknownBoyProfile from "./assets/images/unknownBoyProfile.jpg";
 import farazBG from "./assets/images/farazBG.jpeg";
 
-import aarya from "./assets/images/aarya.webp";
+import aarya from "./assets/images/aarya.jpg";
 import aastha from "./assets/images/aastha.webp";
 import akash from "./assets/images/akash.webp";
 import amir from "./assets/images/amir.webp";
-import faraz from "./assets/images/faraz.webp";
+import faraz from "./assets/images/faraz.jpg";
 import haard from "./assets/images/haard.webp";
-import harshit from "./assets/images/harshit.webp";
+import harshit from "./assets/images/harshit.jpg";
 import khushi from "./assets/images/khushi.webp";
 import parinaz from "./assets/images/parinaz.webp";
-import sanjana from "./assets/images/sanjana.png";
-import shreya from "./assets/images/shreya.webp";
+import sanjana from "./assets/images/sanjana.jpg";
+import shreya from "./assets/images/shreya.jpg";
 import javan from "./assets/images/javan.png";
 import amin from "./assets/images/amin.jpg";
 

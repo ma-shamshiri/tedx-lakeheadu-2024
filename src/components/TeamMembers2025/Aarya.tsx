@@ -34,14 +34,14 @@ const Aarya: React.FC = () => {
           firstName="Aarya"
           lastName="Sadhwani"
           fullName="Aarya Sadhwani"
-          title="Coming soon.."
+          title="Business Student | Aspiring Financial Leader | Entrepreneur"
           role="Director of Finance"
           imageSrc={aaryaNoBG}
           badgeSrc={aminBadge}
           linkedinHref="https://ca.linkedin.com/"
-          twitterHref="https://twitter.com/"
-          tedHref="https://www.ted.com/"
-          quoteText={t("Coming soon.. Stay tuned for an intriguing biography!")}
+          twitterHref="mailto:asadhwan@lakeheadu.ca/"
+          tedHref="https://www.instagram.com/"
+          quoteText={t("I’m Aarya Sadhwani, an international business student at Lakehead University, Thunder Bay, with a passion for finance and entrepreneurship. Growing up in a business-oriented family, I developed a strong interest in strategic decision-making and creating opportunities in the financial world. At Lakehead, I’ve been actively involved in TEDxLakeheadU, helping to foster a platform for meaningful ideas. My career goals include earning my CFA certification, gaining experience in the finance industry, and eventually starting my own brokerage firm. I also plan to expand into real estate and establish a hotel business in the future.")}
           icon={FaComputer}
         />
         <BlockFooter />

@@ -4,7 +4,6 @@ import {
   Flex,
   ResponsiveValue,
   useColorModeValue,
-  Button,
   Image,
   Text,
   HStack,
@@ -19,6 +18,7 @@ import { BsChatRightQuoteFill, BsLinkedin } from "react-icons/bs";
 import { SiTed } from "react-icons/si";
 import { IconType } from "react-icons";
 import { TfiEmail } from "react-icons/tfi";
+import { FaInstagram } from "react-icons/fa";
 
 interface BlockTeamProfilesProps {
   firstName: string;
@@ -308,7 +308,7 @@ export const BlockTeamProfiles: React.FC<BlockTeamProfilesProps> = ({
                     aria-label="ted"
                     variant="ghost"
                     size="xl"
-                    icon={<SiTed size={tedIconSize} />}
+                    icon={<FaInstagram size={tedIconSize} />}
                     color={useColorModeValue("#gray.800", "gray.200")}
                     _hover={{
                       bg: useColorModeValue("gray.800", "gray.200"),

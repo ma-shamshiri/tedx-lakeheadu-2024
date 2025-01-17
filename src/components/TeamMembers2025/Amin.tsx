@@ -40,7 +40,7 @@ const Amin: React.FC = () => {
           badgeSrc={aminBadge}
           linkedinHref="https://ca.linkedin.com/"
           twitterHref="https://twitter.com/"
-          tedHref="https://www.ted.com/"
+          tedHref="https://www.instagram.com/"
           quoteText={t("...")}
           icon={FaComputer}
         />

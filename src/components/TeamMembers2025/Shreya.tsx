@@ -35,12 +35,12 @@ const Shreya: React.FC = () => {
           lastName="Pradhan"
           fullName="Shreya Pradhan"
           title="4th Year Honours Bachelor of Kinesiology Student"
-          role="Design and Social Media Manager"
+          role="Co-Design and Social Media Manager"
           imageSrc={shreyaNoBG}
           badgeSrc={aminBadge}
-          linkedinHref="https://ca.linkedin.com/"
-          twitterHref="https://twitter.com/"
-          tedHref="https://www.ted.com/"
+          linkedinHref="https://ca.linkedin.com/in/shreyapradhan02?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app/"
+          twitterHref="mailto:spradha1@lakeheadu.ca/"
+          tedHref="https://www.instagram.com/"
           quoteText={t("Shreya is the Co-Design and Social Media Manager for TEDxLakeheadU, where she, with her co-manager, leads creative design initiatives and manages digital engagement to spread innovative ideas. A fourth-year Honours Bachelor of Kinesiology student at Lakehead University, Shreya is passionate about promoting physical activity and mental well-being, particularly for international students. Originally from Nepal and having grown up in Brunei, she is committed to fostering an inclusive environment through leadership and mentorship. As President of the Lakehead University Nepali Students Association and a former Peer Mentor, Shreya advocates for international students, helping them navigate cultural challenges and build supportive communities. She also volunteers with older adults at St. Joseph’s Hospital, furthering her dedication to community engagement. Outside of academics, Shreya enjoys staying active through exercise and sports, believing in the transformative power of movement for both physical and mental well-being. She embraces new experiences and challenges as opportunities to learn and grow, bringing a sense of curiosity and openness to all her endeavors.")}
           icon={FaComputer}
         />
