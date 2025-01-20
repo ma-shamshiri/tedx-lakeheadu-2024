@@ -12,6 +12,7 @@ import {
     parinaz,
     sanjana,
     shreya,
+    andrei,
 } from "../../assets";
 
 export interface Member {
@@ -166,5 +167,16 @@ export const members: Member[] = [
         lastName: "Malhotra",
         fullName: "Aastha Malhotra",
         role: "Sponsorship Manager"
+    },
+
+    // ======================== Aastha Malhotra ========================
+    {
+        id: 14,
+        imageSrc: andrei,
+        profileSrc: "/andrei-rosario",
+        firstName: "Andrei",
+        lastName: "Rosario",
+        fullName: "Andrei Rosario",
+        role: "Co-Director of Sponsorship"
     },
 ];

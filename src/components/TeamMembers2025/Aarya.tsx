@@ -41,7 +41,7 @@ const Aarya: React.FC = () => {
           linkedinHref="https://ca.linkedin.com/"
           twitterHref="mailto:asadhwan@lakeheadu.ca/"
           tedHref="https://www.instagram.com/"
-          quoteText={t("I’m Aarya Sadhwani, an international business student at Lakehead University, Thunder Bay, with a passion for finance and entrepreneurship. Growing up in a business-oriented family, I developed a strong interest in strategic decision-making and creating opportunities in the financial world. At Lakehead, I’ve been actively involved in TEDxLakeheadU, helping to foster a platform for meaningful ideas. My career goals include earning my CFA certification, gaining experience in the finance industry, and eventually starting my own brokerage firm. I also plan to expand into real estate and establish a hotel business in the future.")}
+          quoteText={t("I’m Aarya Sadhwani, an international business student at Lakehead University, passionate about finance and entrepreneurship. Growing up in a business-driven family, I developed a keen interest in strategic decision-making. At Lakehead, I’ve contributed to TEDxLakeheadU, promoting meaningful ideas. My goals include earning a CFA certification, gaining finance industry experience, and launching my own brokerage firm, with aspirations to expand into real estate and the hospitality sector.")}
           icon={FaComputer}
         />
         <BlockFooter />

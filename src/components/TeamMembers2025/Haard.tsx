@@ -38,10 +38,10 @@ const Haard: React.FC = () => {
           role="Operations Manager"
           imageSrc={haardNoBG}
           badgeSrc={aminBadge}
-          linkedinHref="https://ca.linkedin.com/"
-          twitterHref="https://twitter.com/"
+          linkedinHref="https://ca.linkedin.com/in/haard-pathak-697688236/overlay/contact-info/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BpqLqlbKUTt2DXP44qEnqYw%3D%3D/"
+          twitterHref="mailto:hpathak1@lakeheadu.ca/"
           tedHref="https://www.instagram.com/"
-          quoteText={t("Haard Pathak is the Operations Manager for TEDxLakeheadU, where he orchestrates the seamless execution of events that bring forward-thinking ideas to life. With a keen eye for detail and strategic planning, he ensures these events are not just organized, but also impactful, inspiring the Lakehead University community to engage with the ideas that shape the future. A second-year Computer Science student at Lakehead University, Haard is captivated by the potential of robotics and quantum computing. As the President of the Artificial Intelligence and Robotics Association (ARIA), he leads a community of students eager to explore and experiment with these cutting-edge technologies. Haard envisions a future where AI, quantum computing, and robotics work in unison to unlock new frontiers of technological advancement. With a passion for innovation and a drive to turn ideas into reality, Haard is determined to bridge the gap between theory and application. Whether managing events, leading tech initiatives, or exploring the complexities of tomorrow’s technologies, he’s committed to creating the future, one innovation at a time.")}
+          quoteText={t("Haard Pathak, Operations Manager for TEDxLakeheadU, ensures seamless, impactful events that inspire the Lakehead University community to engage with forward-thinking ideas. A second-year Computer Science student, he is passionate about robotics and quantum computing. As President of the Artificial Intelligence and Robotics Association (ARIA), Haard leads a student community exploring cutting-edge technologies. He envisions a future where AI, robotics, and quantum computing converge to drive innovation. Committed to bridging theory and application, Haard combines strategic planning with a passion for technology to shape the future through impactful events and pioneering advancements.")}
           icon={FaComputer}
         />
         <BlockFooter />

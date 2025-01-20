@@ -57,6 +57,7 @@ import Khushi from '../components/TeamMembers2025/Khushi';
 import Parinaz from '../components/TeamMembers2025/Parinaz';
 import Sanjana from '../components/TeamMembers2025/Sanjana';
 import Shreya from '../components/TeamMembers2025/Shreya';
+import Andrei from '../components/TeamMembers2025/Andrei';
 
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
@@ -111,6 +112,7 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/team/aarya-sadhwani/" element={<Aarya />} />
         <Route path="/team/aastha-malhotra/" element={<Aastha />} />
         <Route path="/team/akash-balaji/" element={<Akash />} />
+        <Route path="/team/andrei-rosario/" element={<Andrei />} />
         <Route path="/team/mohammad-amin-shamshiri/" element={<Amin />} />
         <Route path="/team/amirmohammad-tayeban/" element={<Amir />} />
         <Route path="/team/faraz-khorsandi/" element={<Faraz />} />

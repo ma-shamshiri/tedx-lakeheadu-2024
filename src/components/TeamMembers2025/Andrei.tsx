@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Navigationbar } from "../Navigationbar";
 import { SiCoinmarketcap } from "react-icons/si";
 import { useTranslation } from "react-i18next";
-import { aminBadge, farazNoBG } from "../../assets";
+import { aminBadge, andreiNoBG } from "../../assets";
 // import { PageTransition } from "../PageTransition";
 
 const Andrei: React.FC = () => {
@@ -36,12 +36,12 @@ const Andrei: React.FC = () => {
                     fullName="Andrei Rosario"
                     title="Independent Events and Marketing Consultant | Rotarian"
                     role="Co-Director of Sponsorship"
-                    imageSrc={farazNoBG}
+                    imageSrc={andreiNoBG}
                     badgeSrc={aminBadge}
                     linkedinHref="https://ca.linkedin.com/in/andrei-rosario/"
                     twitterHref="mailto:andreijrosario@gmail.com/"
                     tedHref="https://www.instagram.com"
-                    quoteText={t("Andrei Rosario is a Co-Director of Sponsorship, where he provides consultations on writing grants and sourcing sponsorships for TEDxLakeheadU. He is a graduate of the Business - Marketing program at Confederation College. Being heavily involved in the Thunder Bay community, Andrei has an array of experience in event planning, marketing, advocacy, and youth development. Outside of TEDx, Andrei is a Unit Public Affairs Representative in the Canadian Cadet Organizations. In his free time, he plays the trombone with the Thunder Bay Community Orchestra, actively volunteers in local to national organizations, writes poetry, and hikes in Northwestern Ontario. Andrei is excited to bring people together through TEDxLakeheadU! He's looking forward to inspiring younger generations and continuously building an open environment for learning, entertainment, and collaboration in Thunder Bay!")}
+                    quoteText={t("Andrei Rosario, Co-Director of Sponsorship at TEDxLakeheadU, specializes in grant writing and sponsorships. A Business - Marketing graduate from Confederation College, he is deeply engaged in the Thunder Bay community, with experience in event planning, marketing, and youth development. Beyond TEDx, Andrei serves as a Public Affairs Representative for the Canadian Cadet Organizations, plays trombone with the Thunder Bay Community Orchestra, volunteers with various organizations, writes poetry, and enjoys hiking. Passionate about fostering collaboration and inspiration, Andrei aims to create an open, engaging environment for learning and connection through TEDxLakeheadU!")}
                     icon={SiCoinmarketcap}
                 />
                 <BlockFooter />

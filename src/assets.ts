@@ -257,7 +257,7 @@ import aastha from "./assets/images/aastha.webp";
 import akash from "./assets/images/akash.webp";
 import amir from "./assets/images/amir.webp";
 import faraz from "./assets/images/faraz.jpg";
-import haard from "./assets/images/haard.webp";
+import haard from "./assets/images/haard.jpg";
 import harshit from "./assets/images/harshit.jpg";
 import khushi from "./assets/images/khushi.webp";
 import parinaz from "./assets/images/parinaz.webp";
@@ -304,7 +304,13 @@ import insta10 from "./assets/images/insta10.png";
 import facebook01 from "./assets/images/facebook01.png";
 import facebook02 from "./assets/images/facebook02.png";
 
+import andrei from "./assets/images/andrei.jpg";
+import andreiNoBG from "./assets/images/andreiNoBG.png";
+
+
 export {
+    andrei,
+    andreiNoBG,
     linkedin01,
     linkedin02,
     linkedin03,
