@@ -56,7 +56,7 @@ export const members: Member[] = [
         firstName: "Akash",
         lastName: "Balaji",
         fullName: "Akash Balaji",
-        role: "Director of Marketing & Communications"
+        role: "Director, Marketing & Communications | Curation Manager"
     },
 
     // ======================== Harshit Singh Maann ========================
