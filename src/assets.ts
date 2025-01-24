@@ -254,17 +254,17 @@ import farazBG from "./assets/images/farazBG.jpeg";
 
 import aarya from "./assets/images/aarya.jpg";
 import aastha from "./assets/images/aastha.webp";
-import akash from "./assets/images/akash.webp";
-import amir from "./assets/images/amir.webp";
+import akash from "./assets/images/akash.png";
+import amir from "./assets/images/amir.jpg";
 import faraz from "./assets/images/faraz.jpg";
 import haard from "./assets/images/haard.jpg";
 import harshit from "./assets/images/harshit.jpg";
 import khushi from "./assets/images/khushi.webp";
-import parinaz from "./assets/images/parinaz.webp";
+import parinaz from "./assets/images/parinaz.jpg";
 import sanjana from "./assets/images/sanjana.jpg";
 import shreya from "./assets/images/shreya.jpg";
 import javan from "./assets/images/javan.png";
-import amin from "./assets/images/amin.jpg";
+import amin from "./assets/images/amin.png";
 
 import aaryaNoBG from "./assets/images/aaryaNoBG.png";
 import aasthaNoBG from "./assets/images/aasthaNoBG.png";

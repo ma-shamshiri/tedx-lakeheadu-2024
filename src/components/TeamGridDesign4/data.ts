@@ -152,9 +152,9 @@ export const members: Member[] = [
         id: 12,
         imageSrc: amir,
         profileSrc: "/amirmohammad-tayeban",
-        firstName: "Amir",
+        firstName: "Sam",
         lastName: "Tayeba",
-        fullName: "Seyed Amirmohammad Tayeban",
+        fullName: "Sam Tayeba",
         role: "Deputy Director of Finance"
     },
 

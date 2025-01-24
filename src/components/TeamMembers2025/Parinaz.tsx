@@ -34,14 +34,14 @@ const Parinaz: React.FC = () => {
           firstName="Parinaz"
           lastName="Beigi"
           fullName="Parinaz Beigi"
-          title="Coming soon.."
+          title="Master of Education | Lakehead University"
           role="Curator Manager"
           imageSrc={parinazNoBG}
           badgeSrc={aminBadge}
-          linkedinHref="https://ca.linkedin.com/"
-          twitterHref="https://twitter.com/"
+          linkedinHref="https://ca.linkedin.com/in/parinaz-gharooni-beigi-12b465219/"
+          twitterHref="mailto:pgharoon@lakeheadu.ca/"
           tedHref="https://www.instagram.com/"
-          quoteText={t("Coming soon.. Stay tuned for an intriguing biography!")}
+          quoteText={t("Parinaz Gharooni Beigi holds a Master of Education degree from Lakehead University and a Bachelor’s degree in English Literature and Creative Writing from Khayyam University. She currently works as an educator with the Lakehead School Board and as a research assistant at the Thunder Bay Regional Health Research Institute, focusing on teaching, mentorship, and fostering inclusivity. She also serves as a curator leader for TEDxLakeheadU, contributing to community engagement and inspiring ideas.")}
           icon={FaComputer}
         />
         <BlockFooter />

@@ -34,7 +34,7 @@ const Faraz: React.FC = () => {
           firstName="Faraz"
           lastName="Khorsandi"
           fullName="Faraz Khorsandi"
-          title="MSc. in Civil Engineering"
+          title="MSc. in Civil Engineering | Lakehead University"
           role="Project Director"
           imageSrc={farazNoBG}
           badgeSrc={aminBadge}
