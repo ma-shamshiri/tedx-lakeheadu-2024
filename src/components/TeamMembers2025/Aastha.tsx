@@ -34,14 +34,14 @@ const Aastha: React.FC = () => {
           firstName="Aastha"
           lastName="Malhotra"
           fullName="Aastha Malhotra"
-          title="Coming soon.."
+          title="Master of Science in Management | Lakehead University"
           role="Sponsorship and Outreach Manager"
           imageSrc={aasthaNoBG}
           badgeSrc={aminBadge}
-          linkedinHref="https://ca.linkedin.com/"
-          twitterHref="https://twitter.com/"
+          linkedinHref="https://ca.linkedin.com/in/aastha29/"
+          twitterHref="mailto:tedxsponsorship@lakeheadu.ca/"
           tedHref="https://www.instagram.com/"
-          quoteText={t("Coming soon.. Stay tuned for an intriguing biography!")}
+          quoteText={t("Aastha Malhotra, Sponsorship Director at TEDxLakeheadU, leverages her marketing expertise to forge transformative partnerships. A Master of Science in Management graduate from Lakehead University, she also excels as a Marketing Specialist at Northern Peak HR and Social Media Strategist at Perfect Fit Lingerie & Fashion. Passionate about connecting bold ideas with communities, Aastha views sponsorship as a catalyst for positive change. She actively volunteers with organizations like the Rotary Club and Terry Fox Foundation, bringing people together to amplify voices, spark ideas, and inspire impactful conversations in Thunder Bay.")}
           icon={FaComputer}
         />
         <BlockFooter />

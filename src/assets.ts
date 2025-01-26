@@ -259,7 +259,7 @@ import amir from "./assets/images/amir.jpg";
 import faraz from "./assets/images/faraz.jpg";
 import haard from "./assets/images/haard.jpg";
 import harshit from "./assets/images/harshit.jpg";
-import khushi from "./assets/images/khushi.webp";
+import khushi from "./assets/images/khushi.jpg";
 import parinaz from "./assets/images/parinaz.jpg";
 import sanjana from "./assets/images/sanjana.jpg";
 import shreya from "./assets/images/shreya.jpg";

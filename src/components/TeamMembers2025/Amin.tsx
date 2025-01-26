@@ -38,7 +38,7 @@ const Amin: React.FC = () => {
           role="Web Designer"
           imageSrc={aminNewNoBG}
           badgeSrc={aminBadge}
-          linkedinHref="https://ca.linkedin.com/"
+          linkedinHref="https://ca.linkedin.com/in/ma-shamshiri/"
           twitterHref="mailto:ma.shamshiri@gmail.com/"
           tedHref="https://www.instagram.com/"
           quoteText={t("aminQuote")}

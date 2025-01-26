@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {aminBadge, javanNoBG, khushiNoBG } from "../../assets";
+import { aminBadge, javanNoBG, khushiNoBG } from "../../assets";
 import { BlockFooter } from "../BlockFooter";
 import { BlockTeamProfiles } from "../BlockTeamProfiles";
 import { FaComputer } from "react-icons/fa6";
@@ -34,14 +34,14 @@ const Khushi: React.FC = () => {
           firstName="Khushi"
           lastName="Shah"
           fullName="Khushi Shah"
-          title="Coming soon.."
+          title="Bachelor's in computer science | Lakehead University"
           role="Curator Manager"
           imageSrc={khushiNoBG}
           badgeSrc={aminBadge}
-          linkedinHref="https://ca.linkedin.com/"
-          twitterHref="https://twitter.com/"
+          linkedinHref="https://ca.linkedin.com/in/khushi-shah-compsci?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app/"
+          twitterHref="mailto:kshah30@lakeheadu.ca/"
           tedHref="https://www.instagram.com/"
-          quoteText={t("Coming soon.. Stay tuned for an intriguing biography!")}
+          quoteText={t("Khushi Shah, Curating Manager at TEDxLakeheadU, collaborates to spotlight diverse speakers and foster innovation. A final-year Computer Science student at Lakehead University, she graduates this April, having also completed a Software Development Engineer internship. Her blend of academic and practical experience fuels her passion for technology and meaningful connections. Beyond work, Khushi enjoys reading and dancing, embracing creativity and collaboration in all she does. Through her dedication and problem-solving mindset, she contributes to impactful conversations and events, embodying the TEDx mission of sparking positive change in the community.")}
           icon={FaComputer}
         />
         <BlockFooter />
