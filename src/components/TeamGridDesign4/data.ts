@@ -133,7 +133,7 @@ export const members: Member[] = [
         firstName: "Amin",
         lastName: "Shamshiri",
         fullName: "Mohammad Amin Shamshiri",
-        role: "Wesbite Designer"
+        role: "Web Designer"
     },
 
     // ======================== Aarya Sadhwani ========================
