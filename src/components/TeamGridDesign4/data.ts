@@ -177,6 +177,6 @@ export const members: Member[] = [
         firstName: "Andrei",
         lastName: "Rosario",
         fullName: "Andrei Rosario",
-        role: "Co-Director of Sponsorship"
+        role: "Manager of Grants"
     },
 ];

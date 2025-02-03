@@ -35,7 +35,7 @@ const Andrei: React.FC = () => {
                     lastName="Rosario"
                     fullName="Andrei Rosario"
                     title="Independent Events and Marketing Consultant | Rotarian"
-                    role="Director of Grant Writing"
+                    role="Manager of Grants"
                     imageSrc={andreiNoBG}
                     badgeSrc={aminBadge}
                     linkedinHref="https://ca.linkedin.com/in/andrei-rosario/"
