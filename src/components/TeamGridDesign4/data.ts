@@ -89,7 +89,7 @@ export const members: Member[] = [
         firstName: "Khushi",
         lastName: "Shah",
         fullName: "Khushi Shah",
-        role: "Curator Manager"
+        role: "Curation Manager"
     },
 
     // ======================== Parinaz Beigi ========================
@@ -100,7 +100,7 @@ export const members: Member[] = [
         firstName: "Parinaz",
         lastName: "Beigi",
         fullName: "Parinaz Beigi",
-        role: "Curator Manager"
+        role: "Curation Manager"
     },
 
     // ======================== Javan Chhatwal ========================
@@ -133,7 +133,7 @@ export const members: Member[] = [
         firstName: "Amin",
         lastName: "Shamshiri",
         fullName: "Mohammad Amin Shamshiri",
-        role: "Web Designer"
+        role: "Website Designer"
     },
 
     // ======================== Aarya Sadhwani ========================

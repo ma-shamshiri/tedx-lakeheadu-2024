@@ -15,7 +15,7 @@ const BlockSocialMediaCarousel: React.FC = () => {
         centerMode: true,        // Centers the active slide
         autoplay: true,          // Enables automatic sliding
         cssEase: "linear",       // Ensures smooth, linear transitions
-        speed: 6000,             // Set a high speed for the continuous effect
+        speed: 15000,             // Set a high speed for the continuous effect
         autoplaySpeed: 0,        // No delay between slides (set to 0)
         pauseOnHover: false,     // Prevent pausing when hovered
         focusOnSelect: true,     // Allows users to focus on slides

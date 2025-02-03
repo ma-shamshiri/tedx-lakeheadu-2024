@@ -35,7 +35,7 @@ const Amin: React.FC = () => {
           lastName="Shamshiri"
           fullName="Amin Shamshiri"
           title="Full-Stack Software Engineer | EnerZam Inc."
-          role="Web Designer"
+          role="Website Designer"
           imageSrc={aminNewNoBG}
           badgeSrc={aminBadge}
           linkedinHref="https://ca.linkedin.com/in/ma-shamshiri/"

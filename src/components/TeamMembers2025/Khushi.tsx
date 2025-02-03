@@ -35,7 +35,7 @@ const Khushi: React.FC = () => {
           lastName="Shah"
           fullName="Khushi Shah"
           title="Bachelor's in computer science | Lakehead University"
-          role="Curator Manager"
+          role="Curation Manager"
           imageSrc={khushiNoBG}
           badgeSrc={aminBadge}
           linkedinHref="https://ca.linkedin.com/in/khushi-shah-compsci?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app/"

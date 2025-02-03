@@ -88,7 +88,7 @@ export const slides: Slide[] = [
         firstName: "Khushi",
         lastName: "Shah",
         fullName: "Khushi Shah",
-        role: "Curator Manager"
+        role: "Curation Manager"
     },
 
     // ======================== Parinaz Beigi ========================
@@ -99,7 +99,7 @@ export const slides: Slide[] = [
         firstName: "Parinaz",
         lastName: "Beigi",
         fullName: "Parinaz Beigi",
-        role: "Curator Manager"
+        role: "Curation Manager"
     },
 
     // ======================== Javan Chhatwal ========================

@@ -35,7 +35,7 @@ const Parinaz: React.FC = () => {
           lastName="Beigi"
           fullName="Parinaz Beigi"
           title="Master of Education | Lakehead University"
-          role="Curator Manager"
+          role="Curation Manager"
           imageSrc={parinazNoBG}
           badgeSrc={aminBadge}
           linkedinHref="https://ca.linkedin.com/in/parinaz-gharooni-beigi-12b465219/"
