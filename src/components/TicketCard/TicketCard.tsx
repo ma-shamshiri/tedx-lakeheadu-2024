@@ -241,13 +241,13 @@ const TicketCard = () => {
                         >
                             {t("yourTicketAwaits")}
                         </Text>
-                        {/* <Text
+                        <Text
                             color={useColorModeValue("gray.100", "gray.100")}
                             fontSize={{ base: "1.7rem", lg: "2.5rem" }}
                             lineHeight="1.4"
                         >
-                            Stay tuned for updates – we’re working to bring you an amazing experience!
-                        </Text> */}
+                            Ticket sales will begin mid-next week. Stay tuned!
+                        </Text>
                     </Box>
                 </motion.div>
                 <motion.div
