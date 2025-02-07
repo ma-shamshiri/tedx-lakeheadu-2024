@@ -239,15 +239,15 @@ const TicketCard = () => {
                             fontWeight="bold"
                             lineHeight="1.4"
                         >
-                            Tickets Coming Soon!
+                            {t("yourTicketAwaits")}
                         </Text>
-                        <Text
+                        {/* <Text
                             color={useColorModeValue("gray.100", "gray.100")}
                             fontSize={{ base: "1.7rem", lg: "2.5rem" }}
                             lineHeight="1.4"
                         >
                             Stay tuned for updates – we’re working to bring you an amazing experience!
-                        </Text>
+                        </Text> */}
                     </Box>
                 </motion.div>
                 <motion.div
@@ -268,10 +268,10 @@ const TicketCard = () => {
                             <Link
                                 key={index}
                                 as={RouterLink}
-                                to={"#"}
+                                to={"https://www.zeffy.com/en-CA/ticketing/tedx-lakeheadu-connecting-for-change"}
                                 cursor="pointer"
-                            // target="_blank"
-                            // rel="noopener noreferrer"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <Box
                                     className="card"
@@ -376,6 +376,7 @@ const TicketCard = () => {
                                                 fontFamily="'Acme', sans-serif"
                                                 // textTransform="uppercase"
                                                 letterSpacing="1px"
+                                                textAlign="center"
                                             >
                                                 {data.type}
                                             </Text>
@@ -395,7 +396,7 @@ const TicketCard = () => {
                                                 </HStack>
                                                 <HStack gap={7}>
                                                     <FaRegClock />
-                                                    <Text> 9 AM - 5 PM</Text>
+                                                    <Text> 9 AM - 6 PM</Text>
                                                 </HStack>
                                             </Box>
                                             <Box

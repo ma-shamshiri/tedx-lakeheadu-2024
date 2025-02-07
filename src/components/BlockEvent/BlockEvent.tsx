@@ -87,8 +87,8 @@ const MotionBox = motion(Box);
 const BlockEvent: React.FC = () => {
     const ref = useRef<HTMLDivElement>(null);
 
-    const buttonHoverTextColor = useColorModeValue("black", "#FF0000");
-    const buttonHoverBorderColor = useColorModeValue("black", "#FF0000");
+    const buttonHoverTextColor = useColorModeValue("#FF0000", "#FF0000");
+    const buttonHoverBorderColor = useColorModeValue("#FF0000", "#FF0000");
 
     const iconColor = useColorModeValue("#160578", "#4299E1");
     const iconBorderColor = useColorModeValue("#63B3ED", "gray.400");
@@ -156,7 +156,7 @@ const BlockEvent: React.FC = () => {
                             >
                                 <Text
                                     className="h2"
-                                    color={useColorModeValue("gray.800", "#16F8B6")}
+                                    color={useColorModeValue("#16F8B6", "#16F8B6")}
                                     // color={useColorModeValue("#f04e2d", "#354E41")}
                                     marginBottom="1rem"
                                     marginTop="0"
@@ -168,7 +168,7 @@ const BlockEvent: React.FC = () => {
                                 </Text>
                                 <Text
                                     className="p"
-                                    color={useColorModeValue("gray.700", "gray.200")}
+                                    color={useColorModeValue("gray.200", "gray.200")}
                                     // color={useColorModeValue("red", "#3B5B40")}
                                     fontSize={{ base: "1.5rem", lg: "2.1rem" }}
                                     // fontWeight="bold"
@@ -260,7 +260,7 @@ const BlockEvent: React.FC = () => {
                                             9:00 AM
                                         </Text>
                                         <Text fontSize={{ base: "1.8rem", lg: "2rem" }}>
-                                            5:00 PM
+                                            6:00 PM
                                         </Text>
                                     </Box>
                                 </VStack>
