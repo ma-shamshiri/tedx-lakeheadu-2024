@@ -66,6 +66,7 @@ import KariChiappetta from '../components/Speakers2025/KariChiappetta';
 import KristopherBlairAlexander from '../components/Speakers2025/KristopherBlairAlexander';
 import RichardTogman from '../components/Speakers2025/RichardTogman';
 import UmeHabiba from '../components/Speakers2025/UmeHabiba';
+import Yash from '../components/TeamMembers2025/Yash';
 
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
@@ -140,6 +141,7 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/team/parinaz-beigi/" element={<Parinaz />} />
         <Route path="/team/sanjana-ravi/" element={<Sanjana />} />
         <Route path="/team/shreya-pradhan/" element={<Shreya />} />
+        <Route path="/team/yash-amethiya/" element={<Yash />} />
       </Routes>
     </AnimatePresence>
   );

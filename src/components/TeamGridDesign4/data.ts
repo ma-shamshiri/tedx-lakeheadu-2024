@@ -13,6 +13,7 @@ import {
     sanjana,
     shreya,
     andrei,
+    yasha,
 } from "../../assets";
 
 export interface Member {
@@ -178,5 +179,14 @@ export const members: Member[] = [
         lastName: "Rosario",
         fullName: "Andrei Rosario",
         role: "Manager of Grants"
+    },
+    {
+        id: 15,
+        imageSrc: yasha,
+        profileSrc: "/yash-amethiya",
+        firstName: "Yash",
+        lastName: "Amethiya",
+        fullName: "Yash Amethiya",
+        role: "Operations Manager and Director of Volunteers"
     },
 ];

@@ -315,7 +315,13 @@ import kari_chiappetta from "./assets/images/kari_chiappetta.jpg";
 import kristopher_blair_alexander from "./assets/images/kristopher_blair_alexander.jpg";
 import richard_togman from "./assets/images/richard_togman.jpg";
 
+import yashNoBG from "./assets/images/yashNoBG.png";
+import yasha from "./assets/images/yasha.png";
+
+
 export {
+    yashNoBG,
+    yasha,
     albert_brule,
     alvin_law,
     ben_wise,
