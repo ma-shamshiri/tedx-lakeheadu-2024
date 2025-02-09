@@ -307,8 +307,22 @@ import facebook02 from "./assets/images/facebook02.png";
 import andrei from "./assets/images/andrei.jpg";
 import andreiNoBG from "./assets/images/andreiNoBG.png";
 
+import albert_brule from "./assets/images/albert_brule.jpg";
+import alvin_law from "./assets/images/alvin_law.jpg";
+import ben_wise from "./assets/images/ben_wise.png";
+import darren_chiu from "./assets/images/darren_chiu.jpg";
+import kari_chiappetta from "./assets/images/kari_chiappetta.jpg";
+import kristopher_blair_alexander from "./assets/images/kristopher_blair_alexander.jpg";
+import richard_togman from "./assets/images/richard_togman.jpg";
 
 export {
+    albert_brule,
+    alvin_law,
+    ben_wise,
+    darren_chiu,
+    kari_chiappetta,
+    kristopher_blair_alexander,
+    richard_togman,
     andrei,
     andreiNoBG,
     linkedin01,

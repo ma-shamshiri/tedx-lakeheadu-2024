@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { BlockFooter } from "../components/BlockFooter";
-import { BlockSpeakerGrid } from "../components/BlockSpeakerGrid";
 import { motion } from "framer-motion";
 import { Navigationbar } from "../components/Navigationbar";
 import { useTranslation } from "react-i18next";
-import { PageTransition } from "../components/PageTransition";
-import { ComingSoonSpeakersPage } from "../components/ComingSoonSpeakersPage";
+import BlockSpeakerGrid2025 from "../components/BlockSpeakerGrid2025";
+// import { PageTransition } from "../components/PageTransition";
 
 const SpeakersPage: React.FC = () => {
   const { t } = useTranslation();
@@ -29,8 +28,7 @@ const SpeakersPage: React.FC = () => {
         onAnimationComplete={handleBoxLoad}
       >
         <Navigationbar />
-        <ComingSoonSpeakersPage />
-        {/* <BlockSpeakerGrid /> */}
+        <BlockSpeakerGrid2025 />
         <BlockFooter />
       </motion.div>
     </>

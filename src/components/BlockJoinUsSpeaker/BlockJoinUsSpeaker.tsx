@@ -3,6 +3,7 @@ import { Box, Text, useColorModeValue } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import SpeakerForm from "./SpeakerForm";
 import { speakerBackgroundImage } from "../../assets";
+import SpeakerForm2 from "./SpeakerForm2";
 
 export const BlockJoinUsSpeaker: React.FC = () => {
   const { t } = useTranslation();
@@ -78,7 +79,8 @@ export const BlockJoinUsSpeaker: React.FC = () => {
           paddingTop={{ base: "35rem" }}
           paddingLeft={{ lg: "15rem" }}
         >
-          <SpeakerForm />
+          {/* <SpeakerForm /> */}
+          <SpeakerForm2/>
         </Box>
       </Box>
     </Box>

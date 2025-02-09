@@ -58,6 +58,14 @@ import Parinaz from '../components/TeamMembers2025/Parinaz';
 import Sanjana from '../components/TeamMembers2025/Sanjana';
 import Shreya from '../components/TeamMembers2025/Shreya';
 import Andrei from '../components/TeamMembers2025/Andrei';
+import AlbertBrule from '../components/Speakers2025/AlbertBrule';
+import AlvinLaw from '../components/Speakers2025/AlvinLaw';
+import BenWise from '../components/Speakers2025/BenWise';
+import DarrenChiu from '../components/Speakers2025/DarrenChiu';
+import KariChiappetta from '../components/Speakers2025/KariChiappetta';
+import KristopherBlairAlexander from '../components/Speakers2025/KristopherBlairAlexander';
+import RichardTogman from '../components/Speakers2025/RichardTogman';
+import UmeHabiba from '../components/Speakers2025/UmeHabiba';
 
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
@@ -74,7 +82,6 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/joinus/team/" element={<JoinUsTeamPage />} />
         <Route path="/joinus/speaker/" element={<JoinUsSpeakerPage />} />
         <Route path="/joinus/sponsor/" element={<JoinUsSponsorPage />} />
-        <Route path="/speakers/" element={<SpeakersPage />} />
         <Route path="/theme/" element={<ThemePage />} />
         {/* <Route path="/tedx-2023/myra-virgil/" element={<MyraVirgil />} />
         <Route path="/tedx-2023/kira-dolhan/" element={<KiraDolhan />} />
@@ -90,6 +97,16 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/team/design2/" element={<TeamPageDesign2 />} />
         <Route path="/team/design3/" element={<TeamPageDesign3 />} />
         <Route path="/team/design4/" element={<TeamPageDesign4 />} />
+
+        <Route path="/speakers/" element={<SpeakersPage />} />
+        <Route path="/speakers/albert-brule" element={<AlbertBrule />} />
+        <Route path="/speakers/alvin-law" element={<AlvinLaw />} />
+        <Route path="/speakers/ben-wise" element={<BenWise />} />
+        <Route path="/speakers/darren-chiu" element={<DarrenChiu />} />
+        <Route path="/speakers/kari-chiappetta" element={<KariChiappetta />} />
+        <Route path="/speakers/kristopher-blair-alexander" element={<KristopherBlairAlexander />} />
+        <Route path="/speakers/richard-togman" element={<RichardTogman />} />
+        <Route path="/speakers/ume-habiba" element={<UmeHabiba />} />
 
         {/* <Route path="/tedx-2023/samin-majidi/" element={<SaminMajidi />} />
         <Route path="/tedx-2023/fatemeh-tavanaei/" element={<FatemehTavanaei />} />
