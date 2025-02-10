@@ -31,7 +31,7 @@ const BlockSponsors2025: React.FC = () => {
                     lineHeight="1.2"
                     paddingBottom="2rem"
                 >
-                    Meet Our Changemakers
+                    Meet Our Partners
                 </Text>
             </Box>
 
@@ -45,7 +45,7 @@ const BlockSponsors2025: React.FC = () => {
                         mb={4}
                     // mt={10}
                     >
-                        Visionary Partners
+                        Visionary
                     </Text>
                     <Divider borderColor={dividerColor} borderWidth={2} mb={6} />
                     <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={6}>
@@ -67,7 +67,7 @@ const BlockSponsors2025: React.FC = () => {
                         mb={4}
                         mt={10}
                     >
-                        Catalyst Partners
+                        Catalyst
                     </Text>
                     <Divider borderColor={dividerColor} borderWidth={2} mb={6} />
                     <SimpleGrid columns={{ base: 1, lg: 1 }} spacing={6}>
@@ -86,7 +86,7 @@ const BlockSponsors2025: React.FC = () => {
                         mb={4}
                         mt={10}
                     >
-                        Advocates Partners
+                        Advocate
                     </Text>
                     <Divider borderColor={dividerColor} borderWidth={2} mb={6} />
                     <SimpleGrid columns={{ base: 2, lg: 2 }} spacing={6}>
@@ -108,7 +108,7 @@ const BlockSponsors2025: React.FC = () => {
                         mb={4}
                         mt={10}
                     >
-                        Connector Partners
+                        Connector
                     </Text>
                     <Divider borderColor={dividerColor} borderWidth={2} mb={6} />
                     <SimpleGrid columns={{ base: 1, lg: 1 }} spacing={6}>
