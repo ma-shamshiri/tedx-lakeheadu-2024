@@ -38,9 +38,9 @@ const Yash: React.FC = () => {
           role="Operations Manager and Director of Volunteers"
           imageSrc={yashNoBG}
           badgeSrc={aminBadge}
-          linkedinHref="#"
-          twitterHref="#"
-          tedHref="https://www.instagram.com/"
+          linkedinHref="https://ca.linkedin.com/in/yash-ga"
+          twitterHref="mailto:spradha1@lakeheadu.ca/"
+          tedHref="https://www.instagram.com/anonymously_yash/"
           quoteText={t("I'm here at TEDxLakeheadU to bring people together, and create a space where ideas turn into action. As Operations Manager and Director of Volunteers at TEDxLakeheadU, I oversee logistics and lead a passionate team to create a seamless event experience. With a Master’s in Computer Science from Lakehead University, my work bridges technology and healthcare, making complex information accessible. Passionate about education, I teach programming through storytelling and interactive learning. At TEDxLakeheadU, I blend innovation, leadership, and storytelling to inspire, challenge, and connect. Let’s make this event a celebration of knowledge, creativity, and impact!")}
           icon={FaComputer}
         />

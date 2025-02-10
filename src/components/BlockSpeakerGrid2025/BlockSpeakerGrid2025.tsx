@@ -64,14 +64,20 @@ const BlockSpeakerGrid2025 = () => {
         <Box width="100%" overflow="hidden">
             {isLargeScreen ? (
                 <Flex height="100%" width="100%">
-                    <SimpleGrid columns={{ base: 1, md: 3, lg: 4, xl: 4 }} spacing={0}>
+                    <SimpleGrid columns={{ base: 1, md: 3, lg: 3 }} spacing={0}>
                         {items.map((item, index) => (
                             <Link
                                 as={RouterLink}
                                 to={`/speakers/${item.profileSrc}`}
                                 href={item.profileSrc}
                             >
-                                <Flex key={item.firstName} direction="row" alignItems="stretch" flex="1" height="100%">
+                                <Flex
+                                    key={item.firstName}
+                                    direction="row"
+                                    alignItems="stretch"
+                                    flex="1"
+                                    height="100%"
+                                >
                                     <Box flex="1" position="relative" height="100%" overflow="hidden">
                                         <Box
                                             className="item-wrapper"
@@ -128,8 +134,8 @@ const BlockSpeakerGrid2025 = () => {
                                                 gap={{ base: "0", lg: "4rem" }}
                                             >
                                                 <Text
-                                                    fontSize="5rem"
-                                                    fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
+                                                    fontSize="4rem"
+                                                    fontFamily="'Acme', sans-serif"
                                                     paddingTop={{ base: "initial", lg: "10rem" }}
                                                 >
                                                     {item.fullName}
@@ -150,7 +156,7 @@ const BlockSpeakerGrid2025 = () => {
                                     {index < items.length - 1 && (
                                         <Box
                                             width="1px"
-                                            height="100vh"
+                                            height="60vh"
                                             bg={useColorModeValue("gray.600", "gray")}
                                             flexShrink={0}
                                         />
@@ -232,7 +238,7 @@ const BlockSpeakerGrid2025 = () => {
                                             gap="4rem"
                                         >
                                             <Text
-                                                fontSize="4rem"
+                                                fontSize="3.5rem"
                                                 fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : "'Acme', sans-serif"}
                                             >
                                                 {item.fullName}

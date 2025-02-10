@@ -314,12 +314,28 @@ import darren_chiu from "./assets/images/darren_chiu.jpg";
 import kari_chiappetta from "./assets/images/kari_chiappetta.jpg";
 import kristopher_blair_alexander from "./assets/images/kristopher_blair_alexander.jpg";
 import richard_togman from "./assets/images/richard_togman.jpg";
-
 import yashNoBG from "./assets/images/yashNoBG.png";
 import yasha from "./assets/images/yasha.png";
-
+import ume_habiba from "./assets/images/ume_habiba.jpg";
+import charmaine_mccraw from "./assets/images/charmaine_mccraw.png";
+import sponsor_lakeheadu from "./assets/images/sponsor_lakeheadu.png";
+import sponsor_opg from "./assets/images/sponsor_opg.png";
+import sponsor_rbc from "./assets/images/sponsor_rbc.png";
+import sponsor_rigin from "./assets/images/sponsor_rigin.png";
+import sponsor_tbcc from "./assets/images/sponsor_tbcc.png";
+import sponsor_tbh from "./assets/images/sponsor_tbh.png";
+import sponsor_lusu from "./assets/images/sponsor_lusu.png";
 
 export {
+    sponsor_lusu,
+    sponsor_opg,
+    sponsor_lakeheadu,
+    sponsor_rbc,
+    sponsor_rigin,
+    sponsor_tbcc,
+    sponsor_tbh,
+    charmaine_mccraw,
+    ume_habiba,
     yashNoBG,
     yasha,
     albert_brule,

@@ -1,4 +1,14 @@
-import { albert_brule, alvin_law, ben_wise, darren_chiu, kari_chiappetta, kristopher_blair_alexander, richard_togman } from "../../assets";
+import {
+    albert_brule,
+    alvin_law,
+    ben_wise,
+    charmaine_mccraw,
+    darren_chiu,
+    kari_chiappetta,
+    kristopher_blair_alexander,
+    richard_togman,
+    ume_habiba
+} from "../../assets";
 
 export interface Item {
     id?: number;
@@ -11,15 +21,15 @@ export interface Item {
 }
 
 export const items: Item[] = [
-    // ======================== Kari Chiappetta ========================
+    // ======================== Alvin Law ========================
     {
         id: 1,
-        imageSrc: kari_chiappetta,
-        profileSrc: "kari-chiappetta",
-        firstName: "Kari",
-        lastName: "Kari Chiappetta",
-        fullName: "Kari Chiappetta",
-        // role: "organizer"
+        imageSrc: alvin_law,
+        profileSrc: "alvin-law",
+        firstName: "Alvin",
+        lastName: "Law",
+        fullName: "Alvin Law",
+        // role: "eventDirector"
     },
 
     // ======================== Ben Wise ========================
@@ -33,31 +43,9 @@ export const items: Item[] = [
         // role: "coOrganizer"
     },
 
-    // ======================== Alvin Law ========================
-    {
-        id: 3,
-        imageSrc: alvin_law,
-        profileSrc: "alvin-law",
-        firstName: "Alvin",
-        lastName: "Law",
-        fullName: "Alvin Law",
-        // role: "eventDirector"
-    },
-
-    // ======================== Kristopher Blair Alexander ========================
-    {
-        id: 4,
-        imageSrc: kristopher_blair_alexander,
-        profileSrc: "kristopher-blair-alexander",
-        firstName: "Kristopher",
-        lastName: "Blair Alexander",
-        fullName: "Kristopher Blair Alexander",
-        // role: "webDeveloper"
-    },
-
     // ======================== Darren Chiu ========================
     {
-        id: 5,
+        id: 3,
         imageSrc: darren_chiu,
         profileSrc: "darren-chiu",
         firstName: "Darren",
@@ -66,10 +54,32 @@ export const items: Item[] = [
         // role: "logisticsCoordinator"
     },
 
+    // ======================== Charmaine McCraw ========================
+    {
+        id: 4,
+        imageSrc: charmaine_mccraw,
+        profileSrc: "charmaine-mccraw",
+        firstName: "Charmaine",
+        lastName: "McCraw",
+        fullName: "Charmaine McCraw",
+        // role: "logisticsCoordinator"
+    },
+
+    // ======================== Kristopher Blair Alexander ========================
+    {
+        id: 5,
+        imageSrc: kristopher_blair_alexander,
+        profileSrc: "kristopher-blair-alexander",
+        firstName: "Kristopher",
+        lastName: "Alexander",
+        fullName: "Kristopher Alexander",
+        // role: "webDeveloper"
+    },
+
     // ======================== Ume Habiba ========================
     {
         id: 6,
-        // imageSrc: mohammadhasanBG2024,
+        imageSrc: ume_habiba,
         profileSrc: "ume-habiba",
         firstName: "Ume",
         lastName: "Habiba",
@@ -88,9 +98,20 @@ export const items: Item[] = [
         // role: "audienceExperienceDesigner"
     },
 
-    // ======================== Richard Togman ========================
+    // ======================== Kari Chiappetta ========================
     {
         id: 8,
+        imageSrc: kari_chiappetta,
+        profileSrc: "kari-chiappetta",
+        firstName: "Kari",
+        lastName: "Kari Chiappetta",
+        fullName: "Kari Chiappetta",
+        // role: "organizer"
+    },
+
+    // ======================== Richard Togman ========================
+    {
+        id: 9,
         imageSrc: richard_togman,
         profileSrc: "richard-togman",
         firstName: "Richard",
@@ -98,4 +119,15 @@ export const items: Item[] = [
         fullName: "Richard Togman",
         // role: "visualDesigner"
     },
+
+    // ======================== ??? ========================
+    // {
+    //     id: 9,
+    //     imageSrc: richard_togman,
+    //     profileSrc: "richard-togman",
+    //     firstName: "Richard",
+    //     lastName: "Togman",
+    //     fullName: "Richard Togman",
+    //     role: "visualDesigner"
+    // },
 ];

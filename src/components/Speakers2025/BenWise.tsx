@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { alvin_law, ben_wise } from "../../assets";
+import { ben_wise } from "../../assets";
 import { BlockFooter } from "../BlockFooter";
 import { motion } from "framer-motion";
 import { Navigationbar } from "../Navigationbar";

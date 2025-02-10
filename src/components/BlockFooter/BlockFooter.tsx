@@ -476,7 +476,7 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      to={"/joinus/team"}
+                      to={"/team"}
                       cursor="pointer"
                       fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
@@ -489,7 +489,7 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      to={"/joinus/speaker"}
+                      to={"/speakers"}
                       cursor="pointer"
                       fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}
@@ -502,7 +502,7 @@ export const BlockFooter = () => {
                     <Link
                       className="link-arrow"
                       as={RouterLink}
-                      to={"/joinus/sponsor"}
+                      to={"/sponsors"}
                       cursor="pointer"
                       fontSize={subTitleFontSize}
                       color={useColorModeValue("gray.800", "#777")}

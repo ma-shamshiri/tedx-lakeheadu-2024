@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { richard_togman } from "../../assets";
+import { richard_togman, ume_habiba } from "../../assets";
 import { BlockFooter } from "../BlockFooter";
 import { motion } from "framer-motion";
 import { Navigationbar } from "../Navigationbar";
@@ -34,7 +34,7 @@ const UmeHabiba: React.FC = () => {
                     // title={t("Associate Professor in the Department of Geography | McGill")}
                     biography={t("My name is Ume (pronounced oo-may), and I am an incoming software engineer at Microsoft in NYC! I recently graduated from the University of Maryland, College Park with a Bachelors of Science in Information and Computer Sciences and a minor in QUEST. I became a part of the GWC sisterhood in 2017, when I started the first Girls Who Code club at my high school. Throughout my tech journey, I faced imposter syndrome, countless microagressions, and the unwillingness of my peers to help me when I struggled. This inspired me to start posting on social media, where I was able to post all about my experiences (the good and the bad) which was aimed at inspiring other women to enter the field of tech! I also am a fashion lover—which is another aspect of my life that is constantly compromised because of me being in a male dominated field. However, this also motivated me to post fashion content and express myself through beauty and clothes—something I had never seen done before in the corporate technology sector. I aspire to be the representation I never saw, and use my experiences and insights to make a better tech future for us all!")}
                     talkTopic={t("Being Yourself in the 2025 Job Market")}
-                    // imageSrc={richard_togman}
+                    imageSrc={ume_habiba}
                 />
                 <BlockFooter />
             </motion.div>

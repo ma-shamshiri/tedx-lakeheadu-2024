@@ -12,16 +12,17 @@ export const MenuLinks = ({ menuLinks }: MenuLinksProps) => {
         <div className="relative group" key={link.name}>
           <Box
             as="li"
-            paddingX={{ lg:"1rem", xl:"2.2rem" }}
+            paddingX={{ lg: "0.8rem", xl: "1.7rem" }}
             borderRadius="lg"
             cursor="pointer"
           >
             <Text
               color={useColorModeValue("gray.800", "gray.200")}
-              fontSize={{ md: "1rem", lg:"1.4rem", xl: "1.6rem" }}
-              // fontFamily="'Acme', sans-serif"
-              // fontFamily="'Englebert', cursive"
-              // fontWeight="semibold"
+              fontSize={{ md: "1rem", lg: "1.4rem", xl: "1.5rem" }}
+            // fontFamily="'Acme', sans-serif"
+            // fontFamily="'Englebert', cursive"
+            // fontWeight="semibold"
+            textAlign="center"
             >
               {t(link.name)}
             </Text>
