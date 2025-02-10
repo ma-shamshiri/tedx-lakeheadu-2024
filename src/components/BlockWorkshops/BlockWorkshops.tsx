@@ -19,17 +19,17 @@ const workshops = [
             "This session will focus on identifying our individual strengths and talents, as well as those of the people around us. Insights will be provided into our inherent traits, what each of us requires to navigate our daily activities efficiently, and the most effective methods for communicating and collaborating with different temperaments. The ultimate aim is to foster an appreciation for the diverse contributions that everyone brings to the table.",
     },
     {
-        speaker: "Dr. Kris Alexander",
-        topic: "AI in Education: Live Interactive Demonstrations and Open Discussion",
-        description:
-            "This interactive workshop builds on the TEDx Talk \"How AI and Level Up Education\" by providing hands-on demonstrations and real-world applications of AI tools in educational settings. Participants will witness real-time demonstrations of AI tools like ChatGPT, Claude, PI, and Coconote while engaging in open dialogue about implementing these technologies across different educational levels. The session will showcase OBS, demonstrating how AI can make education more accessible and efficient when teaching online.",
-    },
-    {
         speaker: "The Origins",
         topic:
             "Career Exploration VR Workshop: A Journey Through Professions & Seven Grandfather Teachings",
         description:
             "Imagine stepping into a virtual world where you can explore various professions firsthand before choosing your career path. This Career Exploration VR Workshop is designed to provide an immersive experience where participants can step into the shoes of different professionals—doctors, engineers, artists, teachers, pilots, and many more—while integrating the wisdom of the Seven Grandfather Teachings (Wisdom, Love, Respect, Bravery, Honesty, Humility, and Truth).",
+    },
+    {
+        speaker: "Dr. Kris Alexander",
+        topic: "AI in Education: Live Interactive Demonstrations and Open Discussion",
+        description:
+            "This interactive workshop builds on the TEDx Talk \"How AI and Level Up Education\" by providing hands-on demonstrations and real-world applications of AI tools in educational settings. Participants will witness real-time demonstrations of AI tools like ChatGPT, Claude, PI, and Coconote while engaging in open dialogue about implementing these technologies across different educational levels. The session will showcase OBS, demonstrating how AI can make education more accessible and efficient when teaching online.",
     },
 ];
 
