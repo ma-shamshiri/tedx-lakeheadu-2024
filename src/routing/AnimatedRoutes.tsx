@@ -44,6 +44,8 @@ import VideoGalleryPage from './VideoGalleryPage';
 import Yash from '../components/TeamMembers2025/Yash';
 import WorkshopsPage from './WorkshopsPage';
 import SponsorsPage from './SponsorsPage';
+import MichaelMorrow from '../components/Speakers2025/MichaelMorrow';
+import RichardDobson from '../components/Speakers2025/RichardDobson';
 
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
@@ -76,6 +78,9 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/speakers/richard-togman" element={<RichardTogman />} />
         <Route path="/speakers/ume-habiba" element={<UmeHabiba />} />
         <Route path="/speakers/charmaine-mccraw" element={<CharmaineMccraw />} />
+        <Route path="/speakers/michael-morrow" element={<MichaelMorrow />} />
+        <Route path="/speakers/richard-dobson" element={<RichardDobson />} />
+
         <Route path="/team/aarya-sadhwani/" element={<Aarya />} />
         <Route path="/team/aastha-malhotra/" element={<Aastha />} />
         <Route path="/team/akash-balaji/" element={<Akash />} />

@@ -6,6 +6,8 @@ import {
     darren_chiu,
     kari_chiappetta,
     kristopher_blair_alexander,
+    michael_morrow,
+    richard_dobson,
     richard_togman,
     ume_habiba
 } from "../../assets";
@@ -109,9 +111,31 @@ export const items: Item[] = [
         // role: "organizer"
     },
 
+        // ======================== Michael Morrow ========================
+        {
+            id: 9,
+            imageSrc: michael_morrow,
+            profileSrc: "michael-morrow",
+            firstName: "Michael",
+            lastName: "Morrow",
+            fullName: "Michael Morrow",
+            // role: "visualDesigner"
+        },
+
+    // ======================== Richard Dobson ========================
+    {
+        id: 10,
+        imageSrc: richard_dobson,
+        profileSrc: "richard-dobson",
+        firstName: "Richard",
+        lastName: "Dobson",
+        fullName: "Richard Dobson",
+        // role: "visualDesigner"
+    },
+
     // ======================== Richard Togman ========================
     {
-        id: 9,
+        id: 11,
         imageSrc: richard_togman,
         profileSrc: "richard-togman",
         firstName: "Richard",
@@ -119,15 +143,4 @@ export const items: Item[] = [
         fullName: "Richard Togman",
         // role: "visualDesigner"
     },
-
-    // ======================== ??? ========================
-    // {
-    //     id: 9,
-    //     imageSrc: richard_togman,
-    //     profileSrc: "richard-togman",
-    //     firstName: "Richard",
-    //     lastName: "Togman",
-    //     fullName: "Richard Togman",
-    //     role: "visualDesigner"
-    // },
 ];
