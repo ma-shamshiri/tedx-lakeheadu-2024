@@ -329,9 +329,13 @@ import richard_dobson from "./assets/images/richard_dobson.png";
 import michael_morrow from "./assets/images/michael_morrow.png";
 import sponsor_cedc from "./assets/images/sponsor_cedc.png";
 import sponsor_impact from "./assets/images/sponsor_impact.png";
+import sponsor_peterson from "./assets/images/sponsor_peterson.png";
+import sponsor_nphr from "./assets/images/sponsor_nphr.png";
 
 
 export {
+    sponsor_peterson,
+    sponsor_nphr,
     sponsor_cedc,
     sponsor_impact,
     michael_morrow,
