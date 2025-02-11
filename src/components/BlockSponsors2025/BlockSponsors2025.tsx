@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text, VStack, SimpleGrid, Divider, useColorModeValue, Image } from "@chakra-ui/react";
-import { sponsor_lakeheadu, sponsor_lusu, sponsor_opg, sponsor_rbc, sponsor_tbcc, sponsor_tbh } from "../../assets";
+import { sponsor_cedc, sponsor_impact, sponsor_lakeheadu, sponsor_lusu, sponsor_opg, sponsor_rbc, sponsor_tbcc, sponsor_tbh } from "../../assets";
 
 const BlockSponsors2025: React.FC = () => {
     const bgGradient = useColorModeValue(
@@ -19,13 +19,13 @@ const BlockSponsors2025: React.FC = () => {
             flexDirection="column"
             alignItems="center"
             width="100%"
-            bg={useColorModeValue("#EFE8D6", "#0D1224")}
+            bg={useColorModeValue("#fff", "#fff")}
             overflow="hidden"
         >
             {/* Header */}
             <Box textAlign="center" padding="6rem 2rem">
                 <Text
-                    color={useColorModeValue("#16F8B6", "#16F8B6")}
+                    color={useColorModeValue("gray.800", "gray.800")}
                     fontSize={{ base: "2.5rem", lg: "4rem" }}
                     fontWeight="bold"
                     lineHeight="1.2"
@@ -41,7 +41,7 @@ const BlockSponsors2025: React.FC = () => {
                     <Text
                         fontSize={{ base: "2.3rem", lg: "2.5rem" }}
                         fontWeight="bold"
-                        color={useColorModeValue("gray.800", "gray.100")}
+                        color={useColorModeValue("gray.800", "gray.800")}
                         mb={4}
                     // mt={10}
                     >
@@ -61,18 +61,21 @@ const BlockSponsors2025: React.FC = () => {
                 {/* Section: Catalyst Partners */}
                 <Box>
                     <Text
-                        fontSize={{ base: "2.1rem", lg: "2.3rem" }}
+                        fontSize={{ base: "2.3rem", lg: "2.5rem" }}
                         fontWeight="bold"
-                        color={useColorModeValue("gray.800", "gray.100")}
+                        color={useColorModeValue("gray.800", "gray.800")}
                         mb={4}
                         mt={10}
                     >
                         Catalyst
                     </Text>
                     <Divider borderColor={dividerColor} borderWidth={2} mb={6} />
-                    <SimpleGrid columns={{ base: 1, lg: 1 }} spacing={6}>
+                    <SimpleGrid columns={{ base: 2, lg: 2 }} spacing={6}>
                         <Box display="flex" justifyContent="center" alignItems="center">
                             <Image src={sponsor_lusu} alt="LUSU" boxSize={{ base: "80%", lg: "300px" }} objectFit="contain" />
+                        </Box>
+                        <Box display="flex" justifyContent="center" alignItems="center">
+                            <Image src={sponsor_impact} alt="sponsor_impact" boxSize={{ base: "80%", lg: "300px" }} objectFit="contain" />
                         </Box>
                     </SimpleGrid>
                 </Box>
@@ -80,21 +83,24 @@ const BlockSponsors2025: React.FC = () => {
                 {/* Section: Advocates Partners */}
                 <Box>
                     <Text
-                        fontSize={{ base: "1.9rem", lg: "2.1rem" }}
+                        fontSize={{ base: "2.3rem", lg: "2.5rem" }}
                         fontWeight="bold"
-                        color={useColorModeValue("gray.800", "gray.100")}
+                        color={useColorModeValue("gray.800", "gray.800")}
                         mb={4}
                         mt={10}
                     >
                         Advocate
                     </Text>
                     <Divider borderColor={dividerColor} borderWidth={2} mb={6} />
-                    <SimpleGrid columns={{ base: 2, lg: 2 }} spacing={6}>
+                    <SimpleGrid columns={{ base: 3, lg: 3 }} spacing={6}>
                         <Box display="flex" justifyContent="center" alignItems="center">
-                            <Image src={sponsor_tbcc} alt="TBCC" boxSize={{ base: "100%", lg: "300px" }} objectFit="contain" />
+                            <Image src={sponsor_tbcc} alt="sponsor_tbcc" boxSize={{ base: "100%", lg: "300px" }} objectFit="contain" />
                         </Box>
                         <Box display="flex" justifyContent="center" alignItems="center">
-                            <Image src={sponsor_opg} alt="OPG" boxSize={{ base: "100%", lg: "300px" }} objectFit="contain" />
+                            <Image src={sponsor_opg} alt="sponsor_opg" boxSize={{ base: "100%", lg: "300px" }} objectFit="contain" />
+                        </Box>
+                        <Box display="flex" justifyContent="center" alignItems="center">
+                            <Image src={sponsor_cedc} alt="sponsor_cedc" boxSize={{ base: "100%", lg: "300px" }} objectFit="contain" />
                         </Box>
                     </SimpleGrid>
                 </Box>
@@ -102,9 +108,9 @@ const BlockSponsors2025: React.FC = () => {
                 {/* Section: Connector Partners */}
                 <Box>
                     <Text
-                        fontSize={{ base: "1.7rem", lg: "1.9rem" }}
+                        fontSize={{ base: "2.3rem", lg: "2.5rem" }}
                         fontWeight="bold"
-                        color={useColorModeValue("gray.800", "gray.100")}
+                        color={useColorModeValue("gray.800", "gray.800")}
                         mb={4}
                         mt={10}
                     >
