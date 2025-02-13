@@ -35,6 +35,7 @@ const KariChiappetta: React.FC = () => {
                     biography={t("Kari Chiappetta is an award-winning author, speaker, and facilitator who has delivered workshops and keynote addresses to audiences across a variety of industries. Her sessions are designed to inspire and motivate audiences to achieve their goals, overcome challenges, and reach their full potential. Kari’s authentic and engaging personality enables her to connect with audiences on a personal level. She is known for her high-energy presentations and her ability to keep audiences engaged and entertained throughout her speeches. Her use of humor, personal anecdotes, and interactive exercises helps to create a positive and dynamic atmosphere, making her presentations memorable and impactful.")}
                     talkTopic={t("Recognizing our Strengths and Celebrating our Gifts")}
                     imageSrc={kari_chiappetta}
+                    videoSrc=""
                 />
                 <BlockFooter />
             </motion.div>

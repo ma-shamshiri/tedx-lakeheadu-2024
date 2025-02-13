@@ -109,7 +109,7 @@ const sponsorsData = [
             },
             {
                 name: "Peterson",
-                url: "#",
+                url: "https://patersonfoundation.ca",
                 src: sponsor_peterson,
                 alt: "sponsor_peterson",
                 boxSize: { base: "70%", lg: "200px" },

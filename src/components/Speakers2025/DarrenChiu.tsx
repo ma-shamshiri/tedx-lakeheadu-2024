@@ -35,6 +35,7 @@ const DarrenChiu: React.FC = () => {
                     biography={t("Darren is a Strategy Lead at Google, helping brands across all industries develop best in class marketing strategies. With over 13 years of industry experience, Darren’s passion for communication doesn’t stop at the world of business and sales. In his spare time, Darren moonlights as a comedian, stretching his creativity and perspectives beyond the boundaries of his professional life. As a recognition of his dedication and expertise, Darren was selected as an Emerging Leader in Advertising & Sales by The Peak in 2023.")}
                     talkTopic={t("The Elephant in the Room: How Emotions Drive Change")}
                     imageSrc={darren_chiu}
+                    videoSrc=""
                 />
                 <BlockFooter />
             </motion.div>

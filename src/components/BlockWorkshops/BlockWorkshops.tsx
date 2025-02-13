@@ -13,7 +13,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const workshops = [
     {
-        speaker: "The Origins",
+        speaker: "Origin",
         topic:
             "Career Exploration VR Workshop: A Journey Through Professions & Seven Grandfather Teachings",
         description:

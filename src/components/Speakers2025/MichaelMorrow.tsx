@@ -35,6 +35,7 @@ const MichaelMorrow: React.FC = () => {
                     biography={t("Mike Morrow is a Legacy Strategist, Certified Financial Planner, and author of four best-selling books. Since 1989, he has helped Canadian families and business owners achieve financial security. His expertise is regularly featured in national media, and he has presented to over 60,000 financial advisors and clients worldwide. A two-time president of his local Financial Advisors Association of Canada chapter and a Diamond Knight of the MDRT Foundation.")}
                     talkTopic={t("The rules of money")}
                     imageSrc={michael_morrow}
+                    videoSrc=""
                 />
                 <BlockFooter />
             </motion.div>

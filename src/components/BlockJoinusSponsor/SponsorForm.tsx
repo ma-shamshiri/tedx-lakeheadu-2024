@@ -106,7 +106,7 @@ const SponsorForm = () => {
           </Text>
           <Text
             className="form_subtitle"
-            fontSize={{ base: "1.7rem", lg: "2.2rem" }}
+            fontSize={{ base: "1.8rem", lg: "2.2rem" }}
             color={useColorModeValue("gray.700", "gray.200")}
             marginTop={{ lg: "1rem" }}
             padding="1rem 2rem"
@@ -118,12 +118,12 @@ const SponsorForm = () => {
         <Box
           className="inner_form_container"
           bg={useColorModeValue("gray.300", "#29303c")}
-          padding="2.5rem"
+          padding={{ base: "2rem", lg: "2.5rem" }}
           marginTop="1rem"
           marginX="auto"
           borderRadius="lg"
           boxShadow="lg"
-          width="85%"
+          width={{ base: "90%", lg: "90%" }}
         >
           {/* --------------------- Company Name field --------------------- */}
           <Box className="company_name_field" width="100%" paddingBottom="2rem">

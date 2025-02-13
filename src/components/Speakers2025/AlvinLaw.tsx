@@ -35,6 +35,7 @@ const AlvinLaw: React.FC = () => {
                     biography={t("Alvin Law is an international keynote speaker, 2-time Hall of Fame recipient, Emmy Award winner, world-class musician, and best-selling author. In his 40+ years of public speaking, Alvin has entertained more than 2 million people across 5 different continents. His incredible true story inspires audiences to explore their lives with greater imagination and transform their obstacles into amazing opportunities. When he’s not on stage, Alvin loves mastering sports video games and prides himself on being the best driver in his family. He shares his life with his wife and business partner, Darlene; his adult son, Vance; and assorted pets. They all live in beautiful Calgary, Canada.")}
                     talkTopic={t("Step Into Your Greatness")}
                     imageSrc={alvin_law}
+                    videoSrc=""
                 />
                 <BlockFooter />
             </motion.div>

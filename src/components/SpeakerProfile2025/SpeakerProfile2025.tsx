@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
-import { Box, Flex, HStack, Text, useColorModeValue, VStack } from '@chakra-ui/react';
-import { BsChatRightQuoteFill } from 'react-icons/bs';
+import { Box, Flex, HStack, Image, Text, useColorModeValue, VStack } from '@chakra-ui/react';
+import ReactPlayer from "react-player";
 import { useTranslation } from 'react-i18next';
 import { FaMicrophoneAlt } from 'react-icons/fa';
+import { videoThumbnail } from '../../assets';
 
 interface SpeakerProfile2025Props {
     name?: string;
@@ -11,6 +12,7 @@ interface SpeakerProfile2025Props {
     talkTopic?: string;
     biography?: string;
     imageSrc?: string;
+    videoSrc?: string;
 }
 const SpeakerProfile2025: React.FC<SpeakerProfile2025Props> = ({
     name,
@@ -18,6 +20,7 @@ const SpeakerProfile2025: React.FC<SpeakerProfile2025Props> = ({
     talkTopic,
     biography,
     imageSrc,
+    videoSrc,
 }) => {
     const { t, i18n } = useTranslation();
 
@@ -304,6 +307,50 @@ const SpeakerProfile2025: React.FC<SpeakerProfile2025Props> = ({
                     </Flex>
                 </Box>
             </Box>
+            {videoSrc !== "" ? (
+                <Flex
+                    className="video_section_container"
+                    position="relative"
+                    width="100%"
+                    height="fit-content"
+                    bg={useColorModeValue("#000", "#000")}
+                    justifyContent="center"
+                    alignItems="center"
+                    paddingY={{ base: "4rem", lg: "6rem" }}
+                    flexDirection="column"
+                    overflow="hidden"
+                >
+                    <Text
+                        className="speaker_title"
+                        fontSize={{ base: "2.2rem", lg: "3rem" }}
+                        fontWeight="bold"
+                        textAlign="center"
+                        color={useColorModeValue("white", "white")}
+                        paddingBottom="2.5rem"
+                    >
+                        The Voice Behind the Ideas
+                    </Text>
+                    <Box
+                        className="video_embed_container"
+                        position="relative"
+                        width={{ base: "90vw", lg: "55vw" }}
+                        height={{ base: "50.5vw", lg: "31vw" }}
+                        // border="1px solid red"
+                        borderRadius="10px"
+                        overflow="hidden"
+                    >
+                        <iframe
+                            src={videoSrc}
+                            width="100%"
+                            height="100%"
+                            allow="autoplay"
+                            allowFullScreen
+                        />
+                    </Box>
+                </Flex>
+            ) : (
+                <></>
+            )}
         </Box>
     );
 };

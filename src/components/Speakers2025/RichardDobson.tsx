@@ -35,6 +35,7 @@ const RichardDobson: React.FC = () => {
                     biography={t("He is dedicated to simplifying client communications for financial advisors, authoring 'Make Simplicity Your Superpower' to provide practical communication strategies. Through his 'applied simplistics' approach, he helps advisors clarify the why and how for clients, improving understanding and outcomes. Drawing on his experience as a former FINRA Broker-Dealer Chief Compliance Officer, he emphasizes that clear, effective communication prevents misunderstandings, protects firms, and builds stronger client relationships—proving simplicity is good business.")}
                     talkTopic={t("Make Simplicity Your Superpower, Communication Hacks Every Financial Advisor Should Know")}
                     imageSrc={richard_dobson}
+                    videoSrc=""
                 />
                 <BlockFooter />
             </motion.div>

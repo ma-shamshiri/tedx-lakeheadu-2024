@@ -85,7 +85,7 @@ const BlockSpeakerGrid2025 = () => {
                                             height="100%"
                                             _hover={{
                                                 ".img-overlay": {
-                                                    top: "-100%", // Move overlay out of view on hover
+                                                    left: "100%", // Move overlay out of view on hover
                                                 },
                                                 img: {
                                                     transform: "scale(1)", // Scale image back to normal size on hover
@@ -108,11 +108,11 @@ const BlockSpeakerGrid2025 = () => {
                                                 className="img-overlay"
                                                 position="absolute"
                                                 bg={useColorModeValue("#dfdbd5", "#232323")}
-                                                opacity="0.92"
-                                                top="0"
+                                                opacity="0.72"
+                                                top="40%"
                                                 left="0"
                                                 width="100%"
-                                                height="100%"
+                                                height="20%"
                                                 transition="1.5s cubic-bezier(0.075, 0.82, 0.165, 1)"
                                                 zIndex="1"
                                             />
@@ -136,7 +136,7 @@ const BlockSpeakerGrid2025 = () => {
                                                 <Text
                                                     fontSize="4rem"
                                                     fontFamily="'Acme', sans-serif"
-                                                    paddingTop={{ base: "initial", lg: "10rem" }}
+                                                    // paddingTop={{ base: "initial", lg: "10rem" }}
                                                 >
                                                     {item.fullName}
                                                 </Text>
@@ -205,18 +205,18 @@ const BlockSpeakerGrid2025 = () => {
                                         className="img-overlay"
                                         position="absolute"
                                         bg={useColorModeValue("#dfdbd5", "#232323")}
-                                        opacity="0.92"
-                                        top="0"
+                                        opacity="0.72"
+                                        top="60%"
                                         left="0"
                                         width="100%"
-                                        height="100%"
+                                        height="30%"
                                         transition="1s cubic-bezier(0.075, 0.82, 0.165, 1)"
                                         zIndex="1"
                                     />
                                     <Box
                                         className="item-copy"
                                         position="absolute"
-                                        top="0"
+                                        top="25%"
                                         width="100%"
                                         height="100%"
                                         display="flex"
