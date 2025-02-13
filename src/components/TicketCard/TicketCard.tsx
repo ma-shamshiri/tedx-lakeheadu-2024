@@ -236,8 +236,8 @@ const TicketCard = () => {
                         <Text
                             color={useColorModeValue("white", "gray.100")}
                             marginBottom="2rem"
-                            fontSize={{ base: "2rem", lg: "4rem" }}
-                            fontWeight="bold"
+                            fontSize={{ base: "3rem", lg: "4rem" }}
+                            fontWeight="1000"
                             lineHeight="1.4"
                         >
                             Tickets On Sale – Get Yours Today!
@@ -252,7 +252,7 @@ const TicketCard = () => {
                         </Text> */}
                         <Box
                             color={useColorModeValue("gray.100", "gray.100")}
-                            fontSize={{ base: "1.7rem", lg: "2.5rem" }}
+                            fontSize={{ base: "2rem", lg: "2.5rem" }}
                             fontWeight="bold"
                             lineHeight="1.4"
                         >
