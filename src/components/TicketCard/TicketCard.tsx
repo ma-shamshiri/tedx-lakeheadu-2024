@@ -10,6 +10,7 @@ import { FaCalendarAlt } from "react-icons/fa";
 import { FaRegClock } from "react-icons/fa6";
 import "./styles.css";
 import CountdownTimer from "../BlockHero2023/CountdownTimer";
+import Typed from "react-typed";
 
 const variants: { [key: string]: any } = {
     initial: {
@@ -239,15 +240,30 @@ const TicketCard = () => {
                             fontWeight="bold"
                             lineHeight="1.4"
                         >
-                            {t("yourTicketAwaits")}
+                            Tickets On Sale – Get Yours Today!
                         </Text>
-                        <Text
+                        {/* <Text
                             color={useColorModeValue("gray.100", "gray.100")}
                             fontSize={{ base: "1.7rem", lg: "2.5rem" }}
+                            fontWeight="bold"
                             lineHeight="1.4"
                         >
-                            Ticket sales will begin mid-next week. Stay tuned!
-                        </Text>
+                            100 Tickets. One Chance. Don’t Miss Out!
+                        </Text> */}
+                        <Box
+                            color={useColorModeValue("gray.100", "gray.100")}
+                            fontSize={{ base: "1.7rem", lg: "2.5rem" }}
+                            fontWeight="bold"
+                            lineHeight="1.4"
+                        >
+                            <Typed
+                                strings={["100 Tickets. One Chance. Don’t Miss Out!"]}
+                                typeSpeed={40}
+                                backSpeed={20}
+                                loop
+                                backDelay={3000}
+                            />
+                        </Box>
                     </Box>
                 </motion.div>
                 <motion.div
@@ -379,6 +395,15 @@ const TicketCard = () => {
                                                 textAlign="center"
                                             >
                                                 {data.type}
+                                            </Text>
+                                            <Text
+                                                fontSize="2rem"
+                                                // fontFamily="'Acme', sans-serif"
+                                                letterSpacing="1px"
+                                                textAlign="center"
+                                                fontWeight="1000"
+                                            >
+                                                {data.limit}
                                             </Text>
                                             <Box
                                                 display="flex"

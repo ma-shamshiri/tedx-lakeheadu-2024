@@ -4,6 +4,7 @@ export interface CardData {
     frontCardColor: string;
     ticketColor: string;
     bgText: string;
+    limit: string;
 }
 
 export const cardData: CardData[] = [
@@ -13,6 +14,7 @@ export const cardData: CardData[] = [
         frontCardColor: "radial-gradient(circle, rgba(19,172,131,1) 0%, rgba(24,113,89,1) 95%, rgba(21,103,81,1) 100%)",
         ticketColor: "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(217,217,217,1) 0%, rgba(153,153,153,1) 0%, rgba(43,43,43,1) 100%)",
         bgText: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ab reprehenderit saepe, voluptatum sed cupiditate minus deleniti corporis, aperiam odio accusantium nesciunt expedita, harum quibusdam nostrum impedit optio nemo placeat quo ratione aut omnis. Architecto asperiores explicabo cumque ratione est.",
+        limit: "🔥 Only 75 Spots!"
     },
     // {
     //     type: "STUDENT PASS",
@@ -27,5 +29,6 @@ export const cardData: CardData[] = [
         frontCardColor: "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(117,39,161,1) 0%, rgba(82,41,135,1) 0%, rgba(26,5,55,1) 100%)",
         ticketColor: "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(217,217,217,1) 0%, rgba(153,153,153,1) 0%, rgba(43,43,43,1) 100%)",
         bgText: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ab reprehenderit saepe, voluptatum sed cupiditate minus deleniti corporis, aperiam odio accusantium nesciunt expedita, harum quibusdam nostrum impedit optio nemo placeat quo ratione aut omnis. Architecto asperiores explicabo cumque ratione est.",
+        limit: "🎓 Just 25 Students!"
     },
 ];
