@@ -19,6 +19,7 @@ import {
     sponsor_rbc,
     sponsor_tbcc,
     sponsor_tbh,
+    sponsor_tbt,
 } from "../../assets";
 
 const sponsorsData = [
@@ -31,14 +32,14 @@ const sponsorsData = [
                 url: "https://www.rbcroyalbank.com",
                 src: sponsor_rbc,
                 alt: "RBC",
-                boxSize: { base: "100%", lg: "350px" },
+                boxSize: { base: "85%", lg: "350px" },
             },
             {
                 name: "Lakehead University",
                 url: "https://www.lakeheadu.ca",
                 src: sponsor_lakeheadu,
                 alt: "Lakehead University",
-                boxSize: { base: "100%", lg: "350px" },
+                boxSize: { base: "85%", lg: "350px" },
             },
         ],
     },
@@ -51,7 +52,7 @@ const sponsorsData = [
                 url: "https://lusu.ca/",
                 src: sponsor_lusu,
                 alt: "LUSU",
-                boxSize: { base: "80%", lg: "300px" },
+                boxSize: { base: "78%", lg: "300px" },
             },
             {
                 name: "Impact Promotions",
@@ -64,28 +65,35 @@ const sponsorsData = [
     },
     {
         title: "Advocate",
-        gridColumn: 3,
+        gridColumn: 4,
         logos: [
             {
                 name: "TB Chamber",
                 url: "https://www.tbchamber.ca",
                 src: sponsor_tbcc,
                 alt: "sponsor_tbcc",
-                boxSize: { base: "100%", lg: "300px" },
+                boxSize: { base: "83%", lg: "260px" },
             },
             {
                 name: "OPG",
                 url: "https://www.opg.com",
                 src: sponsor_opg,
                 alt: "sponsor_opg",
-                boxSize: { base: "100%", lg: "300px" },
+                boxSize: { base: "80%", lg: "260px" },
             },
             {
                 name: "CEDC",
                 url: "https://gotothunderbay.ca",
                 src: sponsor_cedc,
                 alt: "sponsor_cedc",
-                boxSize: { base: "100%", lg: "300px" },
+                boxSize: { base: "83%", lg: "260px" },
+            },
+            {
+                name: "TBT",
+                url: "https://www.tbte.ca",
+                src: sponsor_tbt,
+                alt: "sponsor_tbt",
+                boxSize: { base: "80%", lg: "220px" },
             },
         ],
     },
@@ -98,21 +106,21 @@ const sponsorsData = [
                 url: "https://www.thunderbayhydraulics.com",
                 src: sponsor_tbh,
                 alt: "sponsor_tbh",
-                boxSize: { base: "70%", lg: "200px" },
+                boxSize: { base: "80%", lg: "240px" },
             },
             {
                 name: "Northern Peak HR",
                 url: "https://northernpeakhr.com",
                 src: sponsor_nphr,
                 alt: "sponsor_nphr",
-                boxSize: { base: "70%", lg: "200px" },
+                boxSize: { base: "80%", lg: "240px" },
             },
             {
                 name: "Peterson",
                 url: "https://patersonfoundation.ca",
                 src: sponsor_peterson,
                 alt: "sponsor_peterson",
-                boxSize: { base: "70%", lg: "200px" },
+                boxSize: { base: "80%", lg: "240px" },
             },
         ],
     },
@@ -127,7 +135,7 @@ const BlockSponsors2025: React.FC = () => {
 
     return (
         <Box
-            bgGradient={bgGradient}
+            // bgGradient={bgGradient}
             py={12}
             px={6}
             minHeight="100vh"
@@ -135,7 +143,7 @@ const BlockSponsors2025: React.FC = () => {
             flexDirection="column"
             alignItems="center"
             width="100%"
-            bg="linear-gradient(to bottom, #3E2327, #8A0607)"
+            bg="linear-gradient(to bottom, #000000, #3b000a, #58000d, #800000, #990000, #b30000, #ff1a1a)"
             overflow="hidden"
         >
             <Box textAlign="center" padding="6rem 2rem">

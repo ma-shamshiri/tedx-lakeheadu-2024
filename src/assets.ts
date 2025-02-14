@@ -331,9 +331,10 @@ import sponsor_cedc from "./assets/images/sponsor_cedc.png";
 import sponsor_impact from "./assets/images/sponsor_impact.png";
 import sponsor_peterson from "./assets/images/sponsor_peterson.png";
 import sponsor_nphr from "./assets/images/sponsor_nphr.png";
-
+import sponsor_tbt from "./assets/images/sponsor_tbt.png";
 
 export {
+    sponsor_tbt,
     sponsor_peterson,
     sponsor_nphr,
     sponsor_cedc,
