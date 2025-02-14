@@ -35,7 +35,7 @@ const Javan: React.FC = () => {
           lastName="Chhatwal"
           fullName="Javan Chhatwal"
           title="Constituency Office Manager at Minister Patty Hajdu’s constituency office"
-          role="Operations Manager"
+          role="Design and Social Media Manager"
           imageSrc={javanNoBG}
           badgeSrc={aminBadge}
           linkedinHref="https://ca.linkedin.com/in/javanjyot-k-b0b85b23b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app/"
