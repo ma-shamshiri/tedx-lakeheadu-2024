@@ -8,6 +8,8 @@ import {
     useColorModeValue,
     Flex,
     Icon,
+    UnorderedList,
+    ListItem,
 } from "@chakra-ui/react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
@@ -27,9 +29,16 @@ const workshops = [
     },
     {
         speaker: "Kari Chiappetta",
-        topic: "Recognizing our Strengths and Celebrating our Gifts",
+        topic: "Embracing Change: Strategies for Effective Change Management",
         description:
-            "This session will focus on identifying our individual strengths and talents, as well as those of the people around us. Insights will be provided into our inherent traits, what each of us requires to navigate our daily activities efficiently, and the most effective methods for communicating and collaborating with different temperaments. The ultimate aim is to foster an appreciation for the diverse contributions that everyone brings to the table.",
+            "This session builds upon the insights shared in the keynote presentation 'Recognizing Our Strengths and Celebrating Our Gifts.' In this interactive workshop, participants will acquire knowledge and understanding of how different temperaments manage change. Through practical activities, participants will identify the various ways individuals respond to change, fostering an appreciation of these differences as strengths rather than weaknesses."
+        ,
+        keyTakeaways: [
+            "Gain an understanding of how each temperament manages change.",
+            "Learn strategies to assist others in managing change more effectively.",
+            "Recognize that individuals have varying needs and stressors that influence their reactions and responses to change.",
+            "Learn to appreciate our differences, viewing them as strengths rather than weaknesses.",
+        ],
     },
 ];
 
@@ -46,17 +55,20 @@ const BlockWorkshops: React.FC = () => {
             position="relative"
             width="100%"
             minHeight="100vh"
-            bg={useColorModeValue("#0D1224", "#0D1224")}
+            // bg={useColorModeValue("#0D1224", "#0D1224")}
+            bg={useColorModeValue(
+                "linear-gradient(180deg, #F1F1F1, #FFFFFF)",
+                "linear-gradient(180deg, #000000, #171923)"
+            )}
             overflow="hidden"
             display="flex"
             flexDirection="column"
             alignItems="center"
             py={10}
         >
-            {/* Header */}
             <Box textAlign="center" padding="6rem 2rem">
                 <Text
-                    color={useColorModeValue("#16F8B6", "#16F8B6")}
+                    color={useColorModeValue("gray.900", "#16F8B6")}
                     fontSize={{ base: "2.5rem", lg: "4rem" }}
                     fontWeight="bold"
                     lineHeight="1.2"
@@ -65,7 +77,7 @@ const BlockWorkshops: React.FC = () => {
                     {t("Beyond the Talks")}
                 </Text>
                 <Text
-                    color={useColorModeValue("gray.300", "gray.300")}
+                    color={useColorModeValue("gray.700", "gray.300")}
                     fontSize={{ base: "1.2rem", lg: "2.4rem" }}
                     mt={2}
                 >
@@ -73,12 +85,7 @@ const BlockWorkshops: React.FC = () => {
                 </Text>
             </Box>
 
-            {/* Workshop Cards */}
-            <Flex
-                width={{ base: "90%", lg: "55%" }}
-                flexDirection="column"
-                alignItems="stretch"
-            >
+            <Flex width={{ base: "90%", lg: "55%" }} flexDirection="column" alignItems="stretch">
                 <VStack spacing={6} align="stretch">
                     {workshops.map((workshop, index) => (
                         <Box
@@ -86,44 +93,34 @@ const BlockWorkshops: React.FC = () => {
                             p={5}
                             borderWidth={1}
                             borderRadius="lg"
-                            bg={useColorModeValue("gray.700", "gray.700")}
+                            bg={useColorModeValue("#E2E8F0", "gray.800")}
+                            boxShadow={useColorModeValue("0 0 15px 1px gray", "0 0 15px 1px black")}
                         >
-                            <Flex
-                                justifyContent="space-between"
-                                alignItems="center"
-                                cursor="pointer"
-                                onClick={() => toggleOpen(index)}
-                            >
+                            <Flex justifyContent="space-between" alignItems="center" cursor="pointer" onClick={() => toggleOpen(index)}>
                                 <Box flex="1">
-                                    <Text
-                                        fontWeight="bold"
-                                        fontSize={{ base: "1.5rem", lg: "2.5rem" }}
-                                        color={useColorModeValue("gray.100", "gray.100")}
-                                    >
+                                    <Text fontWeight="bold" fontSize={{ base: "1.5rem", lg: "2.5rem" }} color={useColorModeValue("gray.900", "gray.100")}>
                                         {workshop.speaker}
                                     </Text>
-                                    <Text
-                                        fontWeight="bold"
-                                        fontSize={{ base: "1.3rem", lg: "2.2rem" }}
-                                        color={useColorModeValue("gray.300", "gray.300")}
-                                    >
+                                    <Text fontWeight="bold" fontSize={{ base: "1.3rem", lg: "2.2rem" }} color={useColorModeValue("gray.700", "gray.300")}>
                                         {workshop.topic}
                                     </Text>
                                 </Box>
-                                <Icon
-                                    as={openIndex === index ? FaChevronUp : FaChevronDown}
-                                    color={useColorModeValue("gray.100", "gray.100")}
-                                    boxSize={6}
-                                />
+                                <Icon as={openIndex === index ? FaChevronUp : FaChevronDown} color={useColorModeValue("gray.900", "gray.100")} boxSize={6} />
                             </Flex>
                             <Collapse in={openIndex === index} animateOpacity>
-                                <Text
-                                    mt={4}
-                                    fontSize={{ base: "1.1rem", lg: "1.8rem" }}
-                                    color={useColorModeValue("gray.300", "gray.300")}
-                                >
+                                <Text mt={4} fontSize={{ base: "1.1rem", lg: "1.8rem" }} color={useColorModeValue("gray.700", "gray.300")}>
                                     {workshop.description}
                                 </Text>
+                                {workshop.keyTakeaways && (
+                                    <>
+                                        <Text fontWeight="bold" mt={4}>Key Takeaways:</Text>
+                                        <UnorderedList mt={2} pl={5} color={useColorModeValue("gray.700", "gray.300")}>
+                                            {workshop.keyTakeaways.map((point, i) => (
+                                                <ListItem key={i}>{point}</ListItem>
+                                            ))}
+                                        </UnorderedList>
+                                    </>
+                                )}
                             </Collapse>
                         </Box>
                     ))}
