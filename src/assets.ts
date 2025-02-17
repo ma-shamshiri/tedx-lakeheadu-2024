@@ -332,8 +332,15 @@ import sponsor_impact from "./assets/images/sponsor_impact.png";
 import sponsor_peterson from "./assets/images/sponsor_peterson.png";
 import sponsor_nphr from "./assets/images/sponsor_nphr.png";
 import sponsor_tbt from "./assets/images/sponsor_tbt.png";
+import workshop1 from "./assets/images/workshop1.jpg";
+import workshop2 from "./assets/images/workshop2.jpg";
+import workshop3 from "./assets/images/workshop3.jpg";
+
 
 export {
+    workshop1,
+    workshop2,
+    workshop3,
     sponsor_tbt,
     sponsor_peterson,
     sponsor_nphr,

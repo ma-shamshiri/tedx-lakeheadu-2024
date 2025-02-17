@@ -850,7 +850,7 @@ export const BlockFooter = () => {
               opacity="0.5"
               _dark={{ opacity: "0.3" }}
             >
-              Copyright 2024 TEDxLakeheadU
+              Copyright 2025 TEDxLakeheadU
             </Text>
           </Flex>
         </Grid>

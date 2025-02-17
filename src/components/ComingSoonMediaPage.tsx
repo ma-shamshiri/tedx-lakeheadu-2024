@@ -14,7 +14,10 @@ export const ComingSoonMediaPage: React.FC = () => {
     return (
         <Box
             className="block block--white"
-            bg={useColorModeValue("#EFE8D6", "#0D1224")}
+            bgGradient={useColorModeValue(
+                "linear(to-b, gray.100, white)",
+                "linear(to-b, black, gray.900)"
+            )}
             overflow={"hidden"}
             width="100%"
             height="70vh"

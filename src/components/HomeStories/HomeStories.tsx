@@ -11,8 +11,8 @@ const storyDuration = 4000; // Duration for each story in milliseconds
 const HomeStories: React.FC = () => {
     const { t } = useTranslation();
 
-    const buttonHoverTextColor = useColorModeValue("#FF0000", "#FF0000");
-    const buttonHoverBorderColor = useColorModeValue("#FF0000", "#FF0000");
+    const buttonHoverTextColor = useColorModeValue("#cb0000", "#cb0000");
+    const buttonHoverBorderColor = useColorModeValue("#cb0000", "#cb0000");
 
     const [activeStory, setActiveStory] = useState(0);
     const [direction, setDirection] = useState<'next' | 'prev'>('next');
@@ -92,14 +92,14 @@ const HomeStories: React.FC = () => {
                 <HStack>
                     <ScrollLink to="ticket-section" smooth={true} duration={500}>
                         <Button
-                            border="2px solid #FF0000"
+                            border="2px solid #cb0000"
                             borderRadius="10px"
                             cursor="pointer"
                             fontSize={{ base: "1.8rem", lg: "3.2rem" }}
                             padding={{ base: "0.5rem", lg: "2rem" }}
                             textAlign="center"
                             whiteSpace="nowrap"
-                            bg="#FF0000"
+                            bg="#cb0000"
                             color="#fff"
                             boxShadow="0px 6px 10px rgba(0, 0, 0, 0.2), 0px -6px 10px rgba(0, 0, 0, 0.2)"
                             display="inline-block"

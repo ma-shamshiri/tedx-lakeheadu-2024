@@ -73,7 +73,11 @@ const TeamGridDesign4: React.FC = () => {
             position="relative"
             width="100%"
             minHeight="100vh"
-            bg={useColorModeValue('#F6F3E3', '#0c0c0c')}
+            // bg={useColorModeValue('#F6F3E3', '#0c0c0c')}
+            bgGradient={useColorModeValue(
+                "linear(to-b, gray.100, white)",
+                "linear(to-b, black, gray.900)"
+            )}
             paddingY={{ base: '5rem', lg: '5rem' }}
             display="flex"
             flexDirection="column"
