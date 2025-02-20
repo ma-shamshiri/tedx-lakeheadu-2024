@@ -23,6 +23,7 @@ export const ComingSoonMediaPage: React.FC = () => {
             height="70vh"
             padding="10rem 2rem"
             margin="0 auto"
+            paddingTop={{ base: "3rem", lg: "12rem" }}
         >
 
             <Box className="block__header" textAlign="center" width="100%">
@@ -31,8 +32,8 @@ export const ComingSoonMediaPage: React.FC = () => {
                     marginBottom="1rem"
                     fontSize={{ base: "2.8rem", lg: "4rem" }}
                     fontWeight="bold"
-                    lineHeight="1.1"
-                    paddingY="1rem"
+                    lineHeight={{ base: "1.3", lg: "1.1" }}
+                    paddingY={"1rem"}
                     height={{ base: "8rem", md: "initial", lg: "initial" }}
                 >
                     <Typed
@@ -47,6 +48,7 @@ export const ComingSoonMediaPage: React.FC = () => {
                 <Text
                     color={useColorModeValue("gray.700", "gray.200")}
                     fontSize={{ base: "1.5rem", lg: "2.1rem" }}
+                    paddingTop={{ base: "2rem", lg: "initial" }}
                 >
                     {t("comingSoonMediaPageSubTitle")}
                 </Text>

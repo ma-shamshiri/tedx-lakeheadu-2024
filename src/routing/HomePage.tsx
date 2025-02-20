@@ -7,7 +7,6 @@ import { Navigationbar } from "../components/Navigationbar";
 // import { PageTransition } from "../components/PageTransition";
 // import { PageTransition2 } from "../components/PageTransition2";
 import TicketCard from "../components/TicketCard";
-import BlockCountdownTimer from "../components/BlockCountdownTimer";
 import HomeStories from "../components/HomeStories";
 import BlockSocialMediaCarousel from "../components/BlockSocialMediaCarousel";
 import TicketDividerSection from "../components/TicketDividerSection";

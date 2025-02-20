@@ -46,6 +46,7 @@ import WorkshopsPage from './WorkshopsPage';
 import SponsorsPage from './SponsorsPage';
 import MichaelMorrow from '../components/Speakers2025/MichaelMorrow';
 import RichardDobson from '../components/Speakers2025/RichardDobson';
+import AccommodationPage from './AccommodationPage';
 
 const AnimatedRoutes: React.FC = () => {
   const location = useLocation();
@@ -98,6 +99,7 @@ const AnimatedRoutes: React.FC = () => {
         <Route path="/team/yash-amethiya/" element={<Yash />} />
         <Route path="/sponsors/" element={<SponsorsPage />} />
         <Route path="/workshops/" element={<WorkshopsPage />} />
+        <Route path="/accommodation/" element={<AccommodationPage />} />
       </Routes>
     </AnimatePresence>
   );

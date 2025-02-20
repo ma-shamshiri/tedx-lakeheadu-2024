@@ -107,6 +107,7 @@ const SpeakerProfile2025: React.FC<SpeakerProfile2025Props> = ({
             minHeight="93vh"
             bg={useColorModeValue("#fff", "#0f0f0f")}
             overflow="hidden"
+            paddingTop={{ base: "1rem", lg: "6rem" }}
         >
             <Box
                 className="menu"

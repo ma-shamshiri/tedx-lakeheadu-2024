@@ -36,14 +36,14 @@ const QuickIcons: React.FC = () => {
         localStorage.setItem("headerIsOpen", JSON.stringify(isOpen));
     }, [isOpen]);
 
-    const instagramIconSize = useBreakpointValue({ md: "30px", lg: "28px" });
-    const instagramIconBoxSize = useBreakpointValue({ md: "33px", lg: "35px" });
+    const instagramIconSize = useBreakpointValue({ base: "30px", md: "30px", lg: "28px" });
+    const instagramIconBoxSize = useBreakpointValue({ base: "40px", md: "33px", lg: "35px" });
 
-    const facebookIconSize = useBreakpointValue({ md: "30px", lg: "21px" });
-    const facebookIconBoxSize = useBreakpointValue({ md: "33px", lg: "34px" });
+    const facebookIconSize = useBreakpointValue({ base: "30px", md: "30px", lg: "21px" });
+    const facebookIconBoxSize = useBreakpointValue({ base: "40px", md: "33px", lg: "34px" });
 
-    const linkedinIconSize = useBreakpointValue({ md: "30px", lg: "24px" });
-    const linkedinIconBoxSize = useBreakpointValue({ md: "33px", lg: "35px" });
+    const linkedinIconSize = useBreakpointValue({ base: "30px", md: "30px", lg: "24px" });
+    const linkedinIconBoxSize = useBreakpointValue({ base: "40px", md: "33px", lg: "35px" });
 
     const handleCloseModal = () => {
         setActiveModal(null);
@@ -138,6 +138,7 @@ const QuickIcons: React.FC = () => {
         <Flex align="center" gap={4}>
             {/* Toggle Button */}
             <IconButton
+                display={{ base: "none", md: "flex" }}
                 icon={isOpen ? <FaChevronRight size="16px" /> : <FaChevronLeft size="16px" />}
                 aria-label="Toggle Icons"
                 onClick={() => setIsOpen(!isOpen)}

@@ -13,21 +13,14 @@ import {
 import { Outlet } from "react-router-dom";
 
 import ColorModeSwitch from "./ColorModeSwitch";
-import LanguageSwitcher from "./LanguageSwitcher";
 import { Sidebar } from "./Sidebar";
-import { youChooseLogo, tedxWhite, tedxBlack } from "../../assets";
+import { tedxWhite, tedxBlack } from "../../assets";
 import { MenuLinks } from "../MenuLinks";
 import { navigationLinks } from "../layout/navigation-links";
-import { KbarInput } from "../KbarInput";
 import LanguageSwitcher2 from "./LanguageSwitcher2";
 import QuickIcons from "../QuickIcons";
-// import { HamburgerButton } from "../HamburgerButton";
-// import { MobileMenu } from "../MobileMenu";
-
 
 export const Navigationbar: React.FC = () => {
-  const location = useLocation();
-
   const { colorMode } = useColorMode();
 
   const tedxImg = colorMode === "dark" ? tedxWhite : tedxBlack;
@@ -52,10 +45,6 @@ export const Navigationbar: React.FC = () => {
     };
   }, [scrollPosition]);
 
-  // useEffect(() => {
-  //   setIsMobileMenuOpen(false);
-  // }, [location]);
-
   return (
     <>
       <Box
@@ -76,22 +65,24 @@ export const Navigationbar: React.FC = () => {
         bg={useColorModeValue("rgb(241,241,241)", "black")}
         py={{ base: "1.5rem" }}
         px={{ base: "1.5rem" }}
-        position="sticky"
         zIndex="999"
-        top={isNavVisible ? "0" : "-100px"}
-        transition="top 0.3s"
+        as="nav"
+        position={{ base: "sticky", lg: "fixed" }}
+        top={{ base: 0, lg: "0.3em" }}
+        width={{ base: "100%", md: "100%", lg: "90%" }}
+        height="75px"
+        padding={{ base: "0.4em 0.4em", lg: "0 2em" }}
+        left={{ base: "initial", lg: "50%" }}
+        transform={{ base: "initial", lg: "translateX(-50%)" }}
+        borderRadius={{ base: "2em", md: "2em" }}
+        alignContent="center"
+        boxShadow={useColorModeValue("0 0 10px 1px gray", "0 0 10px 1px #424242")}
       >
         <Flex
           justify={{ base: "space-between", lg: "space-between" }}
           align="center"
         >
           <Flex align="center">
-            {/* <div className="md:hidden">
-              <HamburgerButton
-                isOpen={isMobileMenuOpen}
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              />
-            </div> */}
             <Box
               zIndex="1000"
               marginTop="-10rem"
@@ -109,13 +100,9 @@ export const Navigationbar: React.FC = () => {
             >
               <Flex justifyContent={"center"} alignItems={"center"}>
                 <HStack>
-                  {/* <Image
-                    src={youChooseLogo}
-                    boxSize={{ base: "35px", md: "45px", lg: "45px", xl: "50px" }}
-                  /> */}
                   <Image
                     src={tedxImg}
-                    width={{ base: 160, md: 220, lg: 170, xl: 290 }}
+                    width={{ base: 160, md: 220, lg: 170, xl: 250 }}
                   />
                 </HStack>
               </Flex>
@@ -130,24 +117,19 @@ export const Navigationbar: React.FC = () => {
           {isLargeScreen ? (
             <HStack spacing={5} zIndex={999}>
               <Flex display={{ md: "none", lg: "block" }} paddingRight="1.5rem" >
-                {/* <KbarInput /> */}
               </Flex>
-              {/* <LanguageSwitcher /> */}
               <QuickIcons />
-              <LanguageSwitcher2 />
+              {/* <LanguageSwitcher2 /> */}
               <ColorModeSwitch />
             </HStack>
           ) : (
             <>
-              {/* <Image src={tedxImg} width={{ base: "50%", lg: 300 }} /> */}
-              <LanguageSwitcher2 />
+              {/* <LanguageSwitcher2 /> */}
+              <QuickIcons />
               <ColorModeSwitch />
             </>
           )}
         </Flex>
-        {/* <div className="md:hidden">
-          {isMobileMenuOpen && <MobileMenu menuLinks={navigationLinks} />}
-        </div> */}
       </Box>
       <Outlet />
     </>

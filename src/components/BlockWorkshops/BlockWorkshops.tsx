@@ -71,6 +71,7 @@ const BlockWorkshops: React.FC = () => {
             flexDirection="column"
             alignItems="center"
             py={10}
+            paddingTop={{ base: "initial", lg: "10rem" }}
         >
             <Box textAlign="center" padding="4rem 2rem" paddingBottom="7rem">
                 <Text
@@ -119,7 +120,7 @@ const BlockWorkshops: React.FC = () => {
                             fontWeight="bold"
                             borderRadius={{ base: "10px", lg: "full" }}
                             _selected={{ color: "white", bg: "#CB0000" }}
-                            _hover={{bg:"red.500"}}
+                            _hover={{ bg: "red.500", color: "white" }}
                         >
                             {workshop.speaker}
                         </Tab>

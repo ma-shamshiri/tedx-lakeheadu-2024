@@ -61,7 +61,12 @@ const BlockSpeakerGrid2025 = () => {
     }, [isLargeScreen]);
 
     return (
-        <Box width="100%" overflow="hidden">
+        <Box
+            width="100%"
+            overflow="hidden"
+            paddingTop={{ base: "1rem", lg: "10rem" }}
+            bg={useColorModeValue("#F1F1F1", "#000000")}
+        >
             {isLargeScreen ? (
                 <Flex height="100%" width="100%">
                     <SimpleGrid columns={{ base: 1, md: 3, lg: 3 }} spacing={0}>
@@ -136,7 +141,7 @@ const BlockSpeakerGrid2025 = () => {
                                                 <Text
                                                     fontSize="4rem"
                                                     fontFamily="'Acme', sans-serif"
-                                                    // paddingTop={{ base: "initial", lg: "10rem" }}
+                                                // paddingTop={{ base: "initial", lg: "10rem" }}
                                                 >
                                                     {item.fullName}
                                                 </Text>

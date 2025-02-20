@@ -125,6 +125,7 @@ const BlockEvent: React.FC = () => {
                 // minWidth="90rem"
                 overflow={"hidden"}
                 fontFamily={i18n.language === "fa" ? "'Rubik', sans-serif" : ""}
+                paddingTop={{ base: "initial", lg: "6rem" }}
             >
                 <Box
                     className="block container block-domain"

@@ -84,6 +84,7 @@ const TeamGridDesign4: React.FC = () => {
             justifyContent="center"
             alignItems="center"
             overflow="hidden"
+            paddingTop={{ base: "3rem", lg: "12rem" }}
         >
             <Box
                 className="block__header"

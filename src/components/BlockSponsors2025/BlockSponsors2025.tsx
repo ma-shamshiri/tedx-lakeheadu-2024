@@ -10,6 +10,8 @@ import {
 } from "@chakra-ui/react";
 import {
     sponsor_cedc,
+    sponsor_dtb,
+    sponsor_dtb2,
     sponsor_impact,
     sponsor_lakeheadu,
     sponsor_lusu,
@@ -99,7 +101,7 @@ const sponsorsData = [
     },
     {
         title: "Connector",
-        gridColumn: 3,
+        gridColumn: 4,
         logos: [
             {
                 name: "Thunder Bay Hydraulics",
@@ -121,6 +123,13 @@ const sponsorsData = [
                 src: sponsor_peterson,
                 alt: "sponsor_peterson",
                 boxSize: { base: "80%", lg: "240px" },
+            },
+            {
+                name: "Diversity Thunder Bay",
+                url: "https://www.diversitythunderbay.ca/",
+                src: sponsor_dtb,
+                alt: "sponsor_dtb",
+                boxSize: { base: "90%", lg: "350px" },
             },
         ],
     },
@@ -145,6 +154,7 @@ const BlockSponsors2025: React.FC = () => {
             width="100%"
             bg="linear-gradient(to bottom, #000000, #3b000a, #58000d, #800000, #990000, #b30000, #ff1a1a)"
             overflow="hidden"
+            paddingTop={{ base: "initial", lg: "6rem" }}
         >
             <Box textAlign="center" padding="6rem 2rem">
                 <Text

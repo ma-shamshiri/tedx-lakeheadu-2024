@@ -7,7 +7,7 @@ export const MenuLinks = ({ menuLinks }: MenuLinksProps) => {
   const { t } = useTranslation();
 
   return (
-    <ul className="flex px-1 lg:px-4">
+    <ul className="flex px-1 lg:px-4" style={{ alignItems: "center" }}>
       {menuLinks.map((link) => (
         <div className="relative group" key={link.name}>
           <Box
@@ -18,11 +18,12 @@ export const MenuLinks = ({ menuLinks }: MenuLinksProps) => {
           >
             <Text
               color={useColorModeValue("gray.800", "gray.200")}
-              fontSize={{ md: "1rem", lg: "1.4rem", xl: "1.5rem" }}
-            // fontFamily="'Acme', sans-serif"
-            // fontFamily="'Englebert', cursive"
-            // fontWeight="semibold"
-            textAlign="center"
+              fontSize={{ md: "1rem", lg: "1.3rem", xl: "1.4rem" }}
+              fontWeight="bold"
+              // fontFamily="'Acme', sans-serif"
+              // fontFamily="'Englebert', cursive"
+              // fontWeight="semibold"
+              textAlign="center"
             >
               {t(link.name)}
             </Text>

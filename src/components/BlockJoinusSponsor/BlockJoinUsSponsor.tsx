@@ -23,6 +23,7 @@ export const BlockJoinusSponsor: React.FC = () => {
           className="block block--dark block--skewed-right block-showcase aos-animate"
           bg={useColorModeValue("gray.100", "#1A202C")}
           overflow={"hidden"}
+          paddingTop={{ base: "initial", lg: "6rem" }}
         >
           <Box
             className="block block--dark"

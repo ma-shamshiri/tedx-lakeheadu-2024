@@ -70,7 +70,7 @@ const HomeStories: React.FC = () => {
             <Flex
                 display={{ base: "none", lg: "block" }}
                 position="absolute"
-                top={{ base: "70%", md: "70%", lg: "17%", xl: "10%" }}
+                top={{ base: "70%", md: "73%", lg: "25%", xl: "18%" }}
                 left={{ base: "50%", md: "50%", lg: "20%", xl: "17%" }}
                 transform="translate(-50%, -50%)"
                 zIndex={100}
@@ -84,7 +84,7 @@ const HomeStories: React.FC = () => {
                 alignItems="center"
                 display={{ base: "none", lg: "block" }}
                 position="absolute"
-                top={{ base: "70%", md: "70%", lg: "17%", xl: "22%" }}
+                top={{ base: "70%", md: "70%", lg: "45%", xl: "32%" }}
                 left={{ base: "50%", md: "50%", lg: "20%", xl: "17%" }}
                 transform="translate(-50%, -50%)"
                 zIndex={100}

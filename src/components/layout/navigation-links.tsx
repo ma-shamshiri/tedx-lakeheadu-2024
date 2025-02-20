@@ -186,4 +186,17 @@ export const navigationLinks = [
       },
     ],
   },
+  {
+    name: "accommodation",
+    link: "/accommodation",
+    subLinks: [
+      {
+        name: "accommodation",
+        description: "accommodationSubtitle",
+        link: "/accommodation",
+        color: "#fa3e3e",
+        icon: <IoDiamond size="25px" color="white" />,
+      },
+    ],
+  },
 ];
