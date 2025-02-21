@@ -12,7 +12,7 @@
 //     GiftIcon,
 //   } from "@heroicons/react/24/outline";
 import { SiTed } from "react-icons/si";
-import { FaUniversity } from "react-icons/fa";
+import { FaHotel, FaUniversity } from "react-icons/fa";
 import { PiTelevision } from "react-icons/pi";
 import { BsCalendarDate } from "react-icons/bs";
 import { GrScheduleNew, GrWorkshop } from "react-icons/gr";
@@ -26,34 +26,35 @@ import { IoDiamond } from "react-icons/io5";
 import { IoIosColorPalette, IoIosPeople } from "react-icons/io";
 import { ImVideoCamera } from "react-icons/im";
 import { FaPhotoVideo } from "react-icons/fa";
+import { GiPartyPopper } from "react-icons/gi";
 
 export const navigationLinks = [
-  {
-    name: "aboutUs",
-    subLinks: [
-      // {
-      //   name: "ted",
-      //   description: "tedSubLabel",
-      //   link: "/#more-info-section",
-      //   color: "red",
-      //   icon: <SiTed size="25px" color="white" />,
-      // },
-      // {
-      //   name: "tedx",
-      //   description: "tedxSubtitle",
-      //   link: "/#more-info-section",
-      //   color: "#c40253",
-      //   icon: <FaUniversity size="25px" color="white"/>,
-      // },
-      {
-        name: "tedxlakeheadu",
-        description: "tedxlakeheaduSubtitle",
-        link: "/#more-info-section",
-        color: "#fa3e3e",
-        icon: <PiTelevision size="25px" color="white" />,
-      },
-    ],
-  },
+  // {
+  //   name: "aboutUs",
+  //   subLinks: [
+  //     // {
+  //     //   name: "ted",
+  //     //   description: "tedSubLabel",
+  //     //   link: "/#more-info-section",
+  //     //   color: "red",
+  //     //   icon: <SiTed size="25px" color="white" />,
+  //     // },
+  //     // {
+  //     //   name: "tedx",
+  //     //   description: "tedxSubtitle",
+  //     //   link: "/#more-info-section",
+  //     //   color: "#c40253",
+  //     //   icon: <FaUniversity size="25px" color="white"/>,
+  //     // },
+  //     {
+  //       name: "tedxlakeheadu",
+  //       description: "tedxlakeheaduSubtitle",
+  //       link: "/#more-info-section",
+  //       color: "#fa3e3e",
+  //       icon: <PiTelevision size="25px" color="white" />,
+  //     },
+  //   ],
+  // },
   {
     name: "event",
     subLinks: [
@@ -120,6 +121,19 @@ export const navigationLinks = [
     ],
   },
   {
+    name: "performances",
+    link: "/performances",
+    subLinks: [
+      {
+        name: "performances",
+        description: "performancesSubtitle",
+        link: "/performances",
+        color: "#fa3e3e",
+        icon: <GiPartyPopper size="25px" color="white" />,
+      },
+    ],
+  },
+  {
     name: "sponsors",
     link: "/sponsors",
     subLinks: [
@@ -132,23 +146,36 @@ export const navigationLinks = [
       },
     ],
   },
+  // {
+  //   name: "media",
+  //   link: "/media",
+  //   subLinks: [
+  //     // {
+  //     //   name: "videos",
+  //     //   description: "videosSubtitle",
+  //     //   link: "/videos",
+  //     //   color: "#fa7705",
+  //     //   icon: <ImVideoCamera size="25px" color="white" />,
+  //     // },
+  //     {
+  //       name: "photos",
+  //       description: "photosSubtitle",
+  //       link: "/photos",
+  //       color: "#fa3e3e",
+  //       icon: <FaPhotoVideo size="25px" color="white" />,
+  //     },
+  //   ],
+  // },
   {
-    name: "media",
-    link: "/media",
+    name: "accommodation",
+    link: "/accommodation",
     subLinks: [
-      // {
-      //   name: "videos",
-      //   description: "videosSubtitle",
-      //   link: "/videos",
-      //   color: "#fa7705",
-      //   icon: <ImVideoCamera size="25px" color="white" />,
-      // },
       {
-        name: "photos",
-        description: "photosSubtitle",
-        link: "/photos",
+        name: "accommodation",
+        description: "accommodationSubtitle",
+        link: "/accommodation",
         color: "#fa3e3e",
-        icon: <FaPhotoVideo size="25px" color="white" />,
+        icon: <FaHotel size="25px" color="white" />,
       },
     ],
   },
@@ -183,19 +210,6 @@ export const navigationLinks = [
         link: "/joinus/sponsor",
         color: "#fa3e3e",
         icon: <FaHandshake size="25px" color="white" />,
-      },
-    ],
-  },
-  {
-    name: "accommodation",
-    link: "/accommodation",
-    subLinks: [
-      {
-        name: "accommodation",
-        description: "accommodationSubtitle",
-        link: "/accommodation",
-        color: "#fa3e3e",
-        icon: <IoDiamond size="25px" color="white" />,
       },
     ],
   },

@@ -18,7 +18,7 @@ export const MenuLinks = ({ menuLinks }: MenuLinksProps) => {
           >
             <Text
               color={useColorModeValue("gray.800", "gray.200")}
-              fontSize={{ md: "1rem", lg: "1.3rem", xl: "1.4rem" }}
+              fontSize={{ md: "1rem", lg: "1.2rem", xl: "1.4rem" }}
               fontWeight="bold"
               // fontFamily="'Acme', sans-serif"
               // fontFamily="'Englebert', cursive"

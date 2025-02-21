@@ -6,27 +6,27 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
-  {
-    label: "aboutUs",
-    href: "/",
-    children: [
-      // {
-      //   label: "ted",
-      //   subLabel: "tedSubLabel",
-      //   href: "/",
-      // },
-      // {
-      //   label: "tedx",
-      //   subLabel: "tedxSubLabel",
-      //   href: "/",
-      // },
-      {
-        label: "tedxlakeheadu",
-        subLabel: "tedxavelorneSubLabel",
-        href: "/",
-      },
-    ],
-  },
+  // {
+  //   label: "aboutUs",
+  //   href: "/",
+  //   children: [
+  //     // {
+  //     //   label: "ted",
+  //     //   subLabel: "tedSubLabel",
+  //     //   href: "/",
+  //     // },
+  //     // {
+  //     //   label: "tedx",
+  //     //   subLabel: "tedxSubLabel",
+  //     //   href: "/",
+  //     // },
+  //     {
+  //       label: "tedxlakeheadu",
+  //       subLabel: "tedxavelorneSubLabel",
+  //       href: "/",
+  //     },
+  //   ],
+  // },
   {
     label: "event",
     href: "/event/",
@@ -66,6 +66,10 @@ const NAV_ITEMS: Array<NavItem> = [
     href: "/workshops/",
   },
   {
+    label: "performances",
+    href: "/performances/",
+  },
+  {
     label: "sponsors",
     href: "/sponsors/",
   },
@@ -73,9 +77,14 @@ const NAV_ITEMS: Array<NavItem> = [
   //   label: "partners",
   //   href: "#",
   // },
+  // {
+  //   label: "media",
+  //   href: "/photos/",
+  // },
+
   {
-    label: "media",
-    href: "/photos/",
+    label: "accommodation",
+    href: "/accommodation/",
   },
   {
     label: "Be a Partner",
@@ -97,10 +106,6 @@ const NAV_ITEMS: Array<NavItem> = [
     //     href: "/joinus/sponsor/",
     //   },
     // ],
-  },
-  {
-    label: "accommodation",
-    href: "/accommodation/",
   },
 ];
 

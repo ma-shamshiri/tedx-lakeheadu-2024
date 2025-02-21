@@ -17,7 +17,7 @@ import { Sidebar } from "./Sidebar";
 import { tedxWhite, tedxBlack } from "../../assets";
 import { MenuLinks } from "../MenuLinks";
 import { navigationLinks } from "../layout/navigation-links";
-import LanguageSwitcher2 from "./LanguageSwitcher2";
+// import LanguageSwitcher2 from "./LanguageSwitcher2";
 import QuickIcons from "../QuickIcons";
 
 export const Navigationbar: React.FC = () => {
@@ -26,6 +26,8 @@ export const Navigationbar: React.FC = () => {
   const tedxImg = colorMode === "dark" ? tedxWhite : tedxBlack;
 
   const isLargeScreen = useBreakpointValue({ base: false, md: true });
+
+  // const [isLaptopScreen, setIsLaptopScreen] = useState(window.innerWidth >= 1400 || window.innerWidth <= 990);
 
   const [isNavVisible, setIsNavVisible] = useState(true);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -44,6 +46,18 @@ export const Navigationbar: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollPosition]);
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsLaptopScreen(window.innerWidth >= 1024);
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   return (
     <>
@@ -69,7 +83,7 @@ export const Navigationbar: React.FC = () => {
         as="nav"
         position={{ base: "sticky", lg: "fixed" }}
         top={{ base: 0, lg: "0.3em" }}
-        width={{ base: "100%", md: "100%", lg: "90%" }}
+        width={{ base: "100%", md: "100%", lg: "98%" }}
         height="75px"
         padding={{ base: "0.4em 0.4em", lg: "0 2em" }}
         left={{ base: "initial", lg: "50%" }}
@@ -98,13 +112,13 @@ export const Navigationbar: React.FC = () => {
               to={"/"}
               cursor="pointer"
             >
-              <Flex justifyContent={"center"} alignItems={"center"}>
-                <HStack>
-                  <Image
-                    src={tedxImg}
-                    width={{ base: 160, md: 220, lg: 170, xl: 250 }}
-                  />
-                </HStack>
+              <Flex justifyContent={"center"} alignItems={"center"}
+              // width={{ base: 160, md: "220px", lg: "170px", xl: "250px" }}
+              >
+                <Image
+                  src={tedxImg}
+                  width={{ base: 160, md: "220px", lg: "170px", xl: "250px" }}
+                />
               </Flex>
             </Link>
             <Box

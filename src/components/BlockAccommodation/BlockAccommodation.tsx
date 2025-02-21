@@ -135,10 +135,10 @@ const BlockAccommodation = () => {
                 {/* Booking Information */}
                 <Box textAlign="center" maxW="800px">
                     {/* <Text fontSize="lg" fontWeight="bold" color="red.500">BOOK BY FEB 21, 2025</Text> */}
-                    <Text 
-                    fontSize={{ base: "1.3rem", lg: "1.7rem" }}
-                    color={subTextColor} 
-                    mt={2}
+                    <Text
+                        fontSize={{ base: "1.3rem", lg: "1.7rem" }}
+                        color={subTextColor}
+                        mt={2}
                     >
                         Reservations made through TEDxLakeheadU Room Block will be charged for ALL nights in case of late cancellation or no-show.
                         Marriott requires a 72-hour notice for cancellations; late cancellations incur fees.

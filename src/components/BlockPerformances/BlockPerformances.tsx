@@ -1,0 +1,158 @@
+import { Box, Image, Text, VStack, HStack, Link, Icon, Flex, useColorModeValue } from "@chakra-ui/react";
+import { FaInstagram, FaYoutube, FaTiktok, FaFacebook, FaSpotify } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { sara_kae } from "../../assets";
+
+const MotionBox = motion(Box);
+
+const BlockPerformances = () => {
+    return (
+        <Box
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+            width="100%"
+            minH="100vh"
+            bgGradient={useColorModeValue(
+                "linear(to-b, gray.100, white)",
+                "linear(to-b, black, gray.900)"
+            )}
+            color={useColorModeValue("gray.800", "white")}
+            padding={{ base: "2.5rem", lg: "4rem" }}
+            paddingTop={{ base: "3rem", lg: "12rem" }}
+            overflow="hidden"
+        >
+            <Box
+                textAlign="center"
+                paddingBottom="5rem"
+            >
+                <Text
+                    color={useColorModeValue("gray.900", "#16F8B6")}
+                    fontSize={{ base: "2.5rem", lg: "4rem" }}
+                    fontWeight="bold"
+                    lineHeight="1.5"
+                    pb={4}
+                >
+                    Performing at TEDxLakeheadU
+                </Text>
+                <Text
+                    color={useColorModeValue("gray.700", "gray.300")}
+                    fontSize={{ base: "1.5rem", lg: "2.1rem" }}
+                    lineHeight="1.7"
+                >
+                    Experience an inspiring TEDxLakeheadU performance where storytelling and music unite.
+                </Text>
+            </Box>
+
+            <Flex
+                position="relative"
+                direction={{ base: "column", lg: "row" }} // Column on mobile, row on larger screens
+                maxWidth={{ base: "100%", lg: "90%", xl: "70%" }}
+                paddingX={{ base: "1.5rem", md: "initial" }}
+                padding={{ base: "initial", md: "4rem" }}
+                gap={{ base: "3rem", lg: "5rem" }}
+                marginBottom="5rem"
+                align="center"
+                justify="space-between" // Ensures equal spacing between the two parts
+            >
+                {/* Left part - Image */}
+                <Flex flex="1" justify="center">
+                    <Image
+                        src={sara_kae}
+                        alt="Sara Kae"
+                        borderRadius="lg"
+                        width="100%" // Ensures full width of its container
+                        maxWidth="500px" // Prevents overly large images
+                        boxShadow={useColorModeValue("0 0 10px 1px gray", "0 0 30px 1px black")}
+                    />
+                </Flex>
+
+                {/* Right part - Text */}
+                <Flex flex="1" flexDirection="column" align="center">
+                    <Text
+                        fontSize={{ base: "2.5rem", md: "3.5rem", lg: "4rem" }}
+                        fontWeight="bold"
+                        lineHeight="1.5"
+                        marginBottom={{ base: "1rem", md: "2rem" }}
+                    >
+                        Sara Kae
+                    </Text>
+                    <Text
+                        fontSize={{ base: "1.4rem", md: "1.9rem", lg: "1.7rem", xl: "1.9rem" }}
+                        width="100%"
+                    >
+                        Sara Kae, an Ojibwe and Cree artist from Lake Helen First Nation, is a multifaceted writer,
+                        performer, and storyteller. She began touring northern Ontario at 12, speaking and singing
+                        alongside her father. An honours graduate and Founders Award recipient at Metalworks Institute,
+                        she has collaborated with the Thunder Bay Symphony Orchestra, co-created the musical Trading Places,
+                        and partnered with Susan Aglukark’s Arctic Rose Foundation. Sara has also opened for Juno winner
+                        Aysanabee and hosted national Truth and Reconciliation Day programming on CBC. Her music career
+                        includes debut singles “Rise” and “Constellations,” as well as her latest release, “25.” Funded by
+                        the Ontario Arts Council, her upcoming EP Maadaadizi reflects her growth with an organic and upbeat
+                        sound. The newly released “One Good Reason” is among many new songs set for 2025.
+                    </Text>
+                </Flex>
+            </Flex>
+
+
+            {/* Media Section */}
+            <Flex textAlign="center" flexDirection="column">
+                <Text
+                    fontSize={{ base: "2.5rem", lg: "4rem" }}
+                    fontWeight="bold"
+                >
+                    Latest Performances
+                </Text>
+                <Flex mt={8} justify="center" gap="4rem" wrap="wrap">
+
+                    <Flex
+                        width={{ base: "90vw", lg: "560px" }}
+                        height={{ base: "50.5vw", lg: "315px" }}
+                    >
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/7kQB9iIsJbc"
+                            title="Sara Kae - 25 (Visualizer)"
+                            frameBorder="0"
+                            allowFullScreen>
+                        </iframe>
+                    </Flex>
+                    <Flex
+                        width={{ base: "90vw", lg: "560px" }}
+                        height={{ base: "50.5vw", lg: "315px" }}
+                    >
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/IL0n8gS8nCw"
+                            title="Sara Kae - 25 (Live at Blueprints)"
+                            frameBorder="0"
+                            allowFullScreen>
+                        </iframe>
+                    </Flex>
+                </Flex>
+            </Flex>
+
+            {/* Social Media Section */}
+            <Box
+                mt={16}
+                textAlign="center"
+                paddingX={{ base: "1.5rem", md: "4rem" }}
+
+            >
+                <Text fontSize="2rem" fontWeight="bold">Follow Sara Kae</Text>
+                <HStack spacing={6} justify="center" mt={6}>
+                    <Link href="https://www.instagram.com/sarakaeofficial/" isExternal><Icon as={FaInstagram} boxSize={8} _hover={{ color: "#CB0000" }} /></Link>
+                    <Link href="https://www.youtube.com/@sarakaeofficial" isExternal><Icon as={FaYoutube} boxSize={8} _hover={{ color: "#CB0000" }} /></Link>
+                    <Link href="https://www.tiktok.com/@sarakaeofficial" isExternal><Icon as={FaTiktok} boxSize={8} _hover={{ color: "#CB0000" }} /></Link>
+                    <Link href="https://www.facebook.com/Sarakaeofficial/" isExternal><Icon as={FaFacebook} boxSize={8} _hover={{ color: "#CB0000" }} /></Link>
+                    <Link href="https://open.spotify.com/artist/7BLXUEOlXHgCMJllFcOtMK" isExternal><Icon as={FaSpotify} boxSize={8} _hover={{ color: "#CB0000" }} /></Link>
+                </HStack>
+            </Box>
+        </Box>
+    );
+};
+
+export default BlockPerformances;

@@ -333,9 +333,10 @@ import zahraBadge from "./assets/images/badge-content-creator.webp";
 import zahraBG from "./assets/images/Zahra.webp";
 import zproduction from "./assets/images/ZProduction.webp";
 import hotel from "./assets/images/hotel.jpg";
-
+import sara_kae from "./assets/images/sara_kae.jpg";
 
 export {
+    sara_kae,
     hotel,
     aarya,
     aaryaNoBG,
