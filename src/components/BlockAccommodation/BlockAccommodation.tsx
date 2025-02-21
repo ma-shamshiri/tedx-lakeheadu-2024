@@ -112,7 +112,7 @@ const BlockAccommodation = () => {
                             From 189.00 CAD / Night
                         </Text>
                         <Link
-                            href="https://www.marriott.com/..."
+                            href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1739384939881&key=GRP&guestreslink2=true&app=resvlink"
                             isExternal
                             width={{ base: "100%", lg: "70%" }}
                             height="4rem"
