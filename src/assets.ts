@@ -313,6 +313,9 @@ import teamMember from "./assets/images/teamMember.webp";
 import ted from "./assets/images/ted.webp";
 import tedx from "./assets/images/tedx.webp";
 import tedxavelorne from "./assets/images/tedxavelorne.webp";
+import ted2 from "./assets/images/ted2.webp";
+import tedx2 from "./assets/images/tedx2.webp";
+import tedxlakeheadu from "./assets/images/tedxlakeheadu.webp";
 import tedxBlack from "./assets/images/tedxBlack.png";
 import tedxWhite from "./assets/images/tedxWhite.png";
 import tickImage from "./assets/images/tick.svg";
@@ -651,6 +654,9 @@ export {
     ted,
     tedx,
     tedxavelorne,
+    ted2,
+    tedx2,
+    tedxlakeheadu,
     tedxBlack,
     tedxWhite,
     tickImage,

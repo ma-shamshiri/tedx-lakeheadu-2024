@@ -12,7 +12,7 @@ import { GiTalk } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
 import AOS from "aos"; // Import AOS library
 import "aos/dist/aos.css"; // Import AOS styles
-import { ted, tedx, tedxavelorne } from "../../assets";
+import { ted, tedx, tedxavelorne, ted2, tedx2, tedxlakeheadu } from "../../assets";
 
 const featuresData = [
   {
@@ -23,7 +23,7 @@ const featuresData = [
     linkText: "exploreMore",
     linkUrl: "https://www.ted.com/about/our-organization",
     image: {
-      src: ted,
+      src: ted2,
       alt: "easy",
     },
     size: "40px",
@@ -37,7 +37,7 @@ const featuresData = [
     linkUrl:
       "https://www.ted.com/participate/organize-a-local-tedx-event/before-you-start/what-is-a-tedx-event",
     image: {
-      src: tedx,
+      src: tedx2,
       alt: "easy",
       // srcSetWebp: `${fastWebp} 1x, ${fastWebp2x} 2x`,
       // srcSetPng: `${fastJpg} 1x, ${fastJpg2x} 2x`,
@@ -53,7 +53,7 @@ const featuresData = [
     linkText: "exploreMore",
     linkUrl: "https://www.ted.com/tedx/events/57678",
     image: {
-      src: tedxavelorne,
+      src: tedxlakeheadu,
       alt: "easy",
       // srcSetWebp: `${wordpressWebp} 1x, ${wordpressWebp2x} 2x`,
       // srcSetPng: `${wordpressJpg} 1x, ${wordpressJpg2x} 2x`,
@@ -121,7 +121,7 @@ const Feature: React.FC<FeatureProps> = ({
         href={linkUrl}
         fontSize={{ base: "1.4rem", lg: "1.4rem" }}
         fontWeight="bold"
-        color={useColorModeValue("#000", "#000")}
+        color={useColorModeValue("#fff", "#fff")}
         textTransform="uppercase"
         target="_blank"
         rel="noopener noreferrer"

@@ -124,6 +124,7 @@ export const Navigationbar: React.FC = () => {
             <Box
               position="relative"
               display={{ base: "none", lg: "block" }}
+              paddingLeft="2rem"
             >
               <MenuLinks menuLinks={navigationLinks} />
             </Box>

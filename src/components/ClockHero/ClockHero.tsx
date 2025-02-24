@@ -185,7 +185,7 @@ const ClockHero = () => {
                         alignItems="flex-start"
                         transformOrigin="center center"
                         willChange="transform"
-                        zIndex={2}
+                        // zIndex={2}
                         style={{
                             transformStyle: "preserve-3d",
                         }}
@@ -254,7 +254,7 @@ const ClockHero = () => {
                             fontFamily="'Big Shoulders Display', sans-serif"
                             letterSpacing="0.1rem"
                         >
-                            Every second brings us closer to inspiration
+                            Every Second Brings Us Closer to Inspiration
                         </Text>
                     </Box>
                 </Box>

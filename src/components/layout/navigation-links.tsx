@@ -179,38 +179,38 @@ export const navigationLinks = [
       },
     ],
   },
-  {
-    name: "Be a Partner",
-    link: "/joinus/sponsor",
-    subLinks: [
-      // {
-      //   name: "joinUs",
-      //   description: "joinUsSubtitle",
-      //   link: "/joinus",
-      //   color: "#fa3e3e",
-      //   icon: <IoDiamond size="25px" color="white" />,
-      // },
-      // {
-      //   name: "members",
-      //   description: "membersSubtitle",
-      //   link: "/joinus/team",
-      //   color: "#fa3e3e",
-      //   icon: <FaUsers size="25px" color="white" />,
-      // },
-      // {
-      //   name: "speakers",
-      //   description: "speakersSubtitle",
-      //   link: "/joinus/speaker",
-      //   color: "#fa3e3e",
-      //   icon: <PiMicrophoneStageFill size="25px" color="white" />,
-      // },
-      {
-        name: "Sponsorship",
-        description: "sponsorsSubtitle",
-        link: "/joinus/sponsor",
-        color: "#fa3e3e",
-        icon: <FaHandshake size="25px" color="white" />,
-      },
-    ],
-  },
+  // {
+  //   name: "Be a Partner",
+  //   link: "/joinus/sponsor",
+  //   subLinks: [
+  //     // {
+  //     //   name: "joinUs",
+  //     //   description: "joinUsSubtitle",
+  //     //   link: "/joinus",
+  //     //   color: "#fa3e3e",
+  //     //   icon: <IoDiamond size="25px" color="white" />,
+  //     // },
+  //     // {
+  //     //   name: "members",
+  //     //   description: "membersSubtitle",
+  //     //   link: "/joinus/team",
+  //     //   color: "#fa3e3e",
+  //     //   icon: <FaUsers size="25px" color="white" />,
+  //     // },
+  //     // {
+  //     //   name: "speakers",
+  //     //   description: "speakersSubtitle",
+  //     //   link: "/joinus/speaker",
+  //     //   color: "#fa3e3e",
+  //     //   icon: <PiMicrophoneStageFill size="25px" color="white" />,
+  //     // },
+  //     {
+  //       name: "Sponsorship",
+  //       description: "sponsorsSubtitle",
+  //       link: "/joinus/sponsor",
+  //       color: "#fa3e3e",
+  //       icon: <FaHandshake size="25px" color="white" />,
+  //     },
+  //   ],
+  // },
 ];

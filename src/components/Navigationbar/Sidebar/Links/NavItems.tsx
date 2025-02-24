@@ -85,27 +85,27 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "accommodation",
     href: "/accommodation/",
   },
-  {
-    label: "Be a Partner",
-    href: "/joinus/sponsor",
-    // children: [
-    //   {
-    //     label: "members",
-    //     subLabel: "membersSubLabel",
-    //     href: "/joinus/team/",
-    //   },
-    //   {
-    //     label: "speakers",
-    //     subLabel: "speakersSubLabel",
-    //     href: "/joinus/speaker/",
-    //   },
-    //   {
-    //     label: "sponsors",
-    //     subLabel: "sponsorsSubLabel",
-    //     href: "/joinus/sponsor/",
-    //   },
-    // ],
-  },
+  // {
+  //   label: "Be a Partner",
+  //   href: "/joinus/sponsor",
+  //   // children: [
+  //   //   {
+  //   //     label: "members",
+  //   //     subLabel: "membersSubLabel",
+  //   //     href: "/joinus/team/",
+  //   //   },
+  //   //   {
+  //   //     label: "speakers",
+  //   //     subLabel: "speakersSubLabel",
+  //   //     href: "/joinus/speaker/",
+  //   //   },
+  //   //   {
+  //   //     label: "sponsors",
+  //   //     subLabel: "sponsorsSubLabel",
+  //   //     href: "/joinus/sponsor/",
+  //   //   },
+  //   // ],
+  // },
 ];
 
 export default NAV_ITEMS;

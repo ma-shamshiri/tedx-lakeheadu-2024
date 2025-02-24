@@ -29,7 +29,7 @@ const HomePage: React.FC = () => {
       <Navigationbar />
       {/* <BlockCountdownTimer eventStartTime={eventStartTime} /> */}
       <HomeStories />
-      <ClockHero />
+      {/* <ClockHero /> */}
       <TicketDividerSection />
       <BlockSocialMediaCarousel />
       <TicketCard />
