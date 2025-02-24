@@ -10,6 +10,7 @@ import TicketCard from "../components/TicketCard";
 import HomeStories from "../components/HomeStories";
 import BlockSocialMediaCarousel from "../components/BlockSocialMediaCarousel";
 import TicketDividerSection from "../components/TicketDividerSection";
+import ClockHero from "../components/ClockHero";
 
 const HomePage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +29,7 @@ const HomePage: React.FC = () => {
       <Navigationbar />
       {/* <BlockCountdownTimer eventStartTime={eventStartTime} /> */}
       <HomeStories />
+      <ClockHero />
       <TicketDividerSection />
       <BlockSocialMediaCarousel />
       <TicketCard />

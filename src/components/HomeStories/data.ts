@@ -16,10 +16,10 @@ export const stories: Story[] = [
         title: ["Showcasing creative"],
         storyImg: storyImg1,
     },
-    {
-        title: ["Inspiring design", "ideas and visual", "creations from experts"],
-        storyImg: storyImg2,
-    },
+    // {
+    //     title: ["Inspiring design", "ideas and visual", "creations from experts"],
+    //     storyImg: storyImg2,
+    // },
     // {
     //     title: ["Award-winning web", "design and development", "projects"],
     //     storyImg: storyImg3,
