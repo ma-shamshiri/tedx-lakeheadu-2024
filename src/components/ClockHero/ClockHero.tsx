@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "./styles.css";
 import { amin } from "../../assets";
 import { Box, Image, Text, useColorModeValue } from "@chakra-ui/react";
