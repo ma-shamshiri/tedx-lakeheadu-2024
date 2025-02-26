@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Navigationbar } from "../components/Navigationbar";
 import { useTranslation } from "react-i18next";
 import BlockSponsors2025 from "../components/BlockSponsors2025";
+import BlockSponsorsCarousel2025 from "../components/BlockSponsorsCarousel2025";
 
 const SponsorsPage: React.FC = () => {
     const { t } = useTranslation();
@@ -28,6 +29,7 @@ const SponsorsPage: React.FC = () => {
             >
                 <Navigationbar />
                 <BlockSponsors2025 />
+                <BlockSponsorsCarousel2025 />
                 <BlockFooter />
             </motion.div>
         </>

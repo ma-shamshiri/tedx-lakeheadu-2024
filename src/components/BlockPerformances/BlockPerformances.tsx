@@ -161,7 +161,7 @@ const BlockPerformances = () => {
             <Box
                 className="separator"
                 marginY="4rem"
-                width={{ base: "20rem", lg: "70rem" }}
+                width={{ base: "28rem", lg: "70rem" }}
                 height="2px"
                 style={{
                     background: separatorColor
@@ -212,7 +212,7 @@ const BlockPerformances = () => {
             <Box
                 className="separator"
                 marginY="4rem"
-                width={{ base: "20rem", lg: "70rem" }}
+                width={{ base: "28rem", lg: "70rem" }}
                 height="2px"
                 style={{
                     background: separatorColor

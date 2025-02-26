@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from "@chakra-ui/react";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -15,7 +15,7 @@ const BlockSponsorsCarousel2025: React.FC = () => {
         centerMode: true,        // Centers the active slide
         autoplay: true,          // Enables automatic sliding
         cssEase: "linear",       // Ensures smooth, linear transitions
-        speed: 15000,             // Set a high speed for the continuous effect
+        speed: 5000,             // Set a high speed for the continuous effect
         autoplaySpeed: 0,        // No delay between slides (set to 0)
         pauseOnHover: false,     // Prevent pausing when hovered
         focusOnSelect: true,     // Allows users to focus on slides
@@ -53,7 +53,6 @@ const BlockSponsorsCarousel2025: React.FC = () => {
                             postImageSrc={d.postImageSrc}
                             postUrl={d.postUrl}
                             icon={d.icon}
-                            iconColor={d.iconColor}
                         />
                     </Box>
                 ))}

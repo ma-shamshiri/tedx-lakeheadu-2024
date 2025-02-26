@@ -340,7 +340,31 @@ import sara_kae from "./assets/images/sara_kae.jpg";
 import amani_sloley from "./assets/images/amani_sloley.jpg";
 import open from "./assets/images/open.jpg";
 
+import sponsor_banner_1 from "./assets/images/sponsor_banner_1.png";
+import sponsor_banner_2 from "./assets/images/sponsor_banner_2.png";
+import sponsor_banner_3 from "./assets/images/sponsor_banner_3.png";
+import sponsor_banner_4 from "./assets/images/sponsor_banner_4.png";
+import sponsor_banner_5 from "./assets/images/sponsor_banner_5.png";
+import sponsor_banner_6 from "./assets/images/sponsor_banner_6.png";
+import sponsor_banner_7 from "./assets/images/sponsor_banner_7.png";
+import sponsor_banner_8 from "./assets/images/sponsor_banner_8.png";
+import sponsor_banner_9 from "./assets/images/sponsor_banner_9.png";
+import sponsor_banner_10 from "./assets/images/sponsor_banner_10.png";
+import sponsor_banner_11 from "./assets/images/sponsor_banner_11.png";
+import sponsor_banner_12 from "./assets/images/sponsor_banner_12.png";
+
 export {
+    sponsor_banner_1,
+    sponsor_banner_2,
+    sponsor_banner_3,
+    sponsor_banner_4,
+    sponsor_banner_5,
+    sponsor_banner_6,
+    sponsor_banner_7,
+    sponsor_banner_8,
+    sponsor_banner_9,
+    sponsor_banner_10,
+    sponsor_banner_11,
     amani_sloley,
     open,
     sara_kae,
