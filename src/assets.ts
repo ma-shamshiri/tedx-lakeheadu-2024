@@ -337,8 +337,12 @@ import zahraBG from "./assets/images/Zahra.webp";
 import zproduction from "./assets/images/ZProduction.webp";
 import hotel from "./assets/images/hotel.jpg";
 import sara_kae from "./assets/images/sara_kae.jpg";
+import amani_sloley from "./assets/images/amani_sloley.jpg";
+import open from "./assets/images/open.jpg";
 
 export {
+    amani_sloley,
+    open,
     sara_kae,
     hotel,
     aarya,
