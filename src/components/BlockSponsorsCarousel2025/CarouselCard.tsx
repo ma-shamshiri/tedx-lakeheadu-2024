@@ -54,7 +54,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({
                         className="buttonContainer"
                         justifyContent="center"
                         alignItems="center"
-                        width="75%"
+                        width="95%"
                         onClick={() => window.open(postUrl, "_blank")}
                         rel="noopener noreferrer"
                         cursor="pointer"
