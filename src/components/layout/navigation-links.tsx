@@ -27,6 +27,7 @@ import { IoIosColorPalette, IoIosPeople } from "react-icons/io";
 import { ImVideoCamera } from "react-icons/im";
 import { FaPhotoVideo } from "react-icons/fa";
 import { GiPartyPopper } from "react-icons/gi";
+import { TfiAgenda } from "react-icons/tfi";
 
 export const navigationLinks = [
   // {
@@ -71,6 +72,13 @@ export const navigationLinks = [
         link: "/event",
         color: "#fa3e3e",
         icon: <BsCalendarDate size="25px" color="white" />,
+      },
+      {
+        name: "agenda",
+        description: "agendaSubtitle",
+        link: "/agenda",
+        color: "#fa3e3e",
+        icon: <TfiAgenda size="25px" color="white" />,
       },
       {
         name: "ticket",

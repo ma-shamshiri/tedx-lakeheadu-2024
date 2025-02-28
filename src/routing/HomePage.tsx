@@ -11,6 +11,7 @@ import HomeStories from "../components/HomeStories";
 import BlockSocialMediaCarousel from "../components/BlockSocialMediaCarousel";
 import TicketDividerSection from "../components/TicketDividerSection";
 import ClockHero from "../components/ClockHero";
+import EventAgenda from "../components/EventAgenda";
 
 const HomePage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);

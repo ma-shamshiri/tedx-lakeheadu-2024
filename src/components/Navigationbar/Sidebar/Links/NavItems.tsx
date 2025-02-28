@@ -36,6 +36,11 @@ const NAV_ITEMS: Array<NavItem> = [
         subLabel: "dateAndTimeSubLabel",
         href: "/event/",
       },
+      {
+        label: "agenda",
+        subLabel: "agendaSubLabel",
+        href: "/agenda/",
+      },
       // {
       //   label: "Location",
       //   subLabel: "Trending Design to inspire you",
