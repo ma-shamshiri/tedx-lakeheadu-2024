@@ -351,9 +351,12 @@ import sponsor_banner_8 from "./assets/images/sponsor_banner_8.png";
 import sponsor_banner_9 from "./assets/images/sponsor_banner_9.png";
 import sponsor_banner_10 from "./assets/images/sponsor_banner_10.png";
 import sponsor_banner_11 from "./assets/images/sponsor_banner_11.png";
-import sponsor_banner_12 from "./assets/images/sponsor_banner_12.png";
+import peter from "./assets/images/peter.png";
+import peterNoBG from "./assets/images/peterNoBG.png";
 
 export {
+    peter,
+    peterNoBG,
     sponsor_banner_1,
     sponsor_banner_2,
     sponsor_banner_3,
