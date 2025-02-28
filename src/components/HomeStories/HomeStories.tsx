@@ -19,7 +19,7 @@ const HomeStories: React.FC = () => {
     const [isHoveredButton, setIsHoveredButton] = useState(false);
     const cursorRef = useRef<HTMLDivElement>(null);
 
-    const eventStartTime = new Date("2025-02-28T09:00:00-08:00");
+    const eventStartTime = new Date("2025-03-01T09:00:00-08:00");
 
     const handleHoverButton = () => {
         setIsHoveredButton(true);

@@ -99,7 +99,7 @@ export const BlockStatistics: React.FC = () => {
                   lg: "fit-content",
                   xl: "fit-content",
                 }}
-                endNumber={13}
+                endNumber={16}
                 hasPlusSign={false}
                 text={t("coreTeam")}
                 textSize={{

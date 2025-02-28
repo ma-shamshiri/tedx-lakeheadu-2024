@@ -15,7 +15,7 @@ import EventAgenda from "../components/EventAgenda";
 
 const HomePage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const eventStartTime = new Date("2025-02-28T09:00:00-08:00");
+  const eventStartTime = new Date("2025-03-01T09:00:00-08:00");
 
   useEffect(() => {
     const delay = setTimeout(() => {

@@ -39,7 +39,7 @@ const BlockHeroHome: React.FC = () => {
     setIsHoveredButton(false);
   };
 
-  const eventStartTime = new Date("2025-02-28T09:00:00-08:00");
+  const eventStartTime = new Date("2025-03-01T09:00:00-08:00");
 
   useEffect(() => { }, [boxLoaded]);
 

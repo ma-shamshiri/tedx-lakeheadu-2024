@@ -39,7 +39,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({
                 width="100%"
                 minW="30rem"
                 maxW="50rem"
-                maxH="75rem"
+                maxH="85rem"
                 // bg={cardBackgroundColor}
                 bg={"transparent"}
                 padding={{ base: "1.5rem", lg: "1.5rem" }}
@@ -59,7 +59,7 @@ const CarouselCard: React.FC<CarouselCardProps> = ({
                         rel="noopener noreferrer"
                         cursor="pointer"
                     >
-                        <Image src={postImageSrc} maxH="45rem" objectFit="cover" />
+                        <Image src={postImageSrc} maxH="55rem" objectFit="cover" />
                     </Flex>
                 </VStack>
             </Box>

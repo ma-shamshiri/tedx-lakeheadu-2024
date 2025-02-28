@@ -35,7 +35,7 @@ const Peter: React.FC = () => {
                     lastName="Diedrich"
                     fullName="Peter Diedrich"
                     title="Faculty Lecturer at Darwinian Ventures"
-                    role=""
+                    role="MC"
                     imageSrc={peterNoBG}
                     badgeSrc={aminBadge}
                     linkedinHref="https://ca.linkedin.com/"
