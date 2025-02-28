@@ -1,4 +1,5 @@
 // import testimonial from "./assets/images/testimonial.jpg";
+
 import aarya from "./assets/images/aarya.jpg";
 import aaryaNoBG from "./assets/images/aaryaNoBG.png";
 import aastha from "./assets/images/aastha.webp";
@@ -25,6 +26,7 @@ import alina_talk70 from "./assets/images/alina_talk70.webp";
 import alina_talk80 from "./assets/images/alina_talk80.webp";
 import alina_talk90 from "./assets/images/alina_talk90.webp";
 import alvin_law from "./assets/images/alvin_law.jpg";
+import amani_sloley from "./assets/images/amani_sloley.jpg";
 import amin from "./assets/images/amin.png";
 import aminBadge from "./assets/images/badge-webmaster.webp";
 import aminBG from "./assets/images/Amin.webp";
@@ -136,6 +138,7 @@ import harshitNoBG from "./assets/images/harshitNoBG.png";
 import hero1 from "./assets/images/hero1.jpeg";
 import hero2 from "./assets/images/heroPlateauMR.jpg";
 import heroimage from "./assets/images/heroimage.webp";
+import hotel from "./assets/images/hotel.jpg";
 import insta01 from "./assets/images/insta01.png";
 import insta02 from "./assets/images/insta02.png";
 import insta03 from "./assets/images/insta03.png";
@@ -236,6 +239,7 @@ import myra_talk60 from "./assets/images/myra_talk60.webp";
 import myra_talk70 from "./assets/images/myra_talk70.webp";
 import myra_talk80 from "./assets/images/myra_talk80.webp";
 import myra_talk90 from "./assets/images/myra_talk90.webp";
+import open from "./assets/images/open.jpg";
 import parinaz from "./assets/images/parinaz.jpg";
 import parinazNoBG from "./assets/images/parinazNoBG.png";
 import pegah from "./assets/images/Pegah-removedBG.webp";
@@ -257,6 +261,8 @@ import peggy_talk60 from "./assets/images/peggy_talk60.webp";
 import peggy_talk70 from "./assets/images/peggy_talk70.webp";
 import peggy_talk80 from "./assets/images/peggy_talk80.webp";
 import peggy_talk90 from "./assets/images/peggy_talk90.webp";
+import peter from "./assets/images/peter.png";
+import peterNoBG from "./assets/images/peterNoBG.png";
 import planetsImage from "./assets/images/planets.webp";
 import poulet from "./assets/images/Poulet.webp";
 import reihanehBadge from "./assets/images/badge-creativity.webp";
@@ -271,6 +277,7 @@ import saminBadge from "./assets/images/badge-organizer.webp";
 import saminBG from "./assets/images/Samin.webp";
 import sanjana from "./assets/images/sanjana.jpg";
 import sanjanaNoBG from "./assets/images/sanjanaNoBG.png";
+import sara_kae from "./assets/images/sara_kae.jpg";
 import shaygraphy from "./assets/images/Shaygraphy.webp";
 import shreya from "./assets/images/shreya.jpg";
 import shreyaNoBG from "./assets/images/shreyaNoBG.png";
@@ -287,6 +294,17 @@ import sliderImage9 from "./assets/images/sliderImage9.webp";
 import speaker from "./assets/images/speaker.webp";
 import speakerBackgroundImage from "./assets/images/woman-at-stage1.webp";
 import sponsor from "./assets/images/sponsor.webp";
+import sponsor_banner_1 from "./assets/images/sponsor_banner_1.png";
+import sponsor_banner_10 from "./assets/images/sponsor_banner_10.png";
+import sponsor_banner_11 from "./assets/images/sponsor_banner_11.png";
+import sponsor_banner_2 from "./assets/images/sponsor_banner_2.png";
+import sponsor_banner_3 from "./assets/images/sponsor_banner_3.png";
+import sponsor_banner_4 from "./assets/images/sponsor_banner_4.png";
+import sponsor_banner_5 from "./assets/images/sponsor_banner_5.png";
+import sponsor_banner_6 from "./assets/images/sponsor_banner_6.png";
+import sponsor_banner_7 from "./assets/images/sponsor_banner_7.png";
+import sponsor_banner_8 from "./assets/images/sponsor_banner_8.png";
+import sponsor_banner_9 from "./assets/images/sponsor_banner_9.png";
 import sponsor_cedc from "./assets/images/sponsor_cedc.png";
 import sponsor_dtb from "./assets/images/sponsor_dtb.png";
 import sponsor_dtb2 from "./assets/images/sponsor_dtb2.jpg";
@@ -311,12 +329,12 @@ import storyImg5 from "./assets/images/storyImg5.png";
 import sunImage from "./assets/images/sun.webp";
 import teamMember from "./assets/images/teamMember.webp";
 import ted from "./assets/images/ted.webp";
-import tedx from "./assets/images/tedx.webp";
-import tedxavelorne from "./assets/images/tedxavelorne.webp";
 import ted2 from "./assets/images/ted2.webp";
+import tedx from "./assets/images/tedx.webp";
 import tedx2 from "./assets/images/tedx2.webp";
-import tedxlakeheadu from "./assets/images/tedxlakeheadu.webp";
+import tedxavelorne from "./assets/images/tedxavelorne.webp";
 import tedxBlack from "./assets/images/tedxBlack.png";
+import tedxlakeheadu from "./assets/images/tedxlakeheadu.webp";
 import tedxWhite from "./assets/images/tedxWhite.png";
 import tickImage from "./assets/images/tick.svg";
 import ume_habiba from "./assets/images/ume_habiba.jpg";
@@ -328,6 +346,8 @@ import videoThumbnail from "./assets/images/videoThumbnail.webp";
 import workshop1 from "./assets/images/workshop1.jpg";
 import workshop2 from "./assets/images/workshop2.jpg";
 import workshop3 from "./assets/images/workshop3.jpg";
+import workshop4 from "./assets/images/workshop4.jpg";
+import workshop5 from "./assets/images/workshop5.jpg";
 import yasha from "./assets/images/yasha.png";
 import yashNoBG from "./assets/images/yashNoBG.png";
 import youChooseLogo from "./assets/images/logo.png";
@@ -335,43 +355,8 @@ import zahra from "./assets/images/Zahra-removedBG.webp";
 import zahraBadge from "./assets/images/badge-content-creator.webp";
 import zahraBG from "./assets/images/Zahra.webp";
 import zproduction from "./assets/images/ZProduction.webp";
-import hotel from "./assets/images/hotel.jpg";
-import sara_kae from "./assets/images/sara_kae.jpg";
-import amani_sloley from "./assets/images/amani_sloley.jpg";
-import open from "./assets/images/open.jpg";
-
-import sponsor_banner_1 from "./assets/images/sponsor_banner_1.png";
-import sponsor_banner_2 from "./assets/images/sponsor_banner_2.png";
-import sponsor_banner_3 from "./assets/images/sponsor_banner_3.png";
-import sponsor_banner_4 from "./assets/images/sponsor_banner_4.png";
-import sponsor_banner_5 from "./assets/images/sponsor_banner_5.png";
-import sponsor_banner_6 from "./assets/images/sponsor_banner_6.png";
-import sponsor_banner_7 from "./assets/images/sponsor_banner_7.png";
-import sponsor_banner_8 from "./assets/images/sponsor_banner_8.png";
-import sponsor_banner_9 from "./assets/images/sponsor_banner_9.png";
-import sponsor_banner_10 from "./assets/images/sponsor_banner_10.png";
-import sponsor_banner_11 from "./assets/images/sponsor_banner_11.png";
-import peter from "./assets/images/peter.png";
-import peterNoBG from "./assets/images/peterNoBG.png";
 
 export {
-    peter,
-    peterNoBG,
-    sponsor_banner_1,
-    sponsor_banner_2,
-    sponsor_banner_3,
-    sponsor_banner_4,
-    sponsor_banner_5,
-    sponsor_banner_6,
-    sponsor_banner_7,
-    sponsor_banner_8,
-    sponsor_banner_9,
-    sponsor_banner_10,
-    sponsor_banner_11,
-    amani_sloley,
-    open,
-    sara_kae,
-    hotel,
     aarya,
     aaryaNoBG,
     aastha,
@@ -398,6 +383,7 @@ export {
     alina_talk90,
     alina,
     alvin_law,
+    amani_sloley,
     amin,
     aminBadge,
     aminBG,
@@ -508,6 +494,7 @@ export {
     hero1,
     hero2,
     heroimage,
+    hotel,
     insta01,
     insta02,
     insta03,
@@ -608,6 +595,7 @@ export {
     myra_talk80,
     myra_talk90,
     myra,
+    open,
     parinaz,
     parinazNoBG,
     pegah,
@@ -629,6 +617,8 @@ export {
     peggy_talk80,
     peggy_talk90,
     peggy,
+    peter,
+    peterNoBG,
     planetsImage,
     poulet,
     reihanehBadge,
@@ -643,6 +633,7 @@ export {
     saminBG,
     sanjana,
     sanjanaNoBG,
+    sara_kae,
     shaygraphy,
     shreya,
     shreyaNoBG,
@@ -658,6 +649,17 @@ export {
     sliderImage9,
     speaker,
     speakerBackgroundImage,
+    sponsor_banner_1,
+    sponsor_banner_10,
+    sponsor_banner_11,
+    sponsor_banner_2,
+    sponsor_banner_3,
+    sponsor_banner_4,
+    sponsor_banner_5,
+    sponsor_banner_6,
+    sponsor_banner_7,
+    sponsor_banner_8,
+    sponsor_banner_9,
     sponsor_cedc,
     sponsor_dtb,
     sponsor_dtb2,
@@ -683,12 +685,12 @@ export {
     sunImage,
     teamMember,
     ted,
-    tedx,
-    tedxavelorne,
     ted2,
+    tedx,
     tedx2,
-    tedxlakeheadu,
+    tedxavelorne,
     tedxBlack,
+    tedxlakeheadu,
     tedxWhite,
     tickImage,
     ume_habiba,
@@ -700,6 +702,8 @@ export {
     workshop1,
     workshop2,
     workshop3,
+    workshop4,
+    workshop5,
     yasha,
     yashNoBG,
     youChooseLogo,

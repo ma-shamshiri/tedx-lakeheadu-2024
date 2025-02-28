@@ -20,7 +20,7 @@ import {
     Image,
 } from "@chakra-ui/react";
 import { FaChevronRight } from "react-icons/fa";
-import { workshop1, workshop2, workshop3 } from "../../assets";
+import { workshop1, workshop2, workshop3, workshop4, workshop5 } from "../../assets";
 
 const workshops = [
     {
@@ -50,6 +50,28 @@ const workshops = [
             "Learn to appreciate our differences, viewing them as strengths rather than weaknesses.",
         ],
         image: workshop3,
+    },
+    {
+        speaker: "Ben & Darren",
+        topic: "The Psychology of Persuasion and Communication",
+        description:
+            "Join us for an engaging session on elevating your persuasion game. This workshop will empower you with the knowledge and skills to make a greater impact in both personal and professional interactions.",
+        keyTakeaways: [
+            "Learn practical strategies and techniques to enhance persuasive abilities",
+            "Gain actionable tools and insights for immediate application in high-pressure communication.",
+        ],
+        image: workshop4,
+    },
+    {
+        speaker: "Ume",
+        topic: "Intro to Building a Personal Brand",
+        description:
+            "In today’s evolving job market, having a strong personal brand is no longer optional—it’s essential. Employers, recruiters, and industry leaders are looking beyond resumes and cover letters; they want to see a candidate’s online presence, thought leadership, and unique value proposition. This workshop will guide participants through the foundational steps of creating, growing, and maintaining a compelling personal brand that stands out in the age of AI and social media.",
+        keyTakeaways: [
+            "Learning how to build and maintain a personal brand",
+            "The importance of a personal brand in the rise of AI era and social media",
+        ],
+        image: workshop5,
     },
 ];
 
@@ -94,19 +116,21 @@ const BlockWorkshops: React.FC = () => {
 
             <Tabs
                 variant="unstyled"
-                width={{ base: "90%", lg: "50%" }}
+                width={{ base: "90%", lg: "70%" }}
                 onChange={(index) => setSelectedTab(index)}
             >
                 <TabList
                     display="flex"
+                    flexDirection={{ base: "column", lg: "initial" }}
+                    alignItems={{ base: "center", lg: "initial" }}
                     justifyContent="center"
                     mb={10}
                     position="relative"
-                    gap={{ base: 3, lg: 20 }}
+                    gap={{ base: 3, lg: 10 }}
                     _after={{
                         content: '""',
                         position: "absolute",
-                        width: { base: "90%", lg: "80%" },
+                        width: { base: "90%", lg: "90%" },
                         height: "2px",
                         bg: "#CB0000",
                         bottom: "-20px",
@@ -114,11 +138,12 @@ const BlockWorkshops: React.FC = () => {
                     {workshops.map((workshop, index) => (
                         <Tab
                             key={index}
+                            width={{ base: "100%", lg: "initial" }}
                             px={8}
                             py={4}
                             fontSize={{ base: "1.4rem", lg: "2.2rem" }}
                             fontWeight="bold"
-                            borderRadius={{ base: "10px", lg: "full" }}
+                            borderRadius={{ base: "10px", lg: "12px" }}
                             _selected={{ color: "white", bg: "#CB0000" }}
                             _hover={{ bg: "red.500", color: "white" }}
                         >
