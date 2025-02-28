@@ -6,6 +6,10 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
+  {
+    label: "Home",
+    href: "/",
+  },
   // {
   //   label: "aboutUs",
   //   href: "/",
@@ -31,6 +35,11 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "event",
     href: "/event/",
     children: [
+      {
+        label: "theme",
+        subLabel: "themeSubLabel",
+        href: "/theme/",
+      },
       {
         label: "dateAndTime",
         subLabel: "dateAndTimeSubLabel",

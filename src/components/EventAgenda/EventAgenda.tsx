@@ -184,7 +184,7 @@ const EventAgenda = () => {
                 </Text>
             </Box>
             <Box
-                maxW={{ base: "full", md: "800px" }}
+                maxW={{ base: "90%", md: "800px" }}
                 mx="auto"
                 py={10}
                 px={5}
