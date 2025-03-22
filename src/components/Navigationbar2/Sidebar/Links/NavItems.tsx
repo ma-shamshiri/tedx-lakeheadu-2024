@@ -40,11 +40,11 @@ const NAV_ITEMS: Array<NavItem> = [
         subLabel: "themeSubLabel",
         href: "/theme/",
       },
-      {
-        label: "dateAndTime",
-        subLabel: "dateAndTimeSubLabel",
-        href: "/event/",
-      },
+      // {
+      //   label: "dateAndTime",
+      //   subLabel: "dateAndTimeSubLabel",
+      //   href: "/event/",
+      // },
       {
         label: "agenda",
         subLabel: "agendaSubLabel",
@@ -55,11 +55,11 @@ const NAV_ITEMS: Array<NavItem> = [
       //   subLabel: "Trending Design to inspire you",
       //   href: "#",
       // },
-      {
-        label: "ticket",
-        subLabel: "ticketSubLabel",
-        href: "/event/",
-      },
+      // {
+      //   label: "ticket",
+      //   subLabel: "ticketSubLabel",
+      //   href: "/event/",
+      // },
       // {
       //   label: "Registration",
       //   subLabel: "Up-and-coming Designers",

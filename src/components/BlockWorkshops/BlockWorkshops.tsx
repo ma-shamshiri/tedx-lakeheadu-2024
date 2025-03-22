@@ -160,7 +160,7 @@ const BlockWorkshops: React.FC = () => {
                                     borderWidth={1}
                                     borderRadius="lg"
                                     bg={useColorModeValue("white", "gray.800")}
-                                    boxShadow={useColorModeValue("0 0 30px 1px gray", "boxShadow=0 0 30px 1px black")}
+                                    boxShadow={useColorModeValue("0 0 30px 1px gray", "0 0 30px 1px black")}
                                 >
                                     <Text
                                         fontWeight="bold"

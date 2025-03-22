@@ -66,13 +66,13 @@ export const navigationLinks = [
         color: "#fa3e3e",
         icon: <IoIosColorPalette size="25px" color="white" />,
       },
-      {
-        name: "dateAndTime",
-        description: "dateAndTimeSubtitle",
-        link: "/event",
-        color: "#fa3e3e",
-        icon: <BsCalendarDate size="25px" color="white" />,
-      },
+      // {
+      //   name: "dateAndTime",
+      //   description: "dateAndTimeSubtitle",
+      //   link: "/event",
+      //   color: "#fa3e3e",
+      //   icon: <BsCalendarDate size="25px" color="white" />,
+      // },
       {
         name: "agenda",
         description: "agendaSubtitle",
@@ -80,13 +80,13 @@ export const navigationLinks = [
         color: "#fa3e3e",
         icon: <TfiAgenda size="25px" color="white" />,
       },
-      {
-        name: "ticket",
-        description: "ticketSubtitle",
-        link: "/event",
-        color: "#fa3e3e",
-        icon: <GrScheduleNew size="25px" color="white" />,
-      },
+      // {
+      //   name: "ticket",
+      //   description: "ticketSubtitle",
+      //   link: "/event",
+      //   color: "#fa3e3e",
+      //   icon: <GrScheduleNew size="25px" color="white" />,
+      // },
     ],
   },
   {

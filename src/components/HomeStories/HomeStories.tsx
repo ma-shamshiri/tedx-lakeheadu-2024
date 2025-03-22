@@ -78,7 +78,7 @@ const HomeStories: React.FC = () => {
                 <CountdownTimer eventStartTime={eventStartTime} />
             </Flex>
 
-            <Flex
+            {/* <Flex
                 className="block__button"
                 justifyContent="center"
                 alignItems="center"
@@ -121,7 +121,7 @@ const HomeStories: React.FC = () => {
                         </Button>
                     </ScrollLink>
                 </HStack>
-            </Flex>
+            </Flex> */}
 
             {/* Custom Cursor */}
             <Box

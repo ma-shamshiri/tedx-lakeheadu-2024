@@ -33,8 +33,8 @@ const HomePage: React.FC = () => {
       {/* <ClockHero /> */}
       <TicketDividerSection />
       <BlockSocialMediaCarousel />
-      <TicketCard />
-      <BlockStatistics />
+      {/* <TicketCard /> */}
+      {/* <BlockStatistics /> */}
       <BlockFeatures />
       <BlockFooter />
     </>
